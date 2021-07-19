@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>admin.digital - Cloud für die öffentliche Verwaltung</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+    <link rel="stylesheet" href="{{ '/static/custom.css'|url }}">
+
+    <script src="https://kit.fontawesome.com/a39c3ec46b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+</head>
+<body>
+
+    <header class="header-2">
+        <nav class="navbar navbar-expand-lg navbar-light pt-4">
+            <div class="container">
+                <a class="navbar-brand" href="{{ '/'|url }}"><img src="{{ '/static/images/logo.svg'|asseturl }}" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link menu-regular" href="{{ '/#features'|url }}">Funktionen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-regular" href="{{ '/#data-protection'|url }}">Datenschutz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-regular" href="{{ '/#faq'|url }}">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-regular" href="{{ '/#news'|url }}">News</a>
+                        </li>
+                    </ul>
+                    <a href="mailto:info@seantis.ch" class="button-lg-stroke">Kontakieren Sie uns</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer-4">
+        <div class="footer-content d-lg-flex">
+            <div class="f-left d-flex justify-content-center align-items-center">
+                <a href="#"><img src="{{ '/static/images/logo.svg'|asseturl }}" alt="logo"></a>
+            </div>
+            <div class="f-right">
+                <div class="row">
+                    <div class="col-7 col-md-5 col-lg-5">
+                        <h6 class="small-heading mb-20">Kontakt</h6>
+                        <ul class="contact-info">
+                            <li>
+                                <a href="tel:+41 41 511 22 50" class="paragraph-medium16">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.88235 4H9.64706L11.5294 8.70588L9.17647 10.1176C10.1844 12.1614 11.8386 13.8156 13.8824 14.8235L15.2941 12.4706L20 14.3529V18.1176C20 18.6169 19.8017 19.0957 19.4487 19.4487C19.0957 19.8017 18.6169 20 18.1176 20C14.4464 19.7769 10.9837 18.2179 8.3829 15.6171C5.78212 13.0163 4.22311 9.55363 4 5.88235C4 5.38312 4.19832 4.90434 4.55133 4.55133C4.90434 4.19832 5.38312 4 5.88235 4" fill="#868E96"/>
+                                    </svg>
+                                    +41 41 511 22 50
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@seantis.ch" class="paragraph-medium16">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.77778 6H18.2222C18.948 6 19.5721 6.43486 19.8484 7.05824L12 12.2905L4.15163 7.05826C4.42786 6.43488 5.05203 6 5.77778 6ZM4 8.75995V16.6667C4 17.6485 4.79594 18.4444 5.77778 18.4444H18.2222C19.2041 18.4444 20 17.6485 20 16.6667V8.75992L12.416 13.8159C12.1641 13.9839 11.8359 13.9839 11.584 13.8159L4 8.75995Z" fill="#868E96"/>
+                                    </svg>
+                                    info@seantis.ch
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-5 col-md-4 col-lg-4">
+                        <h6 class="small-heading">Links</h6>
+                        <ul>
+                            <li>
+                                <a href="https://www.onegov.ch" class="paragraph-medium16">Verein OneGov.ch</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/OneGov/onegov-cloud" class="paragraph-medium16">Github</a>
+                            </li>
+                            <li>
+                                <a href="https://www.seantis.ch" class="paragraph-medium16">seantis gmbh</a>
+                            </li>
+                            <li>
+                                <a href="https://seantis.ch/portrait/informationssicherheit-iso-27001/" class="paragraph-medium16">ISO/IEC 27001:2013</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <h6 class="small-heading">Social Media</h6>
+                        <ul class="social-icon">
+                            <li>
+                                <a href="https://twitter.com/seantis" class="paragraph-medium16">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="16" cy="16" r="15.5" fill="#F1F3F5"/>
+                                        <path d="M11 14.2222V17.7778H13.6667V24H17.2222V17.7778H19.8889L20.7778 14.2222H17.2222V12.4444C17.2222 12.2087 17.3159 11.9826 17.4826 11.8159C17.6493 11.6492 17.8754 11.5556 18.1111 11.5556H20.7778V8H18.1111C16.9324 8 15.8019 8.46825 14.9684 9.30175C14.1349 10.1352 13.6667 11.2657 13.6667 12.4444V14.2222H11Z" fill="#868E96"/>
+                                    </svg>
+                                    Twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/seantis" class="paragraph-medium16">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="16" cy="16" r="15.5" fill="#F1F3F5"/>
+                                        <path d="M22.3328 11.0737C21.6662 11.4004 21.0128 11.5331 20.3328 11.7337C19.5855 10.8904 18.4775 10.8437 17.4128 11.2424C16.3482 11.6411 15.6508 12.6157 15.6662 13.7337V14.4004C13.5028 14.4557 11.5762 13.4704 10.3328 11.7337C10.3328 11.7337 7.54484 16.6891 12.9995 19.0671C11.7515 19.8984 10.5068 20.4591 8.99951 20.4004C11.2048 21.6024 13.6082 22.0157 15.6888 21.4117C18.0755 20.7184 20.0368 18.9297 20.7895 16.2504C21.014 15.4355 21.1255 14.5936 21.1208 13.7484C21.1195 13.5824 22.1275 11.9004 22.3328 11.0731V11.0737Z" fill="#868E96"/>
+                                    </svg>
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script>
+    new Glider(document.querySelector('.glider'), {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+        },
+    });
+    </script>
+</body>
+</html>

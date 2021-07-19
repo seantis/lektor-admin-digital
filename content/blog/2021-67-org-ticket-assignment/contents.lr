@@ -1,0 +1,16 @@
+title: Org: Zuweisen von Tickets und Inbox
+---
+pub_date: 2021-07-17
+---
+author: Marc Sommerhalder
+---
+release: 2021.67
+---
+description: Neu können Tickets anderen Benutzern zugewiesen werden. Der entsprechende Benutzer enthält eine Benachrichtigungsemail, sofern die Ticket-Emails aktiviert sind.
+---
+body:
+
+Um jederzeit den Überblick über die eigenen Tickets zu haben, gibt es neu die Ansicht "Meine Tickets". Die Ansicht "Meine Tickets" zeigt alle eigenen Tickets.
+
+![Die Ansicht "Meine Tickets" zeigt alle eigenen Tickets.](2021-67-org.png)
+Die Ansicht "Meine Tickets" zeigt alle eigenen Tickets.

@@ -1,0 +1,23 @@
+title: Staatskalender: Verbesserte Mutationsmeldungen
+---
+pub_date: 2021-07-17
+---
+author: Marc Sommerhalder
+---
+release: 2021.67
+---
+description: Für die Ergebnispräsentation am Abstimmungssonntag können neu individuelle Ansichten erstellt werden. Jede Ansicht hat eine fixe URL und lädt sich bei neuen Resultaten automatisch selbst neu.
+---
+body:
+
+Neu können bei Mutationsmeldungen von Personen und Organisationen direkt Änderungen für spezifische Felder vorgeschlagen werden. Redaktoren könnnen anschliessend mit wenigen Klicks auswählen, welche der vorgeschlagenen Änderung übernommen werden sollen.
+
+![Mit dem neuen Formular für Muationsmeldungen können direkt Änderungen für konkrete Felder vorgeschlagen werden.](2021-67-agency-01.png)
+Mit dem neuen Formular für Muationsmeldungen können direkt Änderungen für konkrete Felder vorgeschlagen werden.
+
+
+![Ticketansicht mit neuen Informationen und Aktionen](2021-67-agency-02.png)
+Ticketansicht mit neuen Informationen und Aktionen
+
+![Vorgeschlagene Änderungen können selektiv übernommen werden](2021-67-agency-03.png)
+Vorgeschlagene Änderungen können selektiv übernommen werden

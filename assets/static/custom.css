@@ -1,0 +1,118 @@
+a {
+    color: #dc0018;
+}
+
+a:hover {
+    color: #9a0011;
+}
+
+.heading-1, .heading-2, .heading-3, .heading-4, .heading-5, .heading-6, .small-heading {
+    letter-spacing: 0
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+header .navbar, .header-2 .h2-content {
+    padding-bottom: 90px;
+}
+
+.navbar-brand {
+    background: #dc0018;
+    margin-top: -24px;
+}
+
+.customers {
+    margin: 100px 0;
+}
+
+.custom-carousel-item img {
+    margin-top: 60px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.testimonial, .featured-section {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.testimonial8-wrapper .glider-contain {
+    padding-top: 0
+}
+
+.testimonial8-wrapper .glider-contain .glider .paragraph-medium {
+    padding-top: 60px;
+}
+
+.faq3-wrapper {
+    padding-top: 0px;
+}
+
+.sms {
+    width: 200px !important;
+    margin-top: -200px;
+    padding-left: 5px;
+}
+
+@media (min-width: 576px) {
+    .sms {
+        margin-top: -65px;
+    }
+}
+
+a.start {
+    font-size: 120%;
+}
+
+.start svg {
+    margin-right: 10px;
+}
+
+.contact a {
+    color: #fff;
+}
+
+@media only screen and (min-width: 992px) {
+    .footer-4 .footer-content .f-right {
+        padding: 70px 8%;
+    }
+}
+
+.blog-section {
+    padding: 0;
+}
+
+.faq .accordion .accordion-item .accordion-header .accordion-button {
+    letter-spacing: 0;
+}
+
+.featured6 .featured-content .featured-single .heading-6 {
+    margin-top: 0
+}
+
+@media (min-width: 768px) {
+    #sustanability .featured-single {height: 500px}
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 48px;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    margin: 30px 0
+}
+
+footer {margin-top: 100px;}
+
+.lead {
+    font-weight: 700;
+    margin-top: 30px;
+}
