@@ -2,3 +2,6 @@
 name = admin.digital
 url = https://www.admin.digital
 locale = de_CH
+
+[servers.ghpages]
+target = ghpages+https://seantis/admin.digital.github.io
