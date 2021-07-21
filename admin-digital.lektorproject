@@ -6,4 +6,4 @@ locale = de_CH
 [packages]
 
 [servers.ghpages]
-target = ghpages+https://seantis/admin.digital.github.io?cname=admin.digital
+target = ghpages+https://seantis/admin.digital.github.io?cname=www.admin.digital
