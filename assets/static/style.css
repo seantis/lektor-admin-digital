@@ -5742,7 +5742,7 @@ header .navbar-toggler {
 }
 
 header .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.svg);
+  background-image: url(images/menu.svg);
   width: 48px;
   height: 48px;
 }
@@ -11274,7 +11274,7 @@ mark {
 }
 
 .other-element .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.svg);
+  background-image: url(images/menu.svg);
   width: 48px;
   height: 48px;
 }
