@@ -14088,18 +14088,6 @@ mark {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .testimonial8-wrapper {
-    padding-bottom: 60px;
-  }
-  .testimonial8-wrapper .heading-2 {
-    margin-bottom: 40px;
-  }
-  .testimonial8-wrapper img {
-    padding-top: 60px;
-  }
-}
-
 .testimonial9-wrapper {
   padding: 0px 0px 120px;
 }

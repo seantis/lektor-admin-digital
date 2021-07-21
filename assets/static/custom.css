@@ -47,6 +47,12 @@ header .navbar, .header-2 .h2-content {
     padding-top: 60px;
 }
 
+@media only screen and (max-width: 767px) {
+    .testimonial8-wrapper .glider-contain .glider .paragraph-medium {
+        padding-top: 10px
+    }
+}
+
 .faq3-wrapper {
     padding-top: 0px;
 }
@@ -103,6 +109,11 @@ p {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 48px;
+}
+
+
+.blog-post-single {
+    margin-bottom: 200px !important;
 }
 
 .blog-post img {
