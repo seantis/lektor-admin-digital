@@ -1,38 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-@font-face {
-  font-family: 'IBM Plex Sans", sans-serif';
-  src: url("http://localhost:5000/static/fonts/spacegrotesk-bold-webfont.woff2") format("woff2"), url("../fonts/spacegrotesk-bold-webfont.woff2") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'space_grotesk';
-  src: url("http://localhost:5000/static/fonts/spacegrotesk-light-webfont.woff") format("woff2"), url("../fonts/spacegrotesk-light-webfont.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'space_grotesk';
-  src: url("http://localhost:5000/static/fonts/spacegrotesk-medium-webfont.woff") format("woff2"), url("../fonts/spacegrotesk-medium-webfont.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'space_grotesk';
-  src: url("http://localhost:5000/static/fonts/spacegrotesk-regular-webfont.woff") format("woff2"), url("../fonts/spacegrotesk-regular-webfont.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'space_grotesk';
-  src: url("http://localhost:5000/static/fonts/spacegrotesk-semibold-webfont.woff") format("woff2"), url("../fonts/spacegrotesk-semibold-webfont.woff2") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 .button-lg-fill {
   -webkit-box-align: center;
@@ -3438,7 +3405,7 @@
   color: unset;
   background-color: unset;
   border: unset;
-  font-family: "space_grotesk";
+  font-family: "Space Grotesk";
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
@@ -8957,7 +8924,7 @@ mark {
 }
 
 .search-form .form-group .form-control::-webkit-input-placeholder {
-  font-family: "space_grotesk";
+  font-family: "Space Grotesk";
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
@@ -8965,7 +8932,7 @@ mark {
 }
 
 .search-form .form-group .form-control:-ms-input-placeholder {
-  font-family: "space_grotesk";
+  font-family: "Space Grotesk";
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
@@ -8973,7 +8940,7 @@ mark {
 }
 
 .search-form .form-group .form-control::-ms-input-placeholder {
-  font-family: "space_grotesk";
+  font-family: "Space Grotesk";
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
@@ -8981,7 +8948,7 @@ mark {
 }
 
 .search-form .form-group .form-control::placeholder {
-  font-family: "space_grotesk";
+  font-family: "Space Grotesk";
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
@@ -12980,7 +12947,7 @@ mark {
 }
 
 .heading-1 {
-  font-family: "space_grotesk";
+  font-family: "Space Grotesk";
   font-weight: 700;
   font-size: 72px;
   line-height: 74px;
@@ -13012,7 +12979,7 @@ mark {
 }
 
 .heading-2 {
-  font-family: "space_grotesk";
+  font-family: "Space Grotesk";
   font-weight: 700;
   font-size: 64px;
   line-height: 76.8px;
@@ -13051,7 +13018,7 @@ mark {
 
 .heading-3 {
   color: #212529;
-  font-family: "space_grotesk";
+  font-family: "Space Grotesk";
   font-weight: 700;
   font-size: 56px;
   line-height: 67.2px;
@@ -13068,7 +13035,7 @@ mark {
 
 .heading-4 {
   color: #212529;
-  font-family: "space_grotesk";
+  font-family: "Space Grotesk";
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
@@ -13084,7 +13051,7 @@ mark {
 
 .heading-5 {
   color: #212529;
-  font-family: "space_grotesk";
+  font-family: "Space Grotesk";
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
@@ -13100,7 +13067,7 @@ mark {
 
 .heading-6 {
   color: #212529;
-  font-family: "space_grotesk";
+  font-family: "Space Grotesk";
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
@@ -13123,7 +13090,7 @@ mark {
 }
 
 .small-heading {
-  font-family: "space_grotesk";
+  font-family: "Space Grotesk";
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
@@ -13201,7 +13168,7 @@ mark {
 }
 
 .menu-regular {
-  font-family: "space_grotesk";
+  font-family: "Space Grotesk";
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
