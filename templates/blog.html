@@ -3,8 +3,8 @@
 {% block content %}
 
     {% set blog = site.get_root().children.get('neuerungen/alle') %}
-    {% if this.type %}
-        {% set items = blog.children.filter(F.types.contains(this.type)).all() %}
+    {% if this.app %}
+        {% set items = blog.children.filter(F.apps.contains(this.app)).all() %}
     {% else %}
         {% set items = blog.children.all() %}
     {% endif %}
