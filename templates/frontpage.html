@@ -380,7 +380,7 @@
                     <div class="blog-post-single">
                         <img src="/static/images/blog/image.png" alt="img">
                         <div class="img-overlay">
-                            <p class="button-small">17. Juli 2021</p>
+                            <p class="button-small">{{ item.pub_date|dateformat }}</p>
                             <a href="{{ item|url }}"><h6 class="heading-6">{{ item.title }}</h6></a>
                             <p class="paragraph-regular">{{ item.description }}</p>
                             <p><a href="{{ item|url }}">
