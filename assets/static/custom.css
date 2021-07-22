@@ -140,3 +140,12 @@ footer {margin-top: 100px;}
     max-width: 100%;
     margin-bottom: 0;
 }
+
+.brand-logo .card {
+    padding: 15px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
