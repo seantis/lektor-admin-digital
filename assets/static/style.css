@@ -4050,6 +4050,7 @@
   color: #ffffff;
 }
 
+.featured3 .featured-content .featured-single:hover svg,
 .featured3 .featured-content .featured-single:hover .button-semi svg path {
   stroke: #ffffff;
 }
