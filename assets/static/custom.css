@@ -15,6 +15,17 @@ a:hover {
     width: 150px;
 }
 
+.announcement {
+    background: #169BDB;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 20px;
+}
+
+.announcement a {
+    color: #fff;
+}
+
 header .navbar, .header-2 .h2-content {
     padding-bottom: 90px;
 }
@@ -150,4 +161,12 @@ footer {margin-top: 100px;}
     align-items: center;
     justify-content: center;
     background: #fff;
+}
+
+.blog-section ul {
+    margin: 40px 0px;
+}
+
+.blog-section ul li, .blog-section ul li a {
+    font-size: 20px;
 }
