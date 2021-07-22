@@ -1,7 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
 
-
     <section class="blog-section blog-4">
         <div class="container">
             <div class="row">
@@ -17,15 +16,11 @@
                     <p class="paragraph-medium">{{ this.body }}</p>
                 </div>
                 <div class="col-xl-4 col-lg-5 offset-lg-1 offset-xl-1 blog-sidebar">
-                    <p class="paragraph-regular">Release 2021.62</p>
-                    <a href="{{ '/blog/2021-62-election-day-screens'|url }}"><h6 class="small-heading">Wahlen und  Abstimmungen: Ergebnispräsentation</h6></a>
+                    {% for item in site.get_root().children.get('neuerungen/alle').children %}
+                    <p class="paragraph-regular">Release {{ item.release }}</p>
+                    <a href="{{ item|url }}"><h6 class="small-heading">{{ item.title }}</h6></a>
                     <hr>
-                    <p class="paragraph-regular">Release 2021.67</p>
-                    <a href="{{ '/blog/2021-67-org-ticket-assignment'|url }}"><h6 class="small-heading">Org: Zuweisen von Tickets und Inbox</h6></a>
-                    <hr>
-                    <p class="paragraph-regular">Release 2021.67</p>
-                    <a href="{{ '/blog/2021-67-agency-mutations'|url }}"><h6 class="small-heading">Staatskalender: Verbesserte Mutationsmeldungen</h6></a>
-                    <hr>
+                    {% endfor %}
                 </div>
             </div>
         </div>
