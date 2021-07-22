@@ -25,7 +25,9 @@ header .navbar, .header-2 .h2-content {
 }
 
 .customers {
-    margin: 100px 0;
+    margin: 50px 0 0 0;
+    padding: 50px 0;
+    background: #F8F9FA
 }
 
 .custom-carousel-item img {
