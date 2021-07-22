@@ -127,3 +127,7 @@ footer {margin-top: 100px;}
     font-weight: 700;
     margin-top: 30px;
 }
+
+.featured7 .featured-content .featured-single:hover {
+    border-color: #dc0018;
+}
