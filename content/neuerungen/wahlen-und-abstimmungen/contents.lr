@@ -2,4 +2,4 @@ _model: blog
 ---
 title: Wahlen und Abstimmungen
 ---
-type: election_day
+app: election_day

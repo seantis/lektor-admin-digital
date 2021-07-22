@@ -2,4 +2,4 @@ _model: blog
 ---
 title: Gemeinden
 ---
-type: town
+app: town
