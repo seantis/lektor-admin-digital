@@ -1,0 +1,5 @@
+_model: redirect
+---
+target: /neuerungen/alle
+---
+_discoverable: no

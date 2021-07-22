@@ -2,22 +2,30 @@
 {% from "macros/pagination.html" import render_pagination %}
 {% block content %}
 
+    {% set blog = site.get_root().children.get('neuerungen/alle') %}
+    {% if this.type %}
+        {% set items = blog.children.filter(F.types.contains(this.type)).all() %}
+    {% else %}
+        {% set items = blog.children.all() %}
+    {% endif %}
+
     <section class="blog-section blog-5">
         <div class="container">
-            <h1 class="heading-1">Blog</h1>
-            <p class="paragraph-medium">In unserem Blog schreiben wir über Aktuelles und woran wir gerade arbeiten.</p>
+            <h1 class="heading-1">Neuerungen</h1>
+            <h6 class="heading-6">{{ this.title }}</h6>
+            <p class="paragraph-medium">Hier schreiben wir über Aktuelles und woran wir gerade arbeiten.</p>
             <div class="row">
                 <div class="col-md-6 col-lg-6  col-xl-8">
                     <div class="row">
-                        {% for child in this.pagination.items %}
+                        {% for item in items %}
                         <div class="col-xl-6 border-end">
                             <div class="card custom-card">
                                 <img src="/static/images/blog/image.png" class="card-img-top" alt="img">
                                 <div class="card-body">
-                                    <p class="button-small">{{ child.pub_date|dateformat }}</p>
-                                    <a href="{{ child|url }}"><h6 class="heading-6">{{ child.title }}</h6></a>
-                                    <p class="paragraph-regular">{{ child.description }}</p>
-                                    <p><a href="{{ child|url }}">
+                                    <p class="button-small">{{ item.pub_date|dateformat }}</p>
+                                    <a href="{{ item|url }}"><h6 class="heading-6">{{ item.title }}</h6></a>
+                                    <p class="paragraph-regular">{{ item.description }}</p>
+                                    <p><a href="{{ item|url }}">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 8H12" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M7 3L12 8L7 13" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"/>
@@ -34,13 +42,12 @@
                     <h5 class="heading-5">Kategorien</h5>
                     <hr>
                     <ul>
-                        <li><a href="">Staatskalender</a></li>
-                        <li><a href="">Wahlen & Abstimmungen</a></li>
-                        <li><a href="">Reservationen</a></li>
+                    {% for category in site.get_root().children.get('neuerungen').children.order_by('_id').all() %}
+                        <li><a href="{{ category|url }}">{{ category.title }}</a></li>
+                    {% endfor %}
                     </ul>
                 </div>
             </div>
-            {{ render_pagination(this.pagination) }}
         </div>
     </section>
 
