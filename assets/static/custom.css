@@ -23,6 +23,10 @@ a:hover {
 }
 
 .announcement a {
+    margin-right: 3px;
+}
+
+.announcement a {
     color: #fff;
 }
 
