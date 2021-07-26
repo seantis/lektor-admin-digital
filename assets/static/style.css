@@ -3427,11 +3427,11 @@
 }
 
 .faq .accordion .accordion-item .accordion-header .accordion-button::after {
-  background-image: url(http://localhost:5000/static/images/faq/plus.svg);
+  background-image: url(../static/images/faq/plus.svg);
 }
 
 .faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-  background-image: url(http://localhost:5000/static/images/faq/minus.svg);
+  background-image: url(../static/images/faq/minus.svg);
 }
 
 .faq .accordion .accordion-item .accordion-collapse {
@@ -3503,7 +3503,7 @@
   height: 1.25rem;
   margin-right: 40px;
   content: "";
-  background-image: url(http://localhost:5000/static/images/faq/plus.svg) !important;
+  background-image: url(../static/images/faq/plus.svg) !important;
   background-repeat: no-repeat;
   background-size: 1.25rem;
   -webkit-transition: -webkit-transform .2s ease-in-out;
@@ -3576,11 +3576,11 @@
 }
 
 .faq2-wrapper .accordion .accordion-item .accordion-header .accordion-button::after {
-  background-image: url(http://localhost:5000/static/images/faq/plus1.svg);
+  background-image: url(static/images/faq/plus1.svg);
 }
 
 .faq2-wrapper .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-  background-image: url(http://localhost:5000/static/images/faq/minus1.svg);
+  background-image: url(static/images/faq/minus1.svg);
 }
 
 @media only screen and (min-width: 768px) {
@@ -3626,11 +3626,11 @@
 }
 
 .faq3-wrapper .accordion .accordion-item .accordion-header .accordion-button::after {
-  background-image: url(http://localhost:5000/static/images/faq/plus2.svg);
+  background-image: url(../static/images/faq/plus2.svg);
 }
 
 .faq3-wrapper .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-  background-image: url(http://localhost:5000/static/images/faq/minus2.svg);
+  background-image: url(../static/images/faq/minus2.svg);
 }
 
 .faq3-wrapper .accordion .accordion-item .accordion-collapse .accordion-body {
@@ -3716,7 +3716,7 @@
 }
 
 .faq4-wrapper .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::before {
-  background-image: url(../images/faq/minus.svg) !important;
+  background-image: url(../static/images/faq/minus.svg) !important;
 }
 
 @media only screen and (min-width: 768px) {
