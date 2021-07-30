@@ -174,3 +174,7 @@ footer {margin-top: 100px;}
 .blog-section ul li, .blog-section ul li a {
     font-size: 20px;
 }
+
+.blog-post-single .img-overlay {
+    margin-bottom: 40px !important;
+}
