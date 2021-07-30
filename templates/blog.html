@@ -20,7 +20,7 @@
                         {% for item in items %}
                         <div class="col-xl-6 border-end">
                             <div class="card custom-card">
-                                <img src="/static/images/blog/image.png" class="card-img-top" alt="img">
+                                <img src="{{ item|url }}/og_image.png" class="card-img-top" alt="img">
                                 <div class="card-body">
                                     <p class="button-small">{{ item.pub_date|dateformat }}</p>
                                     <a href="{{ item|url }}"><h6 class="heading-6">{{ item.title }}</h6></a>
