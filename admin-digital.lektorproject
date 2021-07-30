@@ -4,6 +4,7 @@ url = https://www.admin.digital
 locale = de_CH
 
 [packages]
+lektor-open-graph =
 
 [servers.ghpages]
 target = ghpages+https://seantis/admin.digital.github.io?cname=www.admin.digital
