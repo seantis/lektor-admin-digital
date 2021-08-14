@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-lg-6 blog-post">
-                    <p class="paragraph-regular">Release {{ this.release }}</p>
+                    {% if this.release %}<p class="paragraph-regular">Release {{ this.release }}</p>{% endif %}
                     <a href="#"><h2 class="heading-2">{{ this.title }}</h2></a>
                     <div class="img-overlay d-flex align-items-center">
                         <div class="left">
@@ -17,7 +17,6 @@
                 </div>
                 <div class="col-xl-4 col-lg-5 offset-lg-1 offset-xl-1 blog-sidebar">
                     {% for item in site.get_root().children.get('neuerungen/alle').children %}
-                    <p class="paragraph-regular">Release {{ item.release }}</p>
                     <a href="{{ item|url }}"><h6 class="small-heading">{{ item.title }}</h6></a>
                     <hr>
                     {% endfor %}
