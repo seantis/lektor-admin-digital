@@ -1,0 +1,50 @@
+{% macro render_blog(app) %}
+
+    {% set blog = site.get_root().children.get('neuerungen/alle') %}
+    {% if app %}
+        {% set items = blog.children.filter(F.apps.contains(app)).all() %}
+    {% else %}
+        {% set items = blog.children.all() %}
+    {% endif %}
+
+    <section class="blog-section blog-5">
+        <div class="container">
+            <h1 class="heading-1">Neuerungen</h1>
+            <p class="paragraph-medium">Hier schreiben wir über Aktuelles und woran wir gerade arbeiten.</p>
+            <div class="row">
+                <div class="col-md-6 col-lg-6  col-xl-8">
+                    <div class="row">
+                        {% for item in items %}
+                        <div class="col-xl-6 border-end">
+                            <div class="card custom-card">
+                                <img src="{{ item|url }}/og_image.png" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <p class="button-small">{{ item.pub_date|dateformat }}</p>
+                                    <a href="{{ item|url }}"><h6 class="heading-6">{{ item.title }}</h6></a>
+                                    <p class="paragraph-regular">{{ item.description }}</p>
+                                    <p><a href="{{ item|url }}">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 8H12" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7 3L12 8L7 13" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        weiterlesen
+                                    </a></p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 offset-lg-1 offset-xl-0 col-xl-4 blog-sidebar">
+                    <h5 class="heading-5">Kategorien</h5>
+                    <hr>
+                    <ul>
+                    {% for category in site.get_root().children.get('neuerungen').children.order_by('_id').all() %}
+                        <li><a href="{{ category|url }}">{{ category.title }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endmacro %}
