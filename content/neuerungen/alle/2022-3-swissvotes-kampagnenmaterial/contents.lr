@@ -1,0 +1,24 @@
+title: Swissvotes Kampagnenmaterial
+---
+pub_date: 2022-01-09
+---
+author: Marc Sommerhalder
+---
+release: 2022.3
+---
+description: Die umfassendste Datenbank zu den Schweizer Volksabstimmungen der Universität Bern ist noch umfassender geworden.
+---
+body:
+
+Swissvotes hat neu mehrere Tausend zusätzliche Dokumente aus der Abstimmungskampagne. Zu allen diesen Dokumenten sind verschiedene Metadaten verfügbar: Titel, Datum, Autorenschaft, Sprache,  Typ, Position sowie Auftraggeberschaft. Alle Dokumente einer Vorlage (inklusive Abstimmungsbüchlein, Parlamentsberatung etc.) können zudem neu in einer Volltextsuche durchsucht werden.
+
+![Unterseite mit den Dokumenten aus der Abstimmungskampagne](2022-3-swissvotes-1.png)
+*Unterseite mit den Dokumenten aus der Abstimmungskampagne*
+
+![Volltextsuche](2022-3-swissvotes-2.png)
+*Volltextsuche*
+
+Swissvotes Datenbank: <https://swissvotes.ch>
+
+---
+apps: swissvotes
