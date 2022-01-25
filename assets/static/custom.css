@@ -45,6 +45,10 @@ header .navbar {
     background: #F8F9FA
 }
 
+.custom-carousel-item a {
+    color: #fff;
+}
+
 .custom-carousel-item img {
     margin-top: 60px;
     height: 250px;
