@@ -1,788 +1,971 @@
 {% extends "layout.html" %}
 {% block content %}
 
-    <section>
-        <div class="header-content h2-content">
-            <div class="container">
-                <div class="row column-reverse">
-                    <div class="col">
-                        <h1 class="heading-1">Cloud für die öffentliche Verwaltung🇨🇭</h1>
-                        <p class="paragraph-medium">Alle reden von Digitalisierung. admin.digital ist eine bewährte und sichere Cloud Plattform für Schweizer Kantone und Gemeinden.
-                            Entwickelt als Open Source Software in der Gemeinschaft des Vereins OneGov.ch und betrieben in zertifizierten Schweizer Rechenzentren. Informationssicherheit und Datenschutz stehen bei uns an erster Stelle.
-                        </p>
-                        <a href="https://start.onegovcloud.ch" class="button-lg-fill start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-upload" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1" />
-                                <polyline points="9 15 12 12 15 15" />
-                                <line x1="12" y1="12" x2="12" y2="21" />
-                            </svg>
-                            jetzt testen
+<section>
+    <div class="header-content h2-content">
+        <div class="container">
+            <div class="row column-reverse">
+                <div class="col">
+                    <h1 class="heading-1">Cloud für die öffentliche Verwaltung🇨🇭</h1>
+                    <p class="paragraph-medium">Alle reden von Digitalisierung. admin.digital ist eine bewährte und
+                        sichere Cloud Plattform für Schweizer Kantone und Gemeinden.
+                        Entwickelt als Open Source Software in der Gemeinschaft des Vereins OneGov.ch und betrieben in
+                        zertifizierten Schweizer Rechenzentren. Informationssicherheit und Datenschutz stehen bei uns an
+                        erster Stelle.
+                    </p>
+                    <a href="https://start.onegovcloud.ch" class="button-lg-fill start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-upload"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1" />
+                            <polyline points="9 15 12 12 15 15" />
+                            <line x1="12" y1="12" x2="12" y2="21" />
+                        </svg>
+                        jetzt testen
+                    </a>
+                </div>
+                <div class="col-md-5 col-xl-5 offset-md-1 offset-lg-0">
+                    <img src="static/images/ogc.png" class="img-fluid">
+                    <img class="sms" src="{{ 'static/images/swissmade.png'|asseturl }}">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="customers">
+    <div class="container">
+
+        <div class="brand-logo text-center">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/zg.svg'|asseturl }}" alt="Kanton Zug">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/bs.png'|asseturl }}" alt="Kanton Basel Stadt">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/sg.svg'|asseturl }}" alt="Kanton St. Gallen">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/sz.svg'|asseturl }}" alt="Kanton Schwyz">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/gr.svg'|asseturl }}" alt="Kanton Graubünden">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/ar.svg'|asseturl }}"
+                            alt="Kanton Appenzell Ausserrhoden">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/bl.svg'|asseturl }}" alt="Kanton Basel Landschaft">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/winterthur.svg'|asseturl }}" alt="Stadt Winterhur">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/stadt-bern.svg'|asseturl }}" alt="Stadt Bern">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/ebikon.png'|asseturl }}" alt="Gemeinde Ebikon">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/duerrenaesch.svg'|asseturl }}"
+                            alt="Gemeinde Dürrenäsch">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/lauerz.png'|asseturl }}" alt="Gemeinde Lauerz">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/neuheim.png'|asseturl }}" alt="Gemeinde Neuheim">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/steinhausen.png'|asseturl }}"
+                            alt="Gemeinde Steinhausen">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/huenenberg.png'|asseturl }}"
+                            alt="Gemeinde Hünenberg">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/ottenbach.png'|asseturl }}" alt="Gemeinde Ottenbach">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/risch-rotkreuz.png'|asseturl }}"
+                            alt="Gemeinde Risch Rotkreuz">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/besenbueren.png'|asseturl }}"
+                            alt="Gemeinde Besenbüren">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/musikschule-rontal.svg'|asseturl }}"
+                            alt="Musikschule Rontal">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/ph-zug.png'|asseturl }}" alt="PH Zug">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/pro-juventute.svg'|asseturl }}" alt="Pro Juventute">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="{{ 'static/images/customer-icons/universitaet-bern.svg'|asseturl }}"
+                            alt="Universität Bern">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact contact6-wrapper blue5-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 d-flex flex-column justify-content-between">
+                <div>
+                    <h2 class="heading-2">Kontakt</h2>
+                    <p class="paragraph-regular">seantis gmbh<br>
+                        Pilatusstrasse 3<br>
+                        6003 Luzern<br><br>
+                        <a href="http://www.seantis.ch">www.seantis.ch</a>
+                    </p>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-link active paragraph-regular" id="nav-brochure-tab" data-bs-toggle="tab"
+                            href="#phone" role="tab" aria-selected="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.88235 4H9.64706L11.5294 8.70588L9.17647 10.1176C10.1844 12.1614 11.8386 13.8156 13.8824 14.8235L15.2941 12.4706L20 14.3529V18.1176C20 18.6169 19.8017 19.0957 19.4487 19.4487C19.0957 19.8017 18.6169 20 18.1176 20C14.4464 19.7769 10.9837 18.2179 8.3829 15.6171C5.78212 13.0163 4.22311 9.55363 4 5.88235C4 5.38312 4.19832 4.90434 4.55133 4.55133C4.90434 4.19832 5.38312 4 5.88235 4Z"
+                                    fill="#ffffff" />
+                            </svg>+41 41 511 22 50
+                        </a>
+                        <a class="nav-link paragraph-regular" id="nav-business-tab" data-bs-toggle="tab" href="#email"
+                            role="tab" aria-controls="nav-business" aria-selected="false"
+                            onclick="javascript: window.location.href='mailto:fabian.reinhard@seantis.ch';">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.77778 6H18.2222C18.948 6 19.5721 6.43486 19.8484 7.05824L12 12.2905L4.15163 7.05826C4.42786 6.43488 5.05203 6 5.77778 6ZM4 8.75995V16.6667C4 17.6485 4.79594 18.4444 5.77778 18.4444H18.2222C19.2041 18.4444 20 17.6485 20 16.6667V8.75992L12.416 13.8159C12.1641 13.9839 11.8359 13.9839 11.584 13.8159L4 8.75995Z"
+                                    fill="#ffffff" />
+                            </svg> fabian.reinhard@seantis.ch
+
                         </a>
                     </div>
-                    <div class="col-md-5 col-xl-5 offset-md-1 offset-lg-0">
-                        <img src="static/images/ogc.png" class="img-fluid">
-                        <img class="sms" src="{{ 'static/images/swissmade.png'|asseturl }}">
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="customers">
-        <div class="container">
-
-            <div class="brand-logo text-center">
-                <div class="row align-items-center">
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/zg.svg'|asseturl }}" alt="Kanton Zug">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/bs.png'|asseturl }}" alt="Kanton Basel Stadt">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/sg.svg'|asseturl }}" alt="Kanton St. Gallen">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/sz.svg'|asseturl }}" alt="Kanton Schwyz">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/gr.svg'|asseturl }}" alt="Kanton Graubünden">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/ar.svg'|asseturl }}" alt="Kanton Appenzell Ausserrhoden">
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/bl.svg'|asseturl }}" alt="Kanton Basel Landschaft">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/winterthur.svg'|asseturl }}" alt="Stadt Winterhur">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/stadt-bern.svg'|asseturl }}" alt="Stadt Bern">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/ebikon.png'|asseturl }}" alt="Gemeinde Ebikon">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/duerrenaesch.svg'|asseturl }}" alt="Gemeinde Dürrenäsch">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/lauerz.png'|asseturl }}" alt="Gemeinde Lauerz">
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/neuheim.png'|asseturl }}" alt="Gemeinde Neuheim">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/steinhausen.png'|asseturl }}" alt="Gemeinde Steinhausen">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/huenenberg.png'|asseturl }}" alt="Gemeinde Hünenberg">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/ottenbach.png'|asseturl }}" alt="Gemeinde Ottenbach">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/risch-rotkreuz.png'|asseturl }}" alt="Gemeinde Risch Rotkreuz">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/besenbueren.png'|asseturl }}" alt="Gemeinde Besenbüren">
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/musikschule-rontal.svg'|asseturl }}" alt="Musikschule Rontal">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/ph-zug.png'|asseturl }}" alt="PH Zug">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/pro-juventute.svg'|asseturl }}" alt="Pro Juventute">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card">
-                            <img src="{{ 'static/images/customer-icons/universitaet-bern.svg'|asseturl }}" alt="Universität Bern">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact contact6-wrapper blue5-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 d-flex flex-column justify-content-between">
-                    <div>
-                        <h2 class="heading-2">Kontakt</h2>
-                        <p class="paragraph-regular">seantis gmbh<br>
-                            Pilatusstrasse 3<br>
-                            6003 Luzern<br><br>
-                            <a href="http://www.seantis.ch">www.seantis.ch</a>
-                        </p>
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <a class="nav-link active paragraph-regular" id="nav-brochure-tab" data-bs-toggle="tab"
-                            href="#phone" role="tab"
-                            aria-selected="true">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.88235 4H9.64706L11.5294 8.70588L9.17647 10.1176C10.1844 12.1614 11.8386 13.8156 13.8824 14.8235L15.2941 12.4706L20 14.3529V18.1176C20 18.6169 19.8017 19.0957 19.4487 19.4487C19.0957 19.8017 18.6169 20 18.1176 20C14.4464 19.7769 10.9837 18.2179 8.3829 15.6171C5.78212 13.0163 4.22311 9.55363 4 5.88235C4 5.38312 4.19832 4.90434 4.55133 4.55133C4.90434 4.19832 5.38312 4 5.88235 4Z" fill="#ffffff"/>
-                            </svg>+41 41 511 22 50
-                            </a>
-                            <a class="nav-link paragraph-regular" id="nav-business-tab" data-bs-toggle="tab"
-                                href="#email" role="tab" aria-controls="nav-business"
-                                aria-selected="false">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.77778 6H18.2222C18.948 6 19.5721 6.43486 19.8484 7.05824L12 12.2905L4.15163 7.05826C4.42786 6.43488 5.05203 6 5.77778 6ZM4 8.75995V16.6667C4 17.6485 4.79594 18.4444 5.77778 18.4444H18.2222C19.2041 18.4444 20 17.6485 20 16.6667V8.75992L12.416 13.8159C12.1641 13.9839 11.8359 13.9839 11.584 13.8159L4 8.75995Z" fill="#ffffff"/>
-                                </svg>fabian.reinhard@seantis.ch
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-7 col-xl-6">
-                    <div class="tab-content custom-tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active custom-tab-pane" id="phone" role="tabpanel" aria-labelledby="nav-brochure-tab">
-                            <div class="contact-form">
-                                <div class="row g-4">
-                                    <p class="paragraph-medium">Fabian Reinhard zeigt Ihnen gerne die Möglichkeiten und Anwendung für Ihre Bedürfnisse auf.</p>
-                                    <img src="{{ 'static/images/Fabian-Reinhard.jpg'|asseturl }}" alt="Fabian Reinhard">
-                                </div>
+            <div class="col-md-6 col-lg-7 col-xl-6">
+                <div class="tab-content custom-tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active custom-tab-pane" id="phone" role="tabpanel"
+                        aria-labelledby="nav-brochure-tab">
+                        <div class="contact-form">
+                            <div class="row g-4">
+                                <p class="paragraph-medium">Fabian Reinhard zeigt Ihnen gerne die Möglichkeiten und
+                                    Anwendung für Ihre Bedürfnisse auf.</p>
+                                <img src="{{ 'static/images/Fabian-Reinhard.jpg'|asseturl }}" alt="Fabian Reinhard">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
-    <section class="featured-section featured7">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-lg-6 col-xl-6">
-                    <h2 class="heading-2">Für Gemeinden, Kantone und Organisationen</h2>
-                </div>
-            </div>
-            <div class="row align-items-center flex-column-reverse flex-lg-row">
-                <div class="col-lg-7 col-xl-6">
-                    <div class="featured-content">
-                        <div class="row">
-                            <div class="col-12 featured-single">
-                                <div class="featured-single-left">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="47.1579" height="48" rx="10" fill="#E9ECEF"/>
-                                        <path d="M33.3333 18H14.6667C13.1939 18 12 19.1709 12 20.6154V32.3846C12 33.8291 13.1939 35 14.6667 35H33.3333C34.8061 35 36 33.8291 36 32.3846V20.6154C36 19.1709 34.8061 18 33.3333 18Z" stroke="#dc0018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M19 18V15.5C19 14.837 19.2897 14.2011 19.8055 13.7322C20.3212 13.2634 21.0207 13 21.75 13H27.25C27.9793 13 28.6788 13.2634 29.1945 13.7322C29.7103 14.2011 30 14.837 30 15.5V18" stroke="#dc0018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 26C15.7221 27.9725 19.832 29 24 29C28.168 29 32.2779 27.9725 36 26" stroke="#dc0018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <circle cx="24.25" cy="24.25" r="0.75" fill="#3445ED" stroke="#dc0018"/>
-                                    </svg>
-                                </div>
-                                <div class="featured-single-right">
-                                    <h6 class="heading-6">Gemeinden</h6>
-                                    <p class="paragraph-regular">Online-Schalter, SBB-Tageskarten, Webauftritt, Veranstaltungskalender, Raumreservationen, Amtliche Publikationen</p>
-                                </div>
-                            </div>
-                            <div class="col-12 featured-single">
-                                <div class="featured-single-left">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="47.1579" height="48" rx="10" fill="#E9ECEF"/>
-                                        <path d="M12.334 25.3333C14.7114 25.6158 16.9247 26.69 18.6177 28.3829C20.3106 30.0759 21.3848 32.2891 21.6673 34.6666C22.8459 33.9871 23.8317 33.0184 24.5316 31.8518C25.2315 30.6853 25.6224 29.3596 25.6673 27.9999C27.9061 27.2123 29.8611 25.7786 31.2851 23.8799C32.7091 21.9813 33.5381 19.703 33.6673 17.3333C33.6673 16.2724 33.2459 15.255 32.4957 14.5048C31.7456 13.7547 30.7282 13.3333 29.6673 13.3333C27.2975 13.4625 25.0193 14.2915 23.1206 15.7155C21.222 17.1394 19.7882 19.0944 19.0007 21.3333C17.641 21.3782 16.3153 21.769 15.1487 22.4689C13.9822 23.1689 13.0134 24.1547 12.334 25.3333" stroke="#dc0018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M16.3327 26.6667C14.945 27.4502 13.8229 28.6302 13.1102 30.0555C12.3975 31.4808 12.1268 33.0865 12.3327 34.6667C13.9129 34.8726 15.5186 34.6019 16.9439 33.8892C18.3692 33.1765 19.5492 32.0544 20.3327 30.6667" stroke="#dc0018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M26.9993 21.3334C27.7357 21.3334 28.3327 20.7365 28.3327 20.0001C28.3327 19.2637 27.7357 18.6667 26.9993 18.6667C26.263 18.6667 25.666 19.2637 25.666 20.0001C25.666 20.7365 26.263 21.3334 26.9993 21.3334Z" fill="#3445ED" stroke="#dc0018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div class="featured-single-right">
-                                    <h6 class="heading-6">Kantone</h6>
-                                    <p class="paragraph-regular">Formulare, Wahlen, Abstimmungen, Amtliche Publikationen, Staatskalender, Reservationen, Verzeichnisse</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 featured-single">
-                                <div class="featured-single-left">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="47.1579" height="48" rx="10" fill="#E9ECEF"/>
-                                        <path d="M33.6667 18.6665H12.3333C11.597 18.6665 11 19.2635 11 19.9998V22.6665C11 23.4029 11.597 23.9998 12.3333 23.9998H33.6667C34.403 23.9998 35 23.4029 35 22.6665V19.9998C35 19.2635 34.403 18.6665 33.6667 18.6665Z" stroke="#dc0018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M23 18.6665V35.9998" stroke="#dc0018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M32.3327 24V33.3333C32.3327 34.0406 32.0517 34.7189 31.5516 35.219C31.0515 35.719 30.3733 36 29.666 36H16.3327C15.6254 36 14.9472 35.719 14.4471 35.219C13.947 34.7189 13.666 34.0406 13.666 33.3333V24" stroke="#dc0018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M16.9993 18.6668C16.1153 18.6668 15.2674 18.3156 14.6423 17.6905C14.0172 17.0653 13.666 16.2175 13.666 15.3334C13.666 14.4494 14.0172 13.6015 14.6423 12.9764C15.2674 12.3513 16.1153 12.0001 16.9993 12.0001C18.2856 11.9777 19.546 12.6018 20.6163 13.791C21.6866 14.9802 22.5171 16.6793 22.9993 18.6668C23.4816 16.6793 24.3121 14.9802 25.3824 13.791C26.4526 12.6018 27.7131 11.9777 28.9993 12.0001C29.8834 12.0001 30.7313 12.3513 31.3564 12.9764C31.9815 13.6015 32.3327 14.4494 32.3327 15.3334C32.3327 16.2175 31.9815 17.0653 31.3564 17.6905C30.7313 18.3156 29.8834 18.6668 28.9993 18.6668" stroke="#dc0018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div class="featured-single-right">
-                                    <h6 class="heading-6">Organisationen</h6>
-                                    <p class="paragraph-regular">Formulare, Webauftritt, Verzeichnisse, Reservationen, digitale Signaturen</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-xl-6 featured-img">
-                    <img src="{{ 'static/images/ebikon.png'|asseturl }}" alt="Reservationen Gemeinde Ebikon">
-                </div>
+<section class="featured-section featured7">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-6 col-xl-6">
+                <h2 class="heading-2">Für Gemeinden, Kantone und Organisationen</h2>
             </div>
         </div>
-    </section>
-
-
-
-    <section class="featured-section featured3 text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
-                    <h2 class="heading-2" id="features">Digitale <mark class="heading-2">Services</mark></h2>
-                    <p class="paragraph-medium">admin.digital bietet eine umfassende digitale Plattform für Gemeinden und Kantone: für Online-Portale mit einfacherem Zugang zu Informationen und Dienstleistungen.</p>
-                </div>
-            </div>
-            <div class="featured-content">
-                <div class="row">
-                    <div class="col-xl-10 offset-xl-1">
-                        <div class="row">
-                            <div class="col-md-6 col-md-6 col-lg-4 featured-single border-bottom">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-qrcode" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <rect x="4" y="4" width="6" height="6" rx="1" />
-                                    <line x1="7" y1="17" x2="7" y2="17.01" />
-                                    <rect x="14" y="4" width="6" height="6" rx="1" />
-                                    <line x1="7" y1="7" x2="7" y2="7.01" />
-                                    <rect x="4" y="14" width="6" height="6" rx="1" />
-                                    <line x1="17" y1="7" x2="17" y2="7.01" />
-                                    <line x1="14" y1="14" x2="17" y2="14" />
-                                    <line x1="20" y1="14" x2="20" y2="14.01" />
-                                    <line x1="14" y1="14" x2="14" y2="17" />
-                                    <line x1="14" y1="20" x2="17" y2="20" />
-                                    <line x1="17" y1="17" x2="20" y2="17" />
-                                    <line x1="20" y1="17" x2="20" y2="20" />
+        <div class="row align-items-center flex-column-reverse flex-lg-row">
+            <div class="col-lg-7 col-xl-6">
+                <div class="featured-content">
+                    <div class="row">
+                        <div class="col-12 featured-single">
+                            <div class="featured-single-left">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="47.1579" height="48" rx="10" fill="#E9ECEF" />
+                                    <path
+                                        d="M33.3333 18H14.6667C13.1939 18 12 19.1709 12 20.6154V32.3846C12 33.8291 13.1939 35 14.6667 35H33.3333C34.8061 35 36 33.8291 36 32.3846V20.6154C36 19.1709 34.8061 18 33.3333 18Z"
+                                        stroke="#dc0018" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M19 18V15.5C19 14.837 19.2897 14.2011 19.8055 13.7322C20.3212 13.2634 21.0207 13 21.75 13H27.25C27.9793 13 28.6788 13.2634 29.1945 13.7322C29.7103 14.2011 30 14.837 30 15.5V18"
+                                        stroke="#dc0018" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 26C15.7221 27.9725 19.832 29 24 29C28.168 29 32.2779 27.9725 36 26"
+                                        stroke="#dc0018" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <circle cx="24.25" cy="24.25" r="0.75" fill="#3445ED" stroke="#dc0018" />
                                 </svg>
-                                <h6 class="heading-6">Online Schalter mit Formulareingang</h6>
-                                <p class="paragraph-regular">Die Inbox bietet ein Serviceticket-System für alle über Online-Formulare übermittelten Daten. Tickets werden einer Dienststelle zugewiesen und strukturiert bearbeitet (inkl. automatischer Benachrichtigung bei Statusänderungen).</p>
                             </div>
-                            <div class="col-md-6 col-lg-4 featured-single border border-top-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-                                    <circle cx="18" cy="18" r="4" />
-                                    <path d="M15 3v4" />
-                                    <path d="M7 3v4" />
-                                    <path d="M3 11h16" />
-                                    <path d="M18 16.496v1.504l1 1" />
+                            <div class="featured-single-right">
+                                <h6 class="heading-6">Gemeinden</h6>
+                                <p class="paragraph-regular">Online-Schalter, SBB-Tageskarten, Webauftritt,
+                                    Veranstaltungskalender, Raumreservationen, Amtliche Publikationen</p>
+                            </div>
+                        </div>
+                        <div class="col-12 featured-single">
+                            <div class="featured-single-left">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="47.1579" height="48" rx="10" fill="#E9ECEF" />
+                                    <path
+                                        d="M12.334 25.3333C14.7114 25.6158 16.9247 26.69 18.6177 28.3829C20.3106 30.0759 21.3848 32.2891 21.6673 34.6666C22.8459 33.9871 23.8317 33.0184 24.5316 31.8518C25.2315 30.6853 25.6224 29.3596 25.6673 27.9999C27.9061 27.2123 29.8611 25.7786 31.2851 23.8799C32.7091 21.9813 33.5381 19.703 33.6673 17.3333C33.6673 16.2724 33.2459 15.255 32.4957 14.5048C31.7456 13.7547 30.7282 13.3333 29.6673 13.3333C27.2975 13.4625 25.0193 14.2915 23.1206 15.7155C21.222 17.1394 19.7882 19.0944 19.0007 21.3333C17.641 21.3782 16.3153 21.769 15.1487 22.4689C13.9822 23.1689 13.0134 24.1547 12.334 25.3333"
+                                        stroke="#dc0018" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M16.3327 26.6667C14.945 27.4502 13.8229 28.6302 13.1102 30.0555C12.3975 31.4808 12.1268 33.0865 12.3327 34.6667C13.9129 34.8726 15.5186 34.6019 16.9439 33.8892C18.3692 33.1765 19.5492 32.0544 20.3327 30.6667"
+                                        stroke="#dc0018" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M26.9993 21.3334C27.7357 21.3334 28.3327 20.7365 28.3327 20.0001C28.3327 19.2637 27.7357 18.6667 26.9993 18.6667C26.263 18.6667 25.666 19.2637 25.666 20.0001C25.666 20.7365 26.263 21.3334 26.9993 21.3334Z"
+                                        fill="#3445ED" stroke="#dc0018" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
                                 </svg>
-                                <h6 class="heading-6">Reservationen mit Online-Bezahlung</h6>
-                                <p class="paragraph-regular">Im Kalender informieren sich die User über freie Termine und buchen diese direkt – überall und jederzeit.
-                                    Das Online-Portal bietet so grösstmögliche Flexibilität bei der Terminbuchung und stellt die effiziente Abwicklung durch die Verwaltung sicher.</p>
-                                </div>
-                                <div class="col-md-6 col-lg-4 featured-single border-bottom">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <circle cx="9" cy="7" r="4" />
-                                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-                                    </svg>
-                                    <h6 class="heading-6">Personen und Verzeichnisse</h6>
-                                    <p class="paragraph-regular">Die konfigurierbaren Verzeichnisse schaffen den Überblick über Behörden, Personen und Zuständigkeiten. Der Datenexport bzw. -import ist jederzeit einfach möglich, sodass die Daten einfach weiterverarbeitet werden können.</p>
-                                </div>
-                                <div class="col-md-6 col-lg-4 featured-single border-left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-certificate" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <circle cx="15" cy="15" r="3" />
-                                        <path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" />
-                                        <path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73" />
-                                        <line x1="6" y1="9" x2="18" y2="9" />
-                                        <line x1="6" y1="12" x2="9" y2="12" />
-                                        <line x1="6" y1="15" x2="8" y2="15" />
-                                    </svg>
-                                    <h6 class="heading-6">Signaturen</h6>
-                                    <p class="paragraph-regular">In Zusammenarbeit mit der Swisscom bietet die admin.digital eine elektronische Unterschrift zur rechtsgültigen Signatur von Dokumenten. Amtliche Publikationen können so digital verbreitet werden.</p>
-                                </div>
-                                <div class="col-md-6 col-lg-4 featured-single border border-top-0 border-bottom-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-search" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-                                        <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v4.5" />
-                                        <circle cx="16.5" cy="17.5" r="2.5" />
-                                        <line x1="18.5" y1="19.5" x2="21" y2="22" />
-                                    </svg>
-                                    <h6 class="heading-6">Volltextsuche</h6>
-                                    <p class="paragraph-regular">Alle Inhalte werden für die zentrale Volltextsuche indexiert. Auch Dokumente (PDFs) werden in den Suchindex aufgenommen und sind so leicht auffindbar.</p>
-                                </div>
-                                <div class="col-md-6 col-lg-4 featured-single">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-accessible" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <circle cx="12" cy="12" r="9" />
-                                        <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" />
-                                        <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
-                                    </svg>
-                                    <h6 class="heading-6">Barrierefreier Zugang</h6>
-                                    <p class="paragraph-regular">admin.digital sich an den Richtlinien des Bundes für die Gestaltung von barrierefreien Internetangeboten P028 gemäss Art. 10 BehiV und den internationalen Web Content Accessibility Guidelines WCAG des W3C.</p>
-                                </div>
+                            </div>
+                            <div class="featured-single-right">
+                                <h6 class="heading-6">Kantone</h6>
+                                <p class="paragraph-regular">Formulare, Wahlen, Abstimmungen, Amtliche Publikationen,
+                                    Staatskalender, Reservationen, Verzeichnisse</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 featured-single">
+                            <div class="featured-single-left">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="47.1579" height="48" rx="10" fill="#E9ECEF" />
+                                    <path
+                                        d="M33.6667 18.6665H12.3333C11.597 18.6665 11 19.2635 11 19.9998V22.6665C11 23.4029 11.597 23.9998 12.3333 23.9998H33.6667C34.403 23.9998 35 23.4029 35 22.6665V19.9998C35 19.2635 34.403 18.6665 33.6667 18.6665Z"
+                                        stroke="#dc0018" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M23 18.6665V35.9998" stroke="#dc0018" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M32.3327 24V33.3333C32.3327 34.0406 32.0517 34.7189 31.5516 35.219C31.0515 35.719 30.3733 36 29.666 36H16.3327C15.6254 36 14.9472 35.719 14.4471 35.219C13.947 34.7189 13.666 34.0406 13.666 33.3333V24"
+                                        stroke="#dc0018" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M16.9993 18.6668C16.1153 18.6668 15.2674 18.3156 14.6423 17.6905C14.0172 17.0653 13.666 16.2175 13.666 15.3334C13.666 14.4494 14.0172 13.6015 14.6423 12.9764C15.2674 12.3513 16.1153 12.0001 16.9993 12.0001C18.2856 11.9777 19.546 12.6018 20.6163 13.791C21.6866 14.9802 22.5171 16.6793 22.9993 18.6668C23.4816 16.6793 24.3121 14.9802 25.3824 13.791C26.4526 12.6018 27.7131 11.9777 28.9993 12.0001C29.8834 12.0001 30.7313 12.3513 31.3564 12.9764C31.9815 13.6015 32.3327 14.4494 32.3327 15.3334C32.3327 16.2175 31.9815 17.0653 31.3564 17.6905C30.7313 18.3156 29.8834 18.6668 28.9993 18.6668"
+                                        stroke="#dc0018" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="featured-single-right">
+                                <h6 class="heading-6">Organisationen</h6>
+                                <p class="paragraph-regular">Formulare, Webauftritt, Verzeichnisse, Reservationen,
+                                    digitale Signaturen</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    </section>
+            <div class="col-lg-5 col-xl-6 featured-img">
+                <img src="{{ 'static/images/ebikon.png'|asseturl }}" alt="Reservationen Gemeinde Ebikon">
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section class="blog-section blog-7">
-        <div class="container">
-            <h2 class="heading-2" id="news">Woran wir <mark class="heading-2">aktuell</mark> arbeiten</h2>
+
+
+<section class="featured-section featured3 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+                <h2 class="heading-2" id="features">Digitale <mark class="heading-2">Services</mark></h2>
+                <p class="paragraph-medium">admin.digital bietet eine umfassende digitale Plattform für Gemeinden und
+                    Kantone: für Online-Portale mit einfacherem Zugang zu Informationen und Dienstleistungen.</p>
+            </div>
+        </div>
+        <div class="featured-content">
             <div class="row">
-                {% for item in site.get_root().children.get('neuerungen/alle').children.limit(2) %}
-                <div class="col-lg-6">
-                    <div class="blog-post-single">
-                        <img src="/static/images/blog/image.png" alt="img">
-                        <div class="img-overlay">
-                            <p class="button-small">{{ item.pub_date|dateformat }}</p>
-                            <a href="{{ item|url }}"><h6 class="heading-6">{{ item.title }}</h6></a>
-                            <p class="paragraph-regular">{{ item.description }}</p>
-                            <p><a href="{{ item|url }}">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 8H12" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7 3L12 8L7 13" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"/>
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="row">
+                        <div class="col-md-6 col-md-6 col-lg-4 featured-single border-bottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-qrcode"
+                                width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <rect x="4" y="4" width="6" height="6" rx="1" />
+                                <line x1="7" y1="17" x2="7" y2="17.01" />
+                                <rect x="14" y="4" width="6" height="6" rx="1" />
+                                <line x1="7" y1="7" x2="7" y2="7.01" />
+                                <rect x="4" y="14" width="6" height="6" rx="1" />
+                                <line x1="17" y1="7" x2="17" y2="7.01" />
+                                <line x1="14" y1="14" x2="17" y2="14" />
+                                <line x1="20" y1="14" x2="20" y2="14.01" />
+                                <line x1="14" y1="14" x2="14" y2="17" />
+                                <line x1="14" y1="20" x2="17" y2="20" />
+                                <line x1="17" y1="17" x2="20" y2="17" />
+                                <line x1="20" y1="17" x2="20" y2="20" />
+                            </svg>
+                            <h6 class="heading-6">Online Schalter mit Formulareingang</h6>
+                            <p class="paragraph-regular">Die Inbox bietet ein Serviceticket-System für alle über
+                                Online-Formulare übermittelten Daten. Tickets werden einer Dienststelle zugewiesen und
+                                strukturiert bearbeitet (inkl. automatischer Benachrichtigung bei Statusänderungen).</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 featured-single border border-top-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time"
+                                width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+                                <circle cx="18" cy="18" r="4" />
+                                <path d="M15 3v4" />
+                                <path d="M7 3v4" />
+                                <path d="M3 11h16" />
+                                <path d="M18 16.496v1.504l1 1" />
+                            </svg>
+                            <h6 class="heading-6">Reservationen mit Online-Bezahlung</h6>
+                            <p class="paragraph-regular">Im Kalender informieren sich die User über freie Termine und
+                                buchen diese direkt – überall und jederzeit.
+                                Das Online-Portal bietet so grösstmögliche Flexibilität bei der Terminbuchung und stellt
+                                die effiziente Abwicklung durch die Verwaltung sicher.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 featured-single border-bottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users"
+                                width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                            </svg>
+                            <h6 class="heading-6">Personen und Verzeichnisse</h6>
+                            <p class="paragraph-regular">Die konfigurierbaren Verzeichnisse schaffen den Überblick über
+                                Behörden, Personen und Zuständigkeiten. Der Datenexport bzw. -import ist jederzeit
+                                einfach möglich, sodass die Daten einfach weiterverarbeitet werden können.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 featured-single border-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-certificate"
+                                width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="15" cy="15" r="3" />
+                                <path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" />
+                                <path
+                                    d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73" />
+                                <line x1="6" y1="9" x2="18" y2="9" />
+                                <line x1="6" y1="12" x2="9" y2="12" />
+                                <line x1="6" y1="15" x2="8" y2="15" />
+                            </svg>
+                            <h6 class="heading-6">Signaturen</h6>
+                            <p class="paragraph-regular">In Zusammenarbeit mit der Swisscom bietet die admin.digital
+                                eine elektronische Unterschrift zur rechtsgültigen Signatur von Dokumenten. Amtliche
+                                Publikationen können so digital verbreitet werden.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 featured-single border border-top-0 border-bottom-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-search"
+                                width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v4.5" />
+                                <circle cx="16.5" cy="17.5" r="2.5" />
+                                <line x1="18.5" y1="19.5" x2="21" y2="22" />
+                            </svg>
+                            <h6 class="heading-6">Volltextsuche</h6>
+                            <p class="paragraph-regular">Alle Inhalte werden für die zentrale Volltextsuche indexiert.
+                                Auch Dokumente (PDFs) werden in den Suchindex aufgenommen und sind so leicht auffindbar.
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 featured-single">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-accessible"
+                                width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" />
+                                <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
+                            </svg>
+                            <h6 class="heading-6">Barrierefreier Zugang</h6>
+                            <p class="paragraph-regular">admin.digital sich an den Richtlinien des Bundes für die
+                                Gestaltung von barrierefreien Internetangeboten P028 gemäss Art. 10 BehiV und den
+                                internationalen Web Content Accessibility Guidelines WCAG des W3C.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog-section blog-7">
+    <div class="container">
+        <h2 class="heading-2" id="news">Woran wir <mark class="heading-2">aktuell</mark> arbeiten</h2>
+        <div class="row">
+            {% for item in site.get_root().children.get('neuerungen/alle').children.limit(2) %}
+            <div class="col-lg-6">
+                <div class="blog-post-single">
+                    <img src="/static/images/blog/image.png" alt="img">
+                    <div class="img-overlay">
+                        <p class="button-small">{{ item.pub_date|dateformat }}</p>
+                        <a href="{{ item|url }}">
+                            <h6 class="heading-6">{{ item.title }}</h6>
+                        </a>
+                        <p class="paragraph-regular">{{ item.description }}</p>
+                        <p><a href="{{ item|url }}">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 8H12" stroke="#212529" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7 3L12 8L7 13" stroke="#212529" stroke-linecap="round"
+                                        stroke-linejoin="round" />
                                 </svg>
                                 weiterlesen
                             </a></p>
-                        </div>
                     </div>
                 </div>
-                {% endfor %}
             </div>
+            {% endfor %}
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="testimonial testimonial8-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="offset-xxl-1 col-xxl-10">
-                    <h6 class="heading-6">Testimonials</h6>
-                    <h2 class="heading-2">Was unsere <mark class="heading-2">Kunden</mark> sagen</h2>
-                    <div class="glider-contain">
-                        <div class="glider glider-wrap">
+<section class="testimonial testimonial8-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="offset-xxl-1 col-xxl-10">
+                <h6 class="heading-6">Testimonials</h6>
+                <h2 class="heading-2">Was unsere <mark class="heading-2">Kunden</mark> sagen</h2>
+                <div class="glider-contain">
+                    <div class="glider glider-wrap">
 
-                            <div class="custom-carousel-item">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="{{ 'static/images/testimonial/Lara-Blaettler.jpg'|asseturl }}" alt="Lara Blättler" class="img-fluid">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="item-text">
-                                            <p class="paragraph-medium">«Die Verfügbarkeiten unserer Säle sind nun jederzeit abrufbar. Saalreservationen lassen sich direkt online vornehmen. Dies stellt einen grossen Mehrwert für unsere Dorfvereine dar.»</p>
-                                            <h6 class="heading-6">Lara Blättler</h6>
-                                            <p class="paragraph-regular">Gemeindeschreiberin Stv., Gemeinde Ottenbach</p>
-                                        </div>
+                        <div class="custom-carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="{{ 'static/images/testimonial/Lara-Blaettler.jpg'|asseturl }}"
+                                        alt="Lara Blättler" class="img-fluid">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="item-text">
+                                        <p class="paragraph-medium">«Die Verfügbarkeiten unserer Säle sind nun jederzeit
+                                            abrufbar. Saalreservationen lassen sich direkt online vornehmen. Dies stellt
+                                            einen grossen Mehrwert für unsere Dorfvereine dar.»</p>
+                                        <h6 class="heading-6">Lara Blättler</h6>
+                                        <p class="paragraph-regular">Gemeindeschreiberin Stv., Gemeinde Ottenbach</p>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="custom-carousel-item">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="{{ 'static/images/testimonial/Roland-Beyeler.jpg'|asseturl }}" alt="Beyeler Roland" class="img-fluid">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="item-text">
-                                            <p class="paragraph-medium">«Die Bestellung einer Wohnsitzbestätigung oder die Beantragung einer Fristerstreckung zur Einreichung der Steuererklärung: vieles lässt sich bequem von zu Hause aus oder unterwegs erledigen.»</p>
-                                            <h6 class="heading-6">Beyeler Roland</h6>
-                                            <p class="paragraph-regular">Kommunikationsbeauftragter, Gemeinde Ebikon</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="custom-carousel-item">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="{{ 'static/images/testimonial/Thomas-De-Rocchi.jpg'|asseturl }}" alt="Thomas De Rocchi" class="img-fluid">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="item-text">
-                                            <p class="paragraph-medium">«Der Kanton St. Gallen publiziert alle Wahl- und Abstimmungsresultate auf wab.sg.ch. So stehen die Daten allen Interessierten jederzeit digital zur Verfügung.»
-                                            </p>
-                                            <h6 class="heading-6">Dr. Thomas De Rocchi</h6>
-                                            <p class="paragraph-regular">Leiter Wahlen und Abstimmungen Kanton St. Gallen</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="custom-carousel-item">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="{{ 'static/images/testimonial/Ralph-Mrowietz.jpg'|asseturl }}" alt="Ralph Mrowietzt" class="img-fluid">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="item-text">
-                                            <p class="paragraph-medium">«Bereits über 150 Ferienpässe in der ganzen Schweiz nutzen mit unserer Buchungsplattform ein bewährtes und zuverlässiges Werkzeug für die effiziente und zeitgemässe Organisation von betreuten Ferienangeboten.»
-                                            </p>
-                                            <h6 class="heading-6">Ralph Mrowietz</h6>
-                                            <p class="paragraph-regular">Verantwortlicher <a href="https://www.projuventute.ch/de/eltern/lehrpersonen-fachpersonen/feriennet">Feriennet Pro Juventute</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="custom-carousel-item">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="{{ 'static/images/testimonial/Stefan-Brauchli.jpg'|asseturl }}" alt="Stefan Brauchli" class="img-fluid">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="item-text">
-                                            <p class="paragraph-medium">«Die Gemeinde Lauerz verwaltet die Reservationen für alle ihre Räume sicher und effizient auf ihrer digitalen Plattform.»
-                                            </p>
-                                            <h6 class="heading-6">Stefan Brauchli</h6>
-                                            <p class="paragraph-regular">Gemeindeschreiber Gemeinde Lauerz</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
 
-                        <button aria-label="Previous" class="glider-prev">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17 3L8 12L17 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                        <button aria-label="Next" class="glider-next">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 3L17 12L8 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="featured-section featured4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="row">
-                        <div class="col-md-10 col-lg-9 col-xl-9">
-                            <h2 class="heading-2">Wir sind mehrfach <mark class="heading-2">preisgekrönt</mark></h2>
-                            <p class="paragraph-medium">Unsere Plattform wurde mehrfach ausgezeichnet: mit zwei «Best of Swiss Web Award», einem «OneGov Award» sowie mit einer Innovationsförderung der «Geschäftsstelle E-Government Schweiz». Aber wir sammeln keine Awards, sondern das positive Feedback unserer User.</p>
-                        </div>
-                    </div>
-                    <div class="awards">
-                        <img src="{{ 'static/images/bosw.jpg'|asseturl }}" alt="Best of Swissweb">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="featured-section featured6">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-lg-7 col-xl-6">
-                    <h2 class="heading-2" id="data-protection">Informations&shy;sicherheit und <mark class="heading-2">Datenschutz</mark></h2>
-                    <p class="paragraph-medium">Unsere Systeme verarbeiten hochsensitive personenbezogene Daten. Informationssicherheit ist daher Teil der DNA unseres Unternehmens. Wir führen ein Informationssicherheitsmanagementsystem und sind gemäss ISO/IEC 27001:2013 zertifiziert. Schützenswerte Daten werden bei Schweizer Cloud Provider in zertifizierten Schweizer Rechenzentren gespeichert.</p>
-                </div>
-            </div>
-            <div class="row column-reverse-tab align-items-center">
-                <div class="col-lg-7 col-xl-6">
-                    <div class="featured-content">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 col-lg-6 featured-single">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-2fa" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M7 16h-4l3.47 -4.66a2 2 0 1 0 -3.47 -1.54" />
-                                    <path d="M10 16v-8h4" />
-                                    <line x1="10" y1="12" x2="13" y2="12" />
-                                    <path d="M17 16v-6a2 2 0 0 1 4 0v6" />
-                                    <line x1="17" y1="13" x2="21" y2="13" />
-                                </svg>
-                                <h6 class="heading-6">Zwei-Faktor-Authentisierung</h6>
-                                <p class="paragraph-regular">Benutzer im Backend melden sich über eine sichere Zwei-Faktor-Authentisierung mit YubiKey an.</p>
-
-                            </div>
-                            <div class="col-md-6 col-lg-6 featured-single">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <rect x="5" y="11" width="14" height="10" rx="2" />
-                                    <circle cx="12" cy="16" r="1" />
-                                    <path d="M8 11v-4a4 4 0 0 1 8 0v4" />
-                                </svg>
-                                <h6 class="heading-6">Verschlüsselung (AES, TLS)</h6>
-                                <p class="paragraph-regular">Sensitive Daten werden mit state-of-the-art Protokollen verschlüsselt.</p>
-
-                            </div>
-                            <div class="col-md-6 col-lg-6 featured-single">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shield-check" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M9 12l2 2l4 -4" />
-                                    <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
-                                </svg>
-                                <h6 class="heading-6">Firewall</h6>
-                                <p class="paragraph-regular">Unsere Server sind mit adaptivem Firewall-Schutz geschützt.</p>
-                            </div>
-                            <div class="col-md-6 col-lg-6 featured-single">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-computer-camera" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <circle cx="12" cy="10" r="7" />
-                                    <circle cx="12" cy="10" r="3" />
-                                    <path d="M8 16l-2.091 3.486a1 1 0 0 0 .857 1.514h10.468a1 1 0 0 0 .857 -1.514l-2.091 -3.486" />
-                                </svg>
-                                <h6 class="heading-6">Monitoring</h6>
-                                <p class="paragraph-regular">Alle Services werden im Betrieb proaktiv überwacht.</p>
+                        <div class="custom-carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="{{ 'static/images/testimonial/Roland-Beyeler.jpg'|asseturl }}"
+                                        alt="Beyeler Roland" class="img-fluid">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="item-text">
+                                        <p class="paragraph-medium">«Die Bestellung einer Wohnsitzbestätigung oder die
+                                            Beantragung einer Fristerstreckung zur Einreichung der Steuererklärung:
+                                            vieles lässt sich bequem von zu Hause aus oder unterwegs erledigen.»</p>
+                                        <h6 class="heading-6">Beyeler Roland</h6>
+                                        <p class="paragraph-regular">Kommunikationsbeauftragter, Gemeinde Ebikon</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="custom-carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="{{ 'static/images/testimonial/Thomas-De-Rocchi.jpg'|asseturl }}"
+                                        alt="Thomas De Rocchi" class="img-fluid">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="item-text">
+                                        <p class="paragraph-medium">«Der Kanton St. Gallen publiziert alle Wahl- und
+                                            Abstimmungsresultate auf wab.sg.ch. So stehen die Daten allen Interessierten
+                                            jederzeit digital zur Verfügung.»
+                                        </p>
+                                        <h6 class="heading-6">Dr. Thomas De Rocchi</h6>
+                                        <p class="paragraph-regular">Leiter Wahlen und Abstimmungen Kanton St. Gallen
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="custom-carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="{{ 'static/images/testimonial/Ralph-Mrowietz.jpg'|asseturl }}"
+                                        alt="Ralph Mrowietzt" class="img-fluid">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="item-text">
+                                        <p class="paragraph-medium">«Bereits über 150 Ferienpässe in der ganzen Schweiz
+                                            nutzen mit unserer Buchungsplattform ein bewährtes und zuverlässiges
+                                            Werkzeug für die effiziente und zeitgemässe Organisation von betreuten
+                                            Ferienangeboten.»
+                                        </p>
+                                        <h6 class="heading-6">Ralph Mrowietz</h6>
+                                        <p class="paragraph-regular">Verantwortlicher <a
+                                                href="https://www.projuventute.ch/de/eltern/lehrpersonen-fachpersonen/feriennet">Feriennet
+                                                Pro Juventute</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="custom-carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="{{ 'static/images/testimonial/Stefan-Brauchli.jpg'|asseturl }}"
+                                        alt="Stefan Brauchli" class="img-fluid">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="item-text">
+                                        <p class="paragraph-medium">«Die Gemeinde Lauerz verwaltet die Reservationen für
+                                            alle ihre Räume sicher und effizient auf ihrer digitalen Plattform.»
+                                        </p>
+                                        <h6 class="heading-6">Stefan Brauchli</h6>
+                                        <p class="paragraph-regular">Gemeindeschreiber Gemeinde Lauerz</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-                <div class="col-lg-5 col-xl-5 offset-xl-1 featured-img">
-                    <img src="{{ 'static/images/yubikey.jpg'|asseturl }}" alt="YubiKey">
+
+                    <button aria-label="Previous" class="glider-prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 3L8 12L17 21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button aria-label="Next" class="glider-next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 3L17 12L8 21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-
-
-    <section class="featured-section featured2 text-center" id="sustanability">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
-                    <h2 class="heading-2">Warum uns digitale <mark class="heading-2">Nachhaltigkeit</mark> wichtig ist</h2>
-                </div>
-            </div>
-            <div class="featured-content">
+<section class="featured-section featured4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
                 <div class="row">
-                    <div class="col-lg-4">
-                        <div class="featured-single">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-open-source" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M12 3a9 9 0 0 1 3.618 17.243l-2.193 -5.602a3 3 0 1 0 -2.849 0l-2.193 5.603a9 9 0 0 1 3.617 -17.244z" />
-                            </svg>
-                            <h6 class="heading-6">Open Source Software</h6>
-                            <p class="paragraph-regular">Mit Open Source verbinden wir mehr als einfach "Gratis-Software". Der Ansatz entspringt vielmehr einer Geisteshaltung und damit verbundenen Idealen auf dem Weg zu besseren IT-Lösungen.</p>
-                            <a href="https://github.com/OneGov/onegov-cloud" class="button-semi">Github
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 8H12" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7 3L12 8L7 13" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
+                    <div class="col-md-10 col-lg-9 col-xl-9">
+                        <h2 class="heading-2">Wir sind mehrfach <mark class="heading-2">preisgekrönt</mark></h2>
+                        <p class="paragraph-medium">Unsere Plattform wurde mehrfach ausgezeichnet: mit zwei «Best of
+                            Swiss Web Award», einem «OneGov Award» sowie mit einer Innovationsförderung der
+                            «Geschäftsstelle E-Government Schweiz». Aber wir sammeln keine Awards, sondern das positive
+                            Feedback unserer User.</p>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="featured-single m-md-auto">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chart-arrows" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <line x1="3" y1="18" x2="17" y2="18" />
-                                <path d="M9 9l3 3l-3 3" />
-                                <path d="M14 15l3 3l-3 3" />
-                                <line x1="3" y1="3" x2="3" y2="21" />
-                                <line x1="3" y1="12" x2="12" y2="12" />
-                                <path d="M18 3l3 3l-3 3" />
-                                <line x1="3" y1="6" x2="21" y2="6" />
+                </div>
+                <div class="awards">
+                    <img src="{{ 'static/images/bosw.jpg'|asseturl }}" alt="Best of Swissweb">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="featured-section featured6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-7 col-xl-6">
+                <h2 class="heading-2" id="data-protection">Informations&shy;sicherheit und <mark
+                        class="heading-2">Datenschutz</mark></h2>
+                <p class="paragraph-medium">Unsere Systeme verarbeiten hochsensitive personenbezogene Daten.
+                    Informationssicherheit ist daher Teil der DNA unseres Unternehmens. Wir führen ein
+                    Informationssicherheitsmanagementsystem und sind gemäss ISO/IEC 27001:2013 zertifiziert.
+                    Schützenswerte Daten werden bei Schweizer Cloud Provider in zertifizierten Schweizer Rechenzentren
+                    gespeichert.</p>
+            </div>
+        </div>
+        <div class="row column-reverse-tab align-items-center">
+            <div class="col-lg-7 col-xl-6">
+                <div class="featured-content">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-lg-6 featured-single">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-2fa" width="56"
+                                height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M7 16h-4l3.47 -4.66a2 2 0 1 0 -3.47 -1.54" />
+                                <path d="M10 16v-8h4" />
+                                <line x1="10" y1="12" x2="13" y2="12" />
+                                <path d="M17 16v-6a2 2 0 0 1 4 0v6" />
+                                <line x1="17" y1="13" x2="21" y2="13" />
                             </svg>
-                            <h6 class="heading-6">Open Data</h6>
-                            <p class="paragraph-regular">Open Government Data hat zum Ziel, die Informationsbasis für Forschung, Unternehmen und Öffentlichkeit zu verbessern und so zusätzliche Transparenz zu schaffen.</p>
-                            <a href="https://seantis.ch/portrait/digitale-nachhaltigkeit/" class="button-semi">Digitale Nachhaltigkeit
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 8H12" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7 3L12 8L7 13" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                            <h6 class="heading-6">Zwei-Faktor-Authentisierung</h6>
+                            <p class="paragraph-regular">Benutzer im Backend melden sich über eine sichere
+                                Zwei-Faktor-Authentisierung mit YubiKey an.</p>
+
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="featured-single">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-affiliate" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M5.931 6.936l1.275 4.249m5.607 5.609l4.251 1.275" />
-                                <path d="M11.683 12.317l5.759 -5.759" />
-                                <circle cx="5.5" cy="5.5" r="1.5" />
-                                <circle cx="18.5" cy="5.5" r="1.5" />
-                                <circle cx="18.5" cy="18.5" r="1.5" />
-                                <circle cx="8.5" cy="15.5" r="4.5" />
+                        <div class="col-md-6 col-lg-6 featured-single">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="56"
+                                height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <rect x="5" y="11" width="14" height="10" rx="2" />
+                                <circle cx="12" cy="16" r="1" />
+                                <path d="M8 11v-4a4 4 0 0 1 8 0v4" />
                             </svg>
-                            <h6 class="heading-6">Open Community</h6>
-                            <p class="paragraph-regular">Mit dem Verein OneGov.ch haben sich Schweizer Kantone, Gemeinden und Fachpartner zu einer Gemeinschaft zusammengeschlossen: Lösungen für E-Government, die bedürfnisorientiert und zukunftsfähig sind.</p>
-                            <a href="http://www.onegov.ch" class="button-semi">Verein OneGov.ch
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 8H12" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7 3L12 8L7 13" stroke="#212529" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                            <h6 class="heading-6">Verschlüsselung (AES, TLS)</h6>
+                            <p class="paragraph-regular">Sensitive Daten werden mit state-of-the-art Protokollen
+                                verschlüsselt.</p>
+
+                        </div>
+                        <div class="col-md-6 col-lg-6 featured-single">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shield-check"
+                                width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 12l2 2l4 -4" />
+                                <path
+                                    d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+                            </svg>
+                            <h6 class="heading-6">Firewall</h6>
+                            <p class="paragraph-regular">Unsere Server sind mit adaptivem Firewall-Schutz geschützt.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-6 featured-single">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-device-computer-camera" width="56" height="56"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="10" r="7" />
+                                <circle cx="12" cy="10" r="3" />
+                                <path
+                                    d="M8 16l-2.091 3.486a1 1 0 0 0 .857 1.514h10.468a1 1 0 0 0 .857 -1.514l-2.091 -3.486" />
+                            </svg>
+                            <h6 class="heading-6">Monitoring</h6>
+                            <p class="paragraph-regular">Alle Services werden im Betrieb proaktiv überwacht.</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-5 col-xl-5 offset-xl-1 featured-img">
+                <img src="{{ 'static/images/yubikey.jpg'|asseturl }}" alt="YubiKey">
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="faq faq3-wrapper">
-        <div class="container">
+
+
+<section class="featured-section featured2 text-center" id="sustanability">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+                <h2 class="heading-2">Warum uns digitale <mark class="heading-2">Nachhaltigkeit</mark> wichtig ist</h2>
+            </div>
+        </div>
+        <div class="featured-content">
             <div class="row">
-                <div class="col-lg-10 offset-lg-1 offset-xl-2 col-xl-8">
-                    <h2 class="heading-2" id="faq">Häufig gestellte <mark class="heading-2">Fragen</mark></h2>
-                    <div class="accordion" id="accordionExample">
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    Wo finde ich den Quellcode?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p class="paragraph-regular">
-                                        Schön, dass Sie fragen. Den Source Code finden Sie auf Github: <a href="https://github.com/OneGov/onegov-cloud">https://github.com/OneGov/onegov-cloud</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Wo sind die Daten gespeichert?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p class="paragraph-regular">
-                                        Gemäss Schutzstufen werden die Daten mit den adäquaten Mechanismen geschützt. Auch die Datenspeicherung und der Ort der Datenhaltung richten sich nach den Schutzanforderungen. Schützenswerte Daten werden beim zertifizierten Schweizer Cloud Provider Exoscale gespeichert.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Wie sicher ist admin.digital?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p class="paragraph-regular">
-                                        Qualität und Informationssicherheit gehören seit der Gründung zu unseren Grundwerten. Seit 2021 führen wir ein nach ISO 27001 zertifiziertes Informationssicherheitsmanagementsystem (ISMS).
-                                        ISO 27001 bringt einen bewährten Ansatz für die Analyse und den Umgang mit Risiken der Informationssicherheit. Für Unternehmen bietet ISO 27001 einen systematisch strukturierten Ansatz, die Integrität der betrieblichen Daten und deren Vertraulichkeit zu schützen und die Verfügbarkeit der IT-Systeme zu gewährleisten. Unsere Kunden und Geschäftspartner erhalten dank der Zertifizierung einen vertrauenswürdigen Beleg dafür, dass eine ausreichende IT-Sicherheit gewährleistet werden kann: <a href="https://seantis.ch/portrait/informationssicherheit-iso-27001/">ISO 27001 zertifiziertes Informationssicherheitsmanagementsystem (ISMS)</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Was kostet admin.digital?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                            data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p class="paragraph-regular">
-                                        admin.ch ist Open Source und damit freie Software. Die Firma seantis betreibt die Software als «Software as a Service» (SaaS).
-                                        Das SaaS Angebot folgt einem einfachen und transparenten Preismodell. Der Basispreis pro Instanz beträgt CHF 250 pro Monat. Im Preis enthalten sind alle Funktionen sowie alle Updates.
-                                        Zusätzliche Benutzer mit YubiKeys sind in massgeschneiderten Paketen erhältlich. Lernende sind immer gratis.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Ist admin.digital ein Portal der Bundesverwaltung?
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p class="paragraph-regular">
-                                        Nein, das offizielle Portal der Bundesverwaltung ist unter www.admin.ch erreichbar. admin.digital ist eine Open Source Lösung für digitale Portale für Kantone und Gemeinden.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingSix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    Wer entwickelt admin.digital und wie kann ich mich beteiligen?
-                            </button>
-                            </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p class="paragraph-regular">
-                                        admin.digital wird als Open Source Software entwickelt. Federführend ist dabei die Firma seantis gmbh aus Luzern. Eine koordinierende Funktion übernimmt der Verein OneGov.ch.
-                                        Interessierte können sich direkt über Github an der Weiterentwicklung beteiligen. Wir freuen uns auf Beiträge aus der Community.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingSeven">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    Wer nutzt admin.digital?
-                            </button>
-                            </h2>
-                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p class="paragraph-regular">Hoffentlich bald auch Ihre Organisation. Aktuell ist admin.digital bei sieben Kantonen und gut 20 Städten, Gemeinden und NGOs im Einsatz. Sie wären also in bester Gesellschaft.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
+                <div class="col-lg-4">
+                    <div class="featured-single">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-open-source"
+                            width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M12 3a9 9 0 0 1 3.618 17.243l-2.193 -5.602a3 3 0 1 0 -2.849 0l-2.193 5.603a9 9 0 0 1 3.617 -17.244z" />
+                        </svg>
+                        <h6 class="heading-6">Open Source Software</h6>
+                        <p class="paragraph-regular">Mit Open Source verbinden wir mehr als einfach "Gratis-Software".
+                            Der Ansatz entspringt vielmehr einer Geisteshaltung und damit verbundenen Idealen auf dem
+                            Weg zu besseren IT-Lösungen.</p>
+                        <a href="https://github.com/OneGov/onegov-cloud" class="button-semi">Github
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 8H12" stroke="#212529" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7 3L12 8L7 13" stroke="#212529" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="featured-single m-md-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chart-arrows"
+                            width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <line x1="3" y1="18" x2="17" y2="18" />
+                            <path d="M9 9l3 3l-3 3" />
+                            <path d="M14 15l3 3l-3 3" />
+                            <line x1="3" y1="3" x2="3" y2="21" />
+                            <line x1="3" y1="12" x2="12" y2="12" />
+                            <path d="M18 3l3 3l-3 3" />
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                        </svg>
+                        <h6 class="heading-6">Open Data</h6>
+                        <p class="paragraph-regular">Open Government Data hat zum Ziel, die Informationsbasis für
+                            Forschung, Unternehmen und Öffentlichkeit zu verbessern und so zusätzliche Transparenz zu
+                            schaffen.</p>
+                        <a href="https://seantis.ch/portrait/digitale-nachhaltigkeit/" class="button-semi">Digitale
+                            Nachhaltigkeit
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 8H12" stroke="#212529" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7 3L12 8L7 13" stroke="#212529" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="featured-single">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-affiliate"
+                            width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5.931 6.936l1.275 4.249m5.607 5.609l4.251 1.275" />
+                            <path d="M11.683 12.317l5.759 -5.759" />
+                            <circle cx="5.5" cy="5.5" r="1.5" />
+                            <circle cx="18.5" cy="5.5" r="1.5" />
+                            <circle cx="18.5" cy="18.5" r="1.5" />
+                            <circle cx="8.5" cy="15.5" r="4.5" />
+                        </svg>
+                        <h6 class="heading-6">Open Community</h6>
+                        <p class="paragraph-regular">Mit dem Verein OneGov.ch haben sich Schweizer Kantone, Gemeinden
+                            und Fachpartner zu einer Gemeinschaft zusammengeschlossen: Lösungen für E-Government, die
+                            bedürfnisorientiert und zukunftsfähig sind.</p>
+                        <a href="http://www.onegov.ch" class="button-semi">Verein OneGov.ch
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 8H12" stroke="#212529" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7 3L12 8L7 13" stroke="#212529" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<section class="faq faq3-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 offset-xl-2 col-xl-8">
+                <h2 class="heading-2" id="faq">Häufig gestellte <mark class="heading-2">Fragen</mark></h2>
+                <div class="accordion" id="accordionExample">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Wo finde ich den Quellcode?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="paragraph-regular">
+                                    Schön, dass Sie fragen. Den Source Code finden Sie auf Github: <a
+                                        href="https://github.com/OneGov/onegov-cloud">https://github.com/OneGov/onegov-cloud</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Wo sind die Daten gespeichert?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="paragraph-regular">
+                                    Gemäss Schutzstufen werden die Daten mit den adäquaten Mechanismen geschützt. Auch
+                                    die Datenspeicherung und der Ort der Datenhaltung richten sich nach den
+                                    Schutzanforderungen. Schützenswerte Daten werden beim zertifizierten Schweizer Cloud
+                                    Provider Exoscale gespeichert.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Wie sicher ist admin.digital?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="paragraph-regular">
+                                    Qualität und Informationssicherheit gehören seit der Gründung zu unseren
+                                    Grundwerten. Seit 2021 führen wir ein nach ISO 27001 zertifiziertes
+                                    Informationssicherheitsmanagementsystem (ISMS).
+                                    ISO 27001 bringt einen bewährten Ansatz für die Analyse und den Umgang mit Risiken
+                                    der Informationssicherheit. Für Unternehmen bietet ISO 27001 einen systematisch
+                                    strukturierten Ansatz, die Integrität der betrieblichen Daten und deren
+                                    Vertraulichkeit zu schützen und die Verfügbarkeit der IT-Systeme zu gewährleisten.
+                                    Unsere Kunden und Geschäftspartner erhalten dank der Zertifizierung einen
+                                    vertrauenswürdigen Beleg dafür, dass eine ausreichende IT-Sicherheit gewährleistet
+                                    werden kann: <a
+                                        href="https://seantis.ch/portrait/informationssicherheit-iso-27001/">ISO 27001
+                                        zertifiziertes Informationssicherheitsmanagementsystem (ISMS)</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Was kostet admin.digital?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="paragraph-regular">
+                                    admin.ch ist Open Source und damit freie Software. Die Firma seantis betreibt die
+                                    Software als «Software as a Service» (SaaS).
+                                    Das SaaS Angebot folgt einem einfachen und transparenten Preismodell. Der Basispreis
+                                    pro Instanz beträgt CHF 250 pro Monat. Im Preis enthalten sind alle Funktionen sowie
+                                    alle Updates.
+                                    Zusätzliche Benutzer mit YubiKeys sind in massgeschneiderten Paketen erhältlich.
+                                    Lernende sind immer gratis.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Ist admin.digital ein Portal der Bundesverwaltung?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="paragraph-regular">
+                                    Nein, das offizielle Portal der Bundesverwaltung ist unter www.admin.ch erreichbar.
+                                    admin.digital ist eine Open Source Lösung für digitale Portale für Kantone und
+                                    Gemeinden.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Wer entwickelt admin.digital und wie kann ich mich beteiligen?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="paragraph-regular">
+                                    admin.digital wird als Open Source Software entwickelt. Federführend ist dabei die
+                                    Firma seantis gmbh aus Luzern. Eine koordinierende Funktion übernimmt der Verein
+                                    OneGov.ch.
+                                    Interessierte können sich direkt über Github an der Weiterentwicklung beteiligen.
+                                    Wir freuen uns auf Beiträge aus der Community.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Wer nutzt admin.digital?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="paragraph-regular">Hoffentlich bald auch Ihre Organisation. Aktuell ist
+                                    admin.digital bei sieben Kantonen und gut 20 Städten, Gemeinden und NGOs im Einsatz.
+                                    Sie wären also in bester Gesellschaft.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 {% endblock %}
