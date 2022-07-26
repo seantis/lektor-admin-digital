@@ -2,6 +2,10 @@ a {
     color: #dc0018;
 }
 
+p a, ul li a {
+    font-weight: normal;
+}
+
 a:hover {
     color: #9a0011;
 }
@@ -112,6 +116,10 @@ a.start {
     padding: 0;
 }
 
+.blog-section ul li {
+    font-weight: normal;
+}
+
 .faq .accordion .accordion-item .accordion-header .accordion-button {
     letter-spacing: 0;
 }
@@ -151,6 +159,8 @@ footer {margin-top: 100px;}
 .lead {
     font-weight: 700;
     margin-top: 30px;
+    font-size: 20px !important;
+    line-height: 1.5 !important;
 }
 
 .featured7 .featured-content .featured-single:hover {
@@ -179,9 +189,6 @@ footer {margin-top: 100px;}
     margin: 40px 0px;
 }
 
-.blog-section ul li, .blog-section ul li a {
-    font-size: 20px;
-}
 
 .blog-post-single .img-overlay {
     margin-bottom: 40px !important;
