@@ -6,11 +6,11 @@ author: Fabian Reinhard
 ---
 release: 
 ---
-description: In Zusammenarbeit mit der Swisscom bietet admin.digital elektronische Siegel für amtliche  Dokumente.
+description: In Zusammenarbeit mit der Swisscom stellt admin.digital einen Service für elektronische Siegel amtlicher  Dokumente zur Verfügung.
 ---
 body:
 
-Das elektronische Siegel ist der Behördenstempels des digitalen Zeitalters. Behörden können mit elektronischen Siegeln einen Herkunftsnachweis erbringen sowie den Zeitpunkt, die Integrität und Authentizität eines Dokumentes bestätigen. Das [Bundesgesetz über die elektronische Signatur (ZertES)](https://www.fedlex.admin.ch/eli/cc/2016/752/de) reglt die Verwendung von elektronischen Siegel und erlaubt damit, rechtskonforme Signaturen im Namen einer Organisation als juristische Person durchzuführen und ein gesiegeltes Dokument als Beweisstück vorzulegen.
+Das elektronische Siegel ist der Behördenstempels des digitalen Zeitalters. Behörden können mit elektronischen Siegeln einen Herkunftsnachweis erbringen sowie den Zeitpunkt, die Integrität und Authentizität eines Dokumentes bestätigen. Das [Bundesgesetz über die elektronische Signatur (ZertES)](https://www.fedlex.admin.ch/eli/cc/2016/752/de) regelt die Verwendung von elektronischen Siegel und erlaubt damit, rechtskonforme Signaturen im Namen einer Organisation als juristische Person durchzuführen und ein gesiegeltes Dokument als Beweisstück vorzulegen.
 
 Elektronische Siegel basieren technisch auf dem gleichen Verfahren wie eine elektronische Signatur und werden von admin.digital über den [Signing Service der Swisscom](https://trustservices.swisscom.com/elektronische-siegel/) erstellt.
 
@@ -38,7 +38,7 @@ Folgende Informationen werden für die Nachvollziehbarkeit permanent aufgezeichn
 
 ## Verfügbar für Gemeindeverwaltungen
 
-Die elektronischen Siegel stehen für alle Gemeinden Plattform von admin.digital zur Verfügung. Ein weiterer Schritt für die digitale Transformation der Gemeindeverwaltung.
+Die elektronischen Siegel stehen für alle Gemeinden der Plattform von admin.digital zur Verfügung. Ein weiterer Schritt für die digitale Transformation der Gemeindeverwaltung.
 
 
 ---
