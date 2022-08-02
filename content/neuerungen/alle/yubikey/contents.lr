@@ -10,7 +10,9 @@ description: Mit einem Hardware-Schlüssel von YubiKey melden sich alle Benutzer
 ---
 body:
 
-Passwörter sind eine bekannte Schwachstelle und eines der grössten Probleme IT-Sicherheit überhaupt. Darum setzt die Plattform von admin.digital konsequent auf Zwei-Faktor-Authentisierung (2FA). Damit werden die Benutzerkonten zusätzlich zu einem Passwort (etwas was der Benutzer weiss)  mit einem Schlüssel (etwas was der Benutzer besitzt) geschützt. Der Account ist so also zum potentiell unsicheren Passwort durch einen weiteren Faktor geschützt.
+Passwörter sind eine bekannte Schwachstelle und eines der grössten Probleme IT-Sicherheit überhaupt. Darum setzt die Plattform von admin.digital konsequent auf Zwei-Faktor-Authentisierung (2FA). Damit werden die Benutzerkonten zusätzlich zu einem Passwort (etwas was der Benutzer weiss)  mit einem Schlüssel (etwas worauf der Benutzer physischen Zugriff hat) geschützt. Der Account ist so also zum potentiell unsicheren Passwort durch einen weiteren Faktor geschützt.
+
+![YubiKey Schlüssel](og_image.png)
 
 ## YubiKey Schlüssel
 
@@ -22,16 +24,16 @@ Jedes Mal, wenn der Benutzer den Knopf drückt, wird ein neues OneTime Token erz
 
 ## Sichere Hardware-Schlüssel
 
-Hardware-Schlüssel gelten als eines der sichersten Mittel für Zwei-Faktor-Authentisierung. Unternehmen mit sehr hohen Sicherheitsansprüchen setzen konsequent auf Hardware-Schlüsseln wie den Yubikey. So schützt z.B. Google die Benutzerkonten seiner mehr als 85'000 Mitarbeiter mit Hardware-Schlüsseln und konnte seit der Einführung von Sicherheitsschlüsseln die [feindliche Übernahme von Account kpmplett verhindern](https://krebsonsecurity.com/2018/07/google-security-keys-neutralized-employee-phishing/). Die Authentisierung per Hardware-Schlüssel gilt sogar als noch sicherer als biometrische Verfahren wie z.B. Iris- oder Fingerabdruckscanner, da kryptografischen Schlüssel sicher auf dem Gerät hintelegt sind.
+Hardware-Schlüssel gelten als eines der sichersten Mittel für Zwei-Faktor-Authentisierung. Unternehmen mit sehr hohen Sicherheitsansprüchen setzen konsequent auf Hardware-Schlüsseln wie den YubiKey. So schützt z.B. Google die Benutzerkonten seiner mehr als 85'000 Mitarbeiter mit Hardware-Schlüsseln und konnte seit der Einführung von Sicherheitsschlüsseln die [feindliche Übernahme von Account kpmplett verhindern](https://krebsonsecurity.com/2018/07/google-security-keys-neutralized-employee-phishing/). Die Authentisierung per Hardware-Schlüssel gilt sogar als noch sicherer als biometrische Verfahren wie z.B. Iris- oder Fingerabdruckscanner, da kryptografischen Schlüssel sicher auf dem Gerät hintelegt sind.
 
 ## Der YubiKey in Ihrer Organisation
 
-Um die Authentifikation für Ihre Webapplikation sicher zu machen, werden alle Ihre Mitarbeiter mit YubiKeys ausgerüstet. Der Prozess dazu sieht wie folgt aus:
+Um die Authentifikation für Ihre Webapplikation sicher zu machen, werden alle Mitarbeiter mit YubiKeys ausgerüstet. Der Prozess dazu sieht wie folgt aus:
 
-1. seantis bestellt für Ihre Organisation die YubiKeys
-2. Jedem Benutzeraccount wird ein YubiKey zugeordnet
-3. seantis schickt die YubiKeys per Post an Ihre Mitarbeiter
-4. Ihre Mitarbeiter können sich sofort mit ihrem persönlichen YubiKey sicher einloggen.
+- seantis bestellt für Ihre Organisation die YubiKeys
+- Jedem Benutzeraccount wird ein YubiKey zugeordnet
+- seantis schickt die YubiKeys per Post an alle Mitarbeiter
+- Ihre Mitarbeiter können sich sofort mit ihrem persönlichen YubiKey sicher einloggen.
 
 Sie können organisatorisch sicherstellen, dass alle Mitarbeiter ihre YubiKeys sicher in den Büroräumlichkeiten verwahren. So besteht eine erweiterte Kontrolle wer wo und wann Zugriff auf sensible Daten hat. Persönliche YubiKeys lassen sich mit sofortiger Wirkung entziehen.
 
