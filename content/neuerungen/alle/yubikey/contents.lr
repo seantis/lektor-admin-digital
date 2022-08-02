@@ -24,7 +24,7 @@ Jedes Mal, wenn der Benutzer den Knopf drückt, wird ein neues OneTime Token erz
 
 ## Sichere Hardware-Schlüssel
 
-Hardware-Schlüssel gelten als eines der sichersten Mittel für Zwei-Faktor-Authentisierung. Unternehmen mit sehr hohen Sicherheitsansprüchen setzen konsequent auf Hardware-Schlüsseln wie den YubiKey. So schützt z.B. Google die Benutzerkonten seiner mehr als 85'000 Mitarbeiter mit Hardware-Schlüsseln und konnte seit der Einführung von Sicherheitsschlüsseln die [feindliche Übernahme von Account offenbar komplett verhindern](https://krebsonsecurity.com/2018/07/google-security-keys-neutralized-employee-phishing/). Die Authentisierung per Hardware-Schlüssel gilt sogar als noch sicherer als biometrische Verfahren wie z.B. Iris- oder Fingerabdruckscanner, da die kryptografischen Schlüssel unfälschbar auf dem Gerät hintelegt sind.
+Hardware-Schlüssel gelten als eines der sichersten Mittel für Zwei-Faktor-Authentisierung. Unternehmen mit sehr hohen Sicherheitsansprüchen setzen konsequent auf Hardware-Schlüsseln wie den YubiKey. So schützt z.B. Google die Benutzerkonten seiner mehr als 85'000 Mitarbeiter mit Hardware-Schlüsseln und konnte seit der Einführung von Sicherheitsschlüsseln die [feindliche Übernahme von Account offenbar komplett verhindern](https://krebsonsecurity.com/2018/07/google-security-keys-neutralized-employee-phishing/). Die Authentisierung per Hardware-Schlüssel gilt als deutlich sicherer als mTAN per SMS und – unter gewissen Voraussetzungen – sogar als sicherer als biometrische Verfahren wie z.B. Iris- oder Fingerabdruckscanner, da die kryptografischen Schlüssel unfälschbar auf dem Gerät hintelegt sind.
 
 ## YubiKey in der Gemeindeverwaltung
 
