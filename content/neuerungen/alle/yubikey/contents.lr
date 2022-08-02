@@ -1,4 +1,4 @@
-title: Sicheres Login mit YubiKey
+title: Sicheres Login für die Gemeindeverwaltung mit YubiKey
 ---
 pub_date: 2022-08-02
 ---
@@ -6,29 +6,29 @@ author: Fabian Reinhard
 ---
 release: 
 ---
-description: Mit einem Hardware-Schlüssel von YubiKey melden sich alle Benutzer mit höchster Sicherheit bei admin.digtal an.
+description: Mit einem Hardware-Schlüssel von YubiKey melden sich alle Benutzer mit höchster Sicherheit bei admin.digital an.
 ---
 body:
 
-Passwörter sind eine bekannte Schwachstelle und eines der grössten Probleme IT-Sicherheit überhaupt. Darum setzt die Plattform von admin.digital konsequent auf Zwei-Faktor-Authentisierung (2FA). Damit werden die Benutzerkonten zusätzlich zu einem Passwort (etwas was der Benutzer weiss)  mit einem Schlüssel (etwas worauf der Benutzer physischen Zugriff hat) geschützt. Der Account ist so also zum potentiell unsicheren Passwort durch einen weiteren Faktor geschützt.
+Passwörter sind eine bekannte Schwachstelle und eines der grössten Probleme für die IT-Sicherheit überhaupt. Darum setzt die Plattform von admin.digital konsequent auf Zwei-Faktor-Authentisierung (2FA). Damit werden die Benutzerkonten zusätzlich zu einem Passwort (etwas was der Benutzer weiss)  mit einem Schlüssel (etwas worauf der Benutzer physischen Zugriff hat) geschützt. So sind alle Accounts zusätzlich zum potentiell unsicheren Passwort durch einen weiteren Faktor geschützt.
 
 ![YubiKey Schlüssel](og_image.png)
 
 ## YubiKey Schlüssel
 
-Für die Schlüssel verwenden wir die Schlüssel [YubiKey](https://www.yubico.com/der-yubikey/?lang=de) der Firma [Yubico](https://www.yubico.com). Yubico ist die globale Marktführerin für Hardware-Schlüssel. Die YubiKeys Hardware-Schlüssel sehen tatsächlich aus wie Schlüssel und werden analog zu einem Schlüsselloch in den USB-Eingang gesteckt um Zugang zu erhalten. Ein YubiKey funktioniert wie eine externe Tastatur und kann einfach per USB an Ihr PC/Mac angeschlossen werden. Der YubiKey funktioniert auf sämtlichen Betriebsystemen ohne zusätzliche Software/Treiber-Installation.
+Für die Schlüssel verwenden wir die Schlüssel [YubiKey](https://www.yubico.com/der-yubikey/?lang=de) der Firma [Yubico](https://www.yubico.com). Yubico ist die globale Marktführerin für Hardware-Schlüssel. Die YubiKeys Hardware-Schlüssel sehen tatsächlich aus wie Schlüssel und werden analog zu einem Schlüsselloch in den USB-Eingang gesteckt um Zugang zu erhalten. Ein YubiKey funktioniert wie eine externe Tastatur und kann einfach per USB an Ihr PC/Mac angeschlossen werden. Der YubiKey ist auf sämtlichen Betriebsystemen ohne zusätzliche Software/Treiber-Installation sofort einsetzbar.
 
-## Einloggen mit YubiKey
+## Anmeldung mit YubiKey
 
-Jedes Mal, wenn der Benutzer den Knopf drückt, wird ein neues OneTime Token erzeugt. Auf dem Login-Formular müssen daher ein persönliches Passwort und das YubiKey Token eingegeben werden. Bequem für den Benutzer: andere bekannte Zwei-Faktor-Authenfizierungen machen den Prozess für den Benutzer mühsamer: ich muss z.B. das Token von meinem Handy ablesen und dieses dann in das entsprechende Formularfeld übertragen. YubiKey hingegen erspart dem User Tippen und macht den Login-Prozess so benutzerfreundlicher.
+Jedes Mal, wenn der Benutzer den Knopf drückt, wird ein neues OneTime Token erzeugt. Auf dem Login-Formular müssen also ein persönliches Passwort sowie das YubiKey Token eingegeben werden. Bequem für den Benutzer: andere bekannte Zwei-Faktor-Authenfizierungen machen den Prozess für den Benutzer mühsamer: ich muss z.B. das Token von meinem Handy ablesen und dieses dann in das entsprechende Formularfeld übertragen. Der YubiKey hingegen erspart dem Benutzer das Eintippen eines Codes und macht den Login-Prozess so benutzerfreundlicher.
 
 ## Sichere Hardware-Schlüssel
 
-Hardware-Schlüssel gelten als eines der sichersten Mittel für Zwei-Faktor-Authentisierung. Unternehmen mit sehr hohen Sicherheitsansprüchen setzen konsequent auf Hardware-Schlüsseln wie den YubiKey. So schützt z.B. Google die Benutzerkonten seiner mehr als 85'000 Mitarbeiter mit Hardware-Schlüsseln und konnte seit der Einführung von Sicherheitsschlüsseln die [feindliche Übernahme von Account kpmplett verhindern](https://krebsonsecurity.com/2018/07/google-security-keys-neutralized-employee-phishing/). Die Authentisierung per Hardware-Schlüssel gilt sogar als noch sicherer als biometrische Verfahren wie z.B. Iris- oder Fingerabdruckscanner, da kryptografischen Schlüssel sicher auf dem Gerät hintelegt sind.
+Hardware-Schlüssel gelten als eines der sichersten Mittel für Zwei-Faktor-Authentisierung. Unternehmen mit sehr hohen Sicherheitsansprüchen setzen konsequent auf Hardware-Schlüsseln wie den YubiKey. So schützt z.B. Google die Benutzerkonten seiner mehr als 85'000 Mitarbeiter mit Hardware-Schlüsseln und konnte seit der Einführung von Sicherheitsschlüsseln die [feindliche Übernahme von Account offenbar komplett verhindern](https://krebsonsecurity.com/2018/07/google-security-keys-neutralized-employee-phishing/). Die Authentisierung per Hardware-Schlüssel gilt sogar als noch sicherer als biometrische Verfahren wie z.B. Iris- oder Fingerabdruckscanner, da die kryptografischen Schlüssel unfälschbar auf dem Gerät hintelegt sind.
 
 ## Der YubiKey in Ihrer Organisation
 
-Um die Authentifikation für Ihre Webapplikation sicher zu machen, werden alle Mitarbeiter mit YubiKeys ausgerüstet. Der Prozess dazu sieht wie folgt aus:
+Um die Authentifizierung sicher zu machen, werden alle Mitarbeiter mit YubiKeys ausgerüstet. Der Prozess dazu sieht wie folgt aus:
 
 - Jedem Benutzeraccount wird ein persönlicher YubiKey zugeordnet
 - seantis schickt die YubiKeys per Post an alle Mitarbeiter
@@ -36,7 +36,7 @@ Um die Authentifikation für Ihre Webapplikation sicher zu machen, werden alle M
 
 Sie können organisatorisch sicherstellen, dass alle Mitarbeiter ihre YubiKeys sicher in den Büroräumlichkeiten verwahren. So besteht eine erweiterte Kontrolle wer wo und wann Zugriff auf sensible Daten hat. Persönliche YubiKeys lassen sich mit sofortiger Wirkung entziehen.
 
-Ein YubiKey lässt sich damit bei einer personellen Mutation einfach von einem Benutzer einziehen und an einen anderen weitergeben. Geht ein Schlüssel verloren oder wird gestohlen, so kann dieser mit sofortiger Wirkung für beim entsprechenden Benutzerkonto entfernt werden, so dass kein Login mehr möglich ist. Ein weiterer Vorteil eines Hardware-Schlüssel gegenüber Passwörtern ist, dass ein Velust oder gar Diebstahl – im Gegensatz zu Passwörtern – nicht unbemerkt bleibt.
+Ein YubiKey kann bei einer personellen Mutation einfach einem Benutzer entzogen und an einen anderen zugeordnet werden. Geht ein Schlüssel verloren oder wird gestohlen, so ist es möglich diesen mit sofortiger Wirkung für beim entsprechenden Benutzerkonto zu entfernen, so dass kein Login mehr möglich ist. Ein weiterer Vorteil eines Hardware-Schlüssel gegenüber Passwörtern ist, dass ein Velust oder gar Diebstahl – im Gegensatz zu Passwörtern – nicht unbemerkt bleibt.
 
 
 
