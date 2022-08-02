@@ -26,7 +26,7 @@ Jedes Mal, wenn der Benutzer den Knopf drückt, wird ein neues OneTime Token erz
 
 Hardware-Schlüssel gelten als eines der sichersten Mittel für Zwei-Faktor-Authentisierung. Unternehmen mit sehr hohen Sicherheitsansprüchen setzen konsequent auf Hardware-Schlüsseln wie den YubiKey. So schützt z.B. Google die Benutzerkonten seiner mehr als 85'000 Mitarbeiter mit Hardware-Schlüsseln und konnte seit der Einführung von Sicherheitsschlüsseln die [feindliche Übernahme von Account offenbar komplett verhindern](https://krebsonsecurity.com/2018/07/google-security-keys-neutralized-employee-phishing/). Die Authentisierung per Hardware-Schlüssel gilt sogar als noch sicherer als biometrische Verfahren wie z.B. Iris- oder Fingerabdruckscanner, da die kryptografischen Schlüssel unfälschbar auf dem Gerät hintelegt sind.
 
-## Der YubiKey in Ihrer Organisation
+## YubiKey in der Gemeindeverwaltung
 
 Um die Authentifizierung sicher zu machen, werden alle Mitarbeiter mit YubiKeys ausgerüstet. Der Prozess dazu sieht wie folgt aus:
 
