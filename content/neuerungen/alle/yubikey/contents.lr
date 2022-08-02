@@ -31,8 +31,8 @@ Hardware-Schlüssel gelten als eines der sichersten Mittel für Zwei-Faktor-Auth
 Um die Authentifizierung sicher zu machen, werden alle Mitarbeiter mit YubiKeys ausgerüstet. Der Prozess dazu sieht wie folgt aus:
 
 - Jedem Benutzeraccount wird ein persönlicher YubiKey zugeordnet
-- seantis schickt die YubiKeys per Post an alle Mitarbeiter
-- Ihre Mitarbeiter können sich sofort mit ihrem persönlichen YubiKey sicher einloggen.
+- seantis schickt die YubiKeys per Post an alle Mitarbeitenden
+- Alle Mitarbeitenden können sich sofort mit ihrem persönlichen YubiKey sicher einloggen.
 
 Sie können organisatorisch sicherstellen, dass alle Mitarbeiter ihre YubiKeys sicher in den Büroräumlichkeiten verwahren. So besteht eine erweiterte Kontrolle wer wo und wann Zugriff auf sensible Daten hat. Persönliche YubiKeys lassen sich mit sofortiger Wirkung entziehen.
 
