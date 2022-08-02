@@ -204,6 +204,14 @@ footer {margin-top: 100px;}
     margin-top: 2rem;
 }
 
+.blog-section h1, .blog-section h2, .blog-section h3, .blog-section p {
+    -moz-hyphens: auto;
+   -o-hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+   hyphens: auto; 
+} 
+
 .blog-section .paragraph-medium {
     margin-bottom: 30px;
 }
