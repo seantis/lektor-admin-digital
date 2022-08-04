@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="{{ '/static/custom.css'|url }}">
 
     <link rel="stylesheet" href="{{ '/static/glider.min.css'|url }}">
+    <link href="{{ '/static/aos.css'|url }}" rel="stylesheet">
 
     <!-- Matomo -->
     <script>
@@ -159,6 +160,7 @@
 
     <script src="{{ '/static/bootstrap.bundle.min.js'|url }}"></script>
     <script src="{{ '/static/glider.min.js'|url }}"></script>
+    <script src="{{ '/static/aos.js'|url }}"></script>
 
     <script>
         new Glider(document.querySelector('.glider'), {
@@ -168,6 +170,13 @@
                 prev: '.glider-prev',
                 next: '.glider-next'
             },
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            delay: 700,
+            duration: 700,
         });
     </script>
 
