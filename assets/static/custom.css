@@ -15,6 +15,10 @@ a:hover {
     hyphens: auto;
 }
 
+p a {
+    display: inline;
+}
+
 .navbar-brand img {
     width: 150px;
 }
