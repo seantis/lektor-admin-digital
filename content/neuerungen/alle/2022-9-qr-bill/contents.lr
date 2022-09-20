@@ -1,0 +1,21 @@
+title: QR-Rechnungen
+---
+pub_date: 2022-09-02
+---
+author: Marc Sommerhalder
+---
+release: 2022.43
+---
+description: Feriennet – die Buchungsplattform für betreute Ferienangebote unterstützt neu QR-Rechnungen.
+---
+body:
+
+Die QR-Rechnung werden direkt mit den Zahlungsangaben im Benutzerportal angezeigt und können direkt von dort eingescannt werden - kein unnötiger Papierverbrauch mehr!
+
+![QR-Rechnungen](qr-bill.png)
+*QR-Rechnung*
+
+Projuventute Feriennet: <https://www.projuventute.ch/de/eltern/lehrpersonen-fachpersonen/feriennet/>
+
+---
+apps: feriennet
