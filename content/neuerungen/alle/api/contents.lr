@@ -16,7 +16,7 @@ Eine Datenschnittstelle sollte möglichst standardisiert sein und neben den eige
 
 Die Onegov Cloud API setzt hierbei auf [`Collection+JSON`](http://amundsen.com/media-types/collection/), einen Hypermedia-Type, welche speziell für das Abfragen und Verwaltung von Datensammlungen entwickelt wurde und sehr gut zum Datendesign der Onegov Cloud passt.
 
-```
+<pre><code class="language-json">
 {
   "collection": {
     "version": "1.0",
@@ -40,9 +40,9 @@ Die Onegov Cloud API setzt hierbei auf [`Collection+JSON`](http://amundsen.com/m
     ]
   }
 }
+</code></pre>
 
-```
-*Beispiel einer API-Abfrage.*
+*Beispiel einer API-Abfrage*
 
 Mit dem Staatskalender wurde eine erste API Schnittstelle umgesetzt, welche es erlaubt, Organisation und Personen sowie deren Beziehungen (Mitgliedschaften) abzufragen.
 

@@ -223,3 +223,22 @@ footer {margin-top: 100px;}
 .more {
     margin-top: 16px;
 }
+
+pre code span {
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+pre code {
+    background: #F8F9FA !important;
+}
+
+code {
+    color: #dc0018
+}
+
+em {
+    font-weight: 400;
+    font-size: 18px;
+}

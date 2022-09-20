@@ -24,6 +24,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="{{ '/static/bootstrap.min.css'|url }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/static/highlight/styles/vs.min.css'|url }}">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ '/static/fonts.css'|url }}">
@@ -172,6 +173,9 @@
             },
         });
     </script>
+
+    <script src="{{ '/static/highlight/highlight.min.js'|url }}"></script>
+    <script>hljs.highlightAll();</script>
 
     <script>
         AOS.init({
