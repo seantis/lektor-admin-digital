@@ -1,6 +1,6 @@
 title: QR-Rechnungen
 ---
-pub_date: 2022-09-02
+pub_date: 2022-09-20
 ---
 author: Marc Sommerhalder
 ---
@@ -15,7 +15,29 @@ Die QR-Rechnung werden direkt mit den Zahlungsangaben im Benutzerportal angezeig
 ![QR-Rechnungen](qr-bill.png)
 *QR-Rechnung*
 
-**Projuventute Feriennet: <https://www.projuventute.ch/de/eltern/lehrpersonen-fachpersonen/feriennet/>**
+## Open Source Python Library
+
+Für die Umsetzung konnten wir auf eine Open Source Python Library zurückgreifen. Die Library ermöglicht es einfach QR-Rechungen nach Schweizer Standard zu erstellen. Wir unterstützen `swiss-qr-bill` als Sponsor: https://github.com/claudep/swiss-qr-bill
+
+<pre><code class="language-python">
+>>> from qrbill import QRBill
+>>> my_bill = QRBill(
+        account='CH5800791123000889012',
+        creditor={
+            'name': 'Jane', 'pcode': '1000', 
+            'city': 'Lausanne', 'country': 'CH',
+        },
+        amount='22.45',
+    )
+>>> bill.as_svg('/tmp/my_bill.svg')
+</code></pre>
+
+
+## Pro Juventute Feriennet
+
+Pro Juventute fördert die Idee der betreuten Ferienangebote und unterstützt mit der Buchungsplattform Feriennet seit 2010 über 150 Ferienpässe in der ganzen Schweiz
+
+**Pro Juventute Feriennet: <https://www.projuventute.ch/de/eltern/lehrpersonen-fachpersonen/feriennet/>**
 
 ---
 apps: feriennet
