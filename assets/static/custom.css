@@ -213,8 +213,8 @@ footer {margin-top: 100px;}
    -o-hyphens: auto;
    -webkit-hyphens: auto;
    -ms-hyphens: auto;
-   hyphens: auto; 
-} 
+   hyphens: auto;
+}
 
 .blog-section .paragraph-medium {
     margin-bottom: 30px;
@@ -241,4 +241,22 @@ code {
 em {
     font-weight: 400;
     font-size: 18px;
+}
+
+.blog-section table {
+    margin-bottom: 40px;
+}
+
+.blog-section thead {
+     background-color: #F1F3F5;
+}
+
+.blog-section th {
+    font-weight: 700;
+    padding: 15px 20px;
+}
+
+.blog-section td {
+    font-weight: 400;
+    padding: 15px 20px;
 }
