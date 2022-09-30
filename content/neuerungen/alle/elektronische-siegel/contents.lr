@@ -10,7 +10,7 @@ description: In Zusammenarbeit mit der Swisscom stellt admin.digital einen Servi
 ---
 body:
 
-Das elektronische Siegel ist der Behördenstempels des digitalen Zeitalters. Behörden können mit elektronischen Siegeln einen Herkunftsnachweis erbringen sowie den Zeitpunkt, die Integrität und Authentizität eines Dokumentes bestätigen. Das [Bundesgesetz über die elektronische Signatur (ZertES)](https://www.fedlex.admin.ch/eli/cc/2016/752/de) regelt die Verwendung von elektronischen Siegel und erlaubt damit, rechtskonforme Signaturen im Namen einer Organisation als juristische Person durchzuführen und ein gesiegeltes Dokument als Beweisstück vorzulegen.
+Das elektronische Siegel ist der Behördenstempel des digitalen Zeitalters. Behörden können mit elektronischen Siegeln einen Herkunftsnachweis erbringen sowie den Zeitpunkt, die Integrität und Authentizität eines Dokumentes bestätigen. Das [Bundesgesetz über die elektronische Signatur (ZertES)](https://www.fedlex.admin.ch/eli/cc/2016/752/de) regelt die Verwendung von elektronischen Siegel und erlaubt damit, rechtskonforme Signaturen im Namen einer Organisation als juristische Person durchzuführen und ein gesiegeltes Dokument als Beweisstück vorzulegen.
 
 Elektronische Siegel basieren technisch auf dem gleichen Verfahren wie eine elektronische Signatur und werden von admin.digital über den [Signing Service der Swisscom](https://trustservices.swisscom.com/elektronische-siegel/) erstellt.
 
