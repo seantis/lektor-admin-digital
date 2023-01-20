@@ -10,11 +10,11 @@ description: Das Portal zur Publikation von Wahl- und Abstimmungsresultaten biet
 ---
 body:
 
-Auf den Datenportalen der [Kantone Basel Landschaft](https://abstimmungen.bl.ch), [Graubünden](https://abstimmungen.gr.ch), [Schwyz](https://abstimmungen.sz.ch), [St. Gallen](https://wab.sg.ch) und [Zug](https://wab.zug.ch) werden die Ergebnisse der kantonalen Wahlen und Abstimmungen publiziert.
+Auf den Datenportalen der Kantone [Basel Landschaft](https://abstimmungen.bl.ch), [Graubünden](https://abstimmungen.gr.ch), [Schwyz](https://abstimmungen.sz.ch), [St. Gallen](https://wab.sg.ch) und [Zug](https://wab.zug.ch) werden die Ergebnisse der kantonalen Wahlen und Abstimmungen publiziert.
 
 ## Interaktive Widgets zum Einbetten
 
-Interaktive Diagramme und Karten können als iFrame ganz einfach in andere Webportale eingebettet werden. So kann z.B. eine Zeitung einfach auf ihrer Website den aktuellen Stand der Auszählung für Wahlen. Ebenso einfach ist die Einbettung einer interaktive Karte mit den Ergebnissen aus den Gemeinden.
+Interaktive Diagramme und Karten können als iFrame ganz einfach in andere Webportale eingebettet werden. So kann z.B. eine Zeitung einfach auf ihrer Website den aktuellen Stand der Auszählung für Wahlen publizieren. Ebenso einfach ist die Einbettung einer interaktive Karte mit den Ergebnissen aus den Gemeinden.
 
 ![Widget einbetten](einbetten.png)
 
@@ -56,13 +56,13 @@ Für alle Interessierten besteht die Möglichkeit sich für SMS- bzw. E-Mail-Ben
 
 ## Screens im Wahlzentrum
 
-Im Wahlzentrum werden die Resultate auf Info-Screens angezeigt. Dafür werden im Portal die entsprechenden Screen konfiguriert und die Resultate in Echtzeit ohne Zeitverzögerung publiziert.
+Im Wahlzentrum werden die Resultate auf Info-Screens angezeigt. Dafür werden im Portal die entsprechenden Screens konfiguriert und die Resultate in Echtzeit ohne Zeitverzögerung publiziert.
 
-## Katonale Portale Wahl- und Abstimmungsresultate
+## Kantonale Portale Wahl- und Abstimmungsresultate
 
 Folgende Kantone publizieren ihre Wahl- und Abstimmungsresultate mit dem Portal von admin.digital.
 
-- [Kantone Basel Landschaft](https://abstimmungen.bl.ch)
+- [Kanton Basel Landschaft](https://abstimmungen.bl.ch)
 - [Kanton Graubünden](https://abstimmungen.gr.ch)
 - [Kanton Schwyz](https://abstimmungen.sz.ch)
 - [Kanton St. Gallen](https://wab.sg.ch) 
