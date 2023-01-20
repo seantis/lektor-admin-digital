@@ -58,6 +58,10 @@ Für alle Interessierten besteht die Möglichkeit sich für SMS- bzw. E-Mail-Ben
 
 Im Wahlzentrum werden die Resultate auf Info-Screens angezeigt. Dafür werden im Portal die entsprechenden Screen konfiguriert und die Resultate in Echtzeit ohne Zeitverzögerung publiziert.
 
+## Open Data
+
+Die Daten sind als Open Data mit einer Lizenz zur freien Nutzung verfügbar. Die detaillierte Dokumentation ist auf [Github](https://github.com/OneGov/onegov-cloud/blob/master/src/onegov/election_day/static/docs/api/open_data_de.md) zu finden.
+
 ## Katonale Portale Wahl- und Abstimmungsresultate
 
 Folgende Kantone publizieren ihre Wahl- und Abstimmungsresultate mit dem Portal von admin.digital.
