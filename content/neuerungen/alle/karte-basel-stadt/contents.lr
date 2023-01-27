@@ -1,0 +1,18 @@
+title: Basel-Stadt-Kartendienst MapBS integriert
+---
+pub_date: 2022-10-05
+---
+author: Chantal Trutmanm
+---
+release: 2022.48
+---
+description: Der Kartendienst von Basel-Stadt kann jetzt als Kartenoption ausgewählt werden. Dadurch wird MapBS anstelle des Standard-Kartendienstes aufgerufen.
+---
+body:
+
+Der Kartendienst von MapBS deckt mit seinen standardisierten Darstellungen und Abfragen das Grundangebot an Geoinformationen für die breite Öffentlichkeit und die kantonale Verwaltung ab. Dank diesen aktuell gehaltenen und präzisen Kartendaten können die Adressen der Organisationen der Basel Stadt genau dargestellt und gefunden werden.
+
+![Karte](map-bs.png)
+
+---
+apps: agency, town

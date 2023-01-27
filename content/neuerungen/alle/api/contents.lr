@@ -1,20 +1,20 @@
 title: Webservice API
 ---
-pub_date: 2022-09-02
+pub_date: 2022-12-16
 ---
 author: Marc Sommerhalder
 ---
 release: 2022.43
 ---
-description: Die Onegov Cloud API ermöglicht den maschinenlesbaren Zugriff öffentlicher Daten.
+description: Die OneGov Cloud API ermöglicht den maschinenlesbaren Zugriff öffentlicher Daten.
 ---
 body:
 
-Mit der neuen Komponente `onegov.api` wurde der Grundstein für die Onegov Cloud API gelegt. Dadurch können bestehende Anwendungen mit minimalem Entwicklungsaufwand so erweitert werden, dass sie ihre öffentlichen Daten in maschinenlesbarer Form anbieten können.
+Mit der neuen Komponente `onegov.api` wurde der Grundstein für die OneGov Cloud API gelegt. Dadurch können bestehende Anwendungen mit minimalem Entwicklungsaufwand so erweitert werden, dass sie ihre öffentlichen Daten in maschinenlesbarer Form anbieten können.
 
 Eine Datenschnittstelle sollte möglichst standardisiert sein und neben den eigentlichen Daten auch bestimmte Meta-Informationen enthalten: Welche Endpunkte gibt es? Welche Filtermöglichkeiten? In welcher Beziehung stehen die Daten untereinander?
 
-Die Onegov Cloud API setzt hierbei auf [`Collection+JSON`](http://amundsen.com/media-types/collection/), einen Hypermedia-Type, welche speziell für das Abfragen und Verwaltung von Datensammlungen entwickelt wurde und sehr gut zum Datendesign der Onegov Cloud passt.
+Die OneGov Cloud API setzt hierbei auf [`Collection+JSON`](http://amundsen.com/media-types/collection/), einen Hypermedia-Type, welche speziell für das Abfragen und Verwaltung von Datensammlungen entwickelt wurde und sehr gut zum Datendesign der OneGov Cloud passt.
 
 <pre><code class="language-json">
 {
