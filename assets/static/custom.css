@@ -10,7 +10,7 @@ a:hover {
     color: #9a0011;
 }
 
-.heading-1, .heading-2, .heading-3, .heading-4, .heading-5, .heading-6, .small-heading {
+.heading-3, .heading-4, .heading-5, .heading-6, .small-heading {
     letter-spacing: 0;
     hyphens: auto;
 }
@@ -256,7 +256,17 @@ em {
     padding: 15px 20px;
 }
 
+.blog-section table {
+    width: 100%;
+}
+
 .blog-section td {
     font-weight: 400;
-    padding: 15px 20px;
+    padding: 15px 5px;
+}
+
+.blog-section td, .blog-section th {
+    border: 1px solid #dbdbdb;
+    border-width: 0 0 1px;
+    vertical-align: top;
 }

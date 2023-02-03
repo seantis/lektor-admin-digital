@@ -1,19 +1,19 @@
 title: Landrats-, Grossrats- und Kantonsratswahlen
 ---
-pub_date: 2022-10-01
+pub_date: 2023-02-02
 ---
 author: Marc Sommerhalder
 ---
 release: 2022.42
 ---
-description: Fünf Kantone, fünf verschiedene kantonale Parlamentswahlen, aber nur ein Datenmodell.
+description: Fünf Kantone, fünf verschiedene kantonale Wahlsysteme für das Parlament, aber nur ein Datenmodell.
 ---
 body:
 
 
 ## Einflussbereiche
 
-Die Onegov Cloud stützt sich beim Datenmodell für Wahlen und Abstimmungen auf den [eCH-155 Standard](https://www.ech.ch/de/ech/ech-0155/4.1). Dieser definiert neben dem Datenmodell einzelner Wahlen und Abstimmungen auch einen sogenannten Einflussbereich, die "Stufe" einer Wahl oder Abstimmung. Die Onegov Cloud unterstützt für die Kantone Basel-Landschaft, Graubünden, St.Gallen, Schwyz und Zug die folgenden Einflussbereiche:
+Die OneGov Cloud stützt sich beim Datenmodell für Wahlen und Abstimmungen auf den [eCH-155 Standard](https://www.ech.ch/de/ech/ech-0155/4.1). Dieser definiert neben dem Datenmodell einzelner Wahlen und Abstimmungen auch einen sogenannten Einflussbereich, die "Stufe" einer Wahl bzw. Abstimmung. Die OneGov Cloud unterstützt für die Kantone Basel-Landschaft, Graubünden, St.Gallen, Schwyz und Zug die folgenden Einflussbereiche:
 
 
 | Einflussbereich | BL        | GR        | SG        | SZ       | ZG       |
@@ -28,7 +28,7 @@ Die Onegov Cloud stützt sich beim Datenmodell für Wahlen und Abstimmungen auf 
 
 ## Kantonale Parlamentswahlen
 
-Kantonale Parlamentswahlen unterscheiden sich im Vergleich zu einfachen Wahlen dadurch, dass es sich um einen Verbund einzelner Proportswahlen auf einer tieferen Stufe handelt - das Gesamtergebnis wird aggregiert. Je nach Kanton finden die einzelnen Wahlen in einem unterschiedlichen Einflussbereich statt, wobei es im Kanton Basel-Landschaft sogar noch eine zusätzliche Stufe gibt:
+Kantonale Parlamentswahlen unterscheiden sich im Vergleich zu einfachen Wahlen dadurch, dass es sich um einen Verbund einzelner Proportswahlen auf einer tieferen Stufe handelt. Für die Mandatsverteilung wird das Gesamtergebnis der verbundenen Wahlen aggregiert. Je nach Kanton finden die einzelnen Wahlen in einem unterschiedlichen Einflussbereich statt, wobei es im Kanton Basel-Landschaft sogar noch eine zusätzliche Stufe gibt:
 
 
 |                   | BL                   | GR                   | SG                     | SZ         | ZG         |
@@ -39,24 +39,22 @@ Kantonale Parlamentswahlen unterscheiden sich im Vergleich zu einfachen Wahlen d
 | Ebene Wahlen      | Wahlkreis (`region`) | Wahlkreis (`region`) | Wahlkreis (`district`) | Gemeinde   | Gemeinde   |
 
 
-Schliesslich unterscheiden sich die kantonalen Parlamentswahlen auch noch im Wahlsystem. Mit der Onegov Cloud können hierbei Systeme dargestellt werden, welche die Mandate entweder auf Basis der Stimmen oder Wählerzahlen verteilen. Zudem gibt es einige spezifische Anzeigen, für Wahlen mit doppeltem Pukelsheim.
+Schliesslich unterscheiden sich die kantonalen Parlamentswahlen auch noch im Wahlsystem. Mit der OneGov Cloud können hierbei Systeme dargestellt werden, welche die Mandate entweder auf Basis der Stimmen oder Wählerzahlen verteilen. Zudem gibt es einige spezifische Anzeigen, für Wahlen mit doppeltem Pukelsheim.
 
 |                      | BL   | GR   | SG   | SZ   | ZG   |
 | -------------------- | ---- | ---- | ---- | ---- | ---- |
 | Wählerzahlen         | ✔    | ✔    |      | ✔    | ✔    |
 | Doppelter Pukelsheim |      | ✔    |      | ✔    | ✔    |
 
-### Aktuelle Wahlen
+## Aktuelle Wahlen
 
-[Grossratswahlen 2022 Kanton Zug](tbd)
+Aktuell nutzen fünf Kantone das Portal der OneGov Cloud für die Publikation kantonaler Wahlen:
 
-[Grossratswahlen 2022 Kanton Graubünden](<https://abstimmungen.gr.ch/elections/grw2022>)
-
-[Kantonsratswahlen 2020 Kanton Schwyz](<https://abstimmungen.sz.ch/elections/wahl-des-kantonsrates-vom-22-maerz-2020-in-der-gemeinde>)
-
-[Kantonsratswahlen 2020 Kanton St.Gallen](<https://wab.sg.ch/elections/erneuerungswahl-der-mitglieder-des-kantonsrates-2020>)
-
-[Landratswahlen 2019 Kanton Basel-Landschaft](<https://abstimmungen.bl.ch/elections/landratswahlen-2019>)
+- [Kantonsratswahlen 2022 Kanton Zug](https://wab.zug.ch/elections/kantonsratswahl-2022/seat-allocation)
+- [Grossratswahlen 2022 Kanton Graubünden](<https://abstimmungen.gr.ch/elections/grw2022>)
+- [Kantonsratswahlen 2020 Kanton Schwyz](<https://abstimmungen.sz.ch/elections/wahl-des-kantonsrates-vom-22-maerz-2020-in-der-gemeinde>)
+- [Kantonsratswahlen 2020 Kanton St.Gallen](<https://wab.sg.ch/elections/erneuerungswahl-der-mitglieder-des-kantonsrates-2020>)
+- [Landratswahlen 2019 Kanton Basel-Landschaft](<https://abstimmungen.bl.ch/elections/landratswahlen-2019>)
 
 
 ---
