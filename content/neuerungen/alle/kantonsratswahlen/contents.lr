@@ -28,7 +28,7 @@ Die OneGov Cloud stützt sich beim Datenmodell für Wahlen und Abstimmungen auf 
 
 ## Kantonale Parlamentswahlen
 
-Kantonale Parlamentswahlen unterscheiden sich im Vergleich zu einfachen Wahlen dadurch, dass es sich um einen Verbund einzelner Proportswahlen auf einer tieferen Stufe handelt. Für die Mandatsverteilung wird das Gesamtergebnis der verbundenen Wahlen aggregiert. Je nach Kanton finden die einzelnen Wahlen in einem unterschiedlichen Einflussbereich statt, wobei es im Kanton Basel-Landschaft sogar noch eine zusätzliche Stufe gibt:
+Kantonale Parlamentswahlen unterscheiden sich im Vergleich zu einfachen Wahlen dadurch, da es sich um einen Verbund einzelner Proportswahlen auf einer tieferen Stufe handelt. Für die Mandatsverteilung wird das Gesamtergebnis der verbundenen Wahlen aggregiert. Je nach Kanton finden die einzelnen Wahlen in einem unterschiedlichen Einflussbereich statt, wobei es im Kanton Basel-Landschaft sogar noch eine zusätzliche Stufe gibt:
 
 
 |                   | BL                   | GR                   | SG                     | SZ         | ZG         |
