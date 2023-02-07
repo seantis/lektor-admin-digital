@@ -1,0 +1,32 @@
+title: OneGov GEVER API
+---
+pub_date: 2023-02-08
+---
+author: Cyrill Küttel
+---
+release: 2023.6
+---
+description: Die OneGov GEVER API ermöglicht die nahtlose Anbindung an GEVER Systeme.
+---
+body:
+
+Mit der neuen Komponente `onegov.gever` wurde eine Anbindung an GEVER Systeme realisiert.
+Neu gibt es die Option «Hochladen auf GEVER», die auf einem Ticket angezeigt wird.
+Ein Ticket kann mit dieser Option schnell und unkompliziert an ein GEVER System hochgeladen werden.
+Die PDF-Version dieses Tickets wird on-the-fly generiert und anschliessend hochgeladen.
+
+![Gever_Action_bar](gever-action-bar.png)
+
+Voraussetzung dafür ist, dass die API-Credentials in den Einstellungen hinterlegt werden. Dieser Schritt ist einmalig notwendig:
+
+![Gever](gever-settings.png)
+
+Sobald die API-Credentials gespeichert sind, können aus der OneGov Cloud beliebig Dokumente hochgeladen werden.
+Diese werden dann an den GEVER-Endpunkt geschickt.
+
+Dort angelangt, kann das Dokument dann weiter zugeordnet werden. Der Eingangskorb von GEVER bietet sich hierfür an.
+
+
+
+---
+apps: town6
