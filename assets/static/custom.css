@@ -50,7 +50,7 @@ header .navbar {
 .customers {
     margin: 50px 0 0 0;
     padding: 50px 0;
-    background: #F8F9FA
+    background: #f3f2ef
 }
 
 .custom-carousel-item a {
@@ -126,6 +126,14 @@ a.start {
 
 .faq .accordion .accordion-item .accordion-header .accordion-button {
     letter-spacing: 0;
+}
+
+.featured2 .featured-content .featured-single {
+    background: #f3f2ef;
+}
+
+.featured-section .featured-content .featured-single .paragraph-regular {
+    color: rgb(85, 85, 85);
 }
 
 .featured6 .featured-content .featured-single .heading-6 {
