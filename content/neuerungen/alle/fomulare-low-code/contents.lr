@@ -14,7 +14,7 @@ body:
 
 Digitale Formulare ein zentrales Kernelemente jeder E-Government Plattform. Für die Definition von Formularen setzt admin.digital seit Beginn auf Low Code. Unsere Eigenentwicklung zur Erstellung von Formularen nennen wir FormCode.
 
-### Definition in FormCode 
+## Definition in FormCode 
 
 Die Erstellung bzw. Definition von Formularen wird bei anderen Softwarelösungen meist über komplizierte Benutzeroberflächen realisiert. Das funktioniert gut für einfache Formulare: man verschiebt ein paar Felder in eine Box und schon steht das eigene Formular. WYSIWYG (What you see is what you get) nennt man dies im Jargon.
 
@@ -22,7 +22,7 @@ Die Erstellung bzw. Definition von Formularen wird bei anderen Softwarelösungen
 
 Für Benutzer ohne Erfahrung mag dies gut sein, für Fortgeschrittene aber ist es aber ein eher mühsamer Prozess. Trotz Erfahrung wird man nicht schneller im Erstellen von Formularen. Auch fehlt meist die Möglichkeit das ganze Formular oder einen Teil davon in ein anderes Formular zu kopieren.
 
-### Snippets als Vorlagen
+## Snippets als Vorlagen
 
 Unsere Erfahrung zeigt, dass die Benutzer mit FormCode zur Definition von Formularen sehr gut zurechtkommen. Anhand der Beispiele, welche wir mitliefern, wurden selbständig Formulare erstellt. 
 
