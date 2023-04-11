@@ -1,0 +1,35 @@
+title: FormCode – Formulare mit Low Code
+---
+pub_date: 2023-03-07
+---
+author: Fabian Reinhard 
+---
+release: 
+---
+description: FormCode ermöglicht die Definition von digitalen Formularen in Low-Code.
+---
+body:
+
+«Low Code» oder «No Code» haben sich zu vielversprechenden Werkzeugen für die digitale Transformation von Geschäftsprozessen entwickelt. Diese Plattformen ermöglichen es auch Benutzern ohne Programmierkenntnisse, einfach Anwendungen eigenständig zu realisieren. 
+
+Digitale Formulare sind ein zentrales Kernelemente jeder E-Government Plattform. Für die Definition von Formularen setzt admin.digital seit Beginn auf Low Code. Unsere Eigenentwicklung zur Erstellung von Formularen heisst FormCode.
+
+## Definition in FormCode 
+
+Die Erstellung bzw. Definition von Formularen wird bei anderen Softwarelösungen meist über komplizierte Benutzeroberflächen realisiert. Das funktioniert gut für einfache Formulare: man verschiebt ein paar Felder in eine Box und schon steht das eigene Formular. WYSIWYG (What you see is what you get) nennt man dies im Jargon.
+
+![Definitition in FormCode](definitition.png)
+
+Für Benutzer ohne Erfahrung mag dies gut sein, für Fortgeschrittene aber ist es aber ein eher mühsamer Prozess. Trotz Erfahrung wird man nicht schneller im Erstellen von Formularen. Auch fehlt meist die Möglichkeit das ganze Formular oder einen Teil davon in ein anderes Formular zu kopieren.
+
+## Snippets als Vorlagen
+
+Unsere Erfahrung zeigt, dass die Benutzer mit FormCode zur Definition von Formularen sehr gut zurechtkommen. Anhand der Beispiele, welche wir mitliefern, wurden selbständig Formulare erstellt. 
+
+![Snippets für FormCode](snippets.png)
+
+Für die Definition von Formularen kann der Benutzer auf eine Sammlung von Vorlagen zurückgreifen. Dies ermöglicht das Zusammen-Klicken von Formularen, ohne dass das Know-How von Formcode verloren geht. Ein versierter Benutzer mit etwas Übung wird den Code weiter direkt tippen und arbeitet so effizienter. Ein neuer Benutzer kann dank der Snippets selbstständig neue Formulare erstellen.
+
+
+---
+apps: town6
