@@ -2,7 +2,7 @@ a {
     color: #dc0018;
 }
 
-p a, ul li a, ul li {
+p a, ul li a, ul li, sup {
     font-weight: normal;
 }
 
