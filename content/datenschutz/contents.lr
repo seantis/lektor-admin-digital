@@ -82,7 +82,8 @@ Tranparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschutz
         </tr>
     </tbody>
 </table>
-
+- <sup>1</sup> BCrypt+SHA256
+- <sup>2</sup> Es werden keine sensitiven personenbezogenen Daten per E-Mail versandt.
 
 
 ## Cookies Analytics
