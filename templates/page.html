@@ -1,6 +1,16 @@
 {% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
-{% block body %}
-  <h2>{{ this.title }}</h2>
-  {{ this.body }}
+{% block content %}
+
+    <section class="page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-6 page">
+                    <a href="#"><h2 class="heading-2">{{ this.title }}</h2></a>
+                    <p class="paragraph-medium lead">{{ this.description }}</p>
+                    <p class="paragraph-medium">{{ this.body }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 {% endblock %}

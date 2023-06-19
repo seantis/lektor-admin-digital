@@ -2,7 +2,7 @@ a {
     color: #dc0018;
 }
 
-p a, ul li a {
+p a, ul li a, ul li {
     font-weight: normal;
 }
 
@@ -207,12 +207,18 @@ footer {margin-top: 100px;}
     margin-bottom: 40px !important;
 }
 
-.blog-section p, .blog-section ul li, .blog-section p a {
+.blog-section p, 
+.blog-section ul li, 
+.blog-section p a,
+.page p, 
+.page ul li, 
+.page p a {
     font-size: 18px;
     line-height: 1.5;
 }
 
-.blog-section h2 {
+.blog-section h2,
+.page h2 {
     font-weight: 700;
     margin-top: 2rem;
 }
@@ -225,7 +231,8 @@ footer {margin-top: 100px;}
    hyphens: auto;
 }
 
-.blog-section .paragraph-medium {
+.blog-section .paragraph-medium,
+.page .paragraph-medium {
     margin-bottom: 30px;
 }
 
@@ -252,29 +259,29 @@ em {
     font-size: 18px;
 }
 
-.blog-section table {
+table {
     margin-bottom: 40px;
 }
 
-.blog-section thead {
+thead {
      background-color: #F1F3F5;
 }
 
-.blog-section th {
+th {
     font-weight: 700;
     padding: 15px 20px;
 }
 
-.blog-section table {
+table {
     width: 100%;
 }
 
-.blog-section td {
+td {
     font-weight: 400;
     padding: 15px 5px;
 }
 
-.blog-section td, .blog-section th {
+td, th {
     border: 1px solid #dbdbdb;
     border-width: 0 0 1px;
     vertical-align: top;
