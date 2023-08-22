@@ -4,7 +4,7 @@ pub_date: 2023-08-22
 ---
 author: Cyrill Küttel
 ---
-release: 2022.43
+release: 2022.36
 ---
 description: Die OneGov Cloud API ermöglicht eine Authentifizierung für Nutzer, die auf das Rate Limit gestossen sind.
 ---
