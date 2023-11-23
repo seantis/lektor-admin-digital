@@ -16,14 +16,14 @@ Qualität und Informationssicherheit gehören seit der Gründung zu unseren Grun
 
 Können wir damit also für Informationssicherheit garantieren? Leider nein, in der IT-Sicherheit gibt es keine Garantien. Sicherheit ist kein Zustand, sondern ein Prozess. Wir setzen auf eine Vielzahl von technischen und organisatorischen Massnahmen um einen bestmöglichen Schutz sensitiver Daten sicherzustellen.
 
+- 2-Faktor Authentifizierung ([YubiKey](https://www.admin.digital/neuerungen/alle/yubikey/))
 - Verschlüsselung (TLS 256bit Encryption)
 - Netzerksicherheit (Firewalls / Network Security)
-- 2-Faktor Authentifizierung (YubiKey)
 - Intrusion Detection System (Fail2ban)
 - Zugriffskontrolle (Role Based Access Control)
 - Datenmaskierung und Anonymisierung (Logfiles / Analytics)
 - Aktive Systemüberwachung (System Monitoring)
-- Regelmässige Updates (Update / Patch Management)
+- Regelmässige Updates (Release / Patch Management)
 - Automatische Scans auf Schwachstellen (Vulnerability Scans)
 - Backups mit Wiederherstellungstests ([Offsite / Airgrap Backup](https://www.seantis.ch/services/))
 - Schulung und Traning für Mitabeitende (z.B. [Tabletop-Übung](https://www.seantis.ch/blog/wir-proben-den-ernstfall-ransomware/))
