@@ -12,6 +12,25 @@ body: Über die Plattform admin.digital werden sensible Daten übertragen und ve
 
 Qualität und Informationssicherheit gehören seit der Gründung zu unseren Grundwerten. Seit 2021 führen wir ein nach ISO/IEC 27001:2013 zertifiziertes [Informationssicherheitsmanagementsystem (ISMS)](https://seantis.ch/portrait/informationssicherheit-iso-27001/). ISO 27001 ist eine internationale Norm für Informationssicherheit. Die Norm beschreibt die Anforderungen für den Aufbau, den Betrieb sowie die laufende Optimierung eines dokumentierten Informationssicherheits-Managementsystems (ISMS). Die Einhaltung der Norm wird in jährlichen Audits überprüft.
 
+## Technische und organisatorische Massnahmen
+
+Können wir damit also für Informationssicherheit garantieren? Leider nein, in der IT-Sicherheit gibt es keine Garantien. Sicherheit ist kein Zustand, sondern ein Prozess. Wir setzen nicht auf eine Vielzahl von technischen und organsatorischen Massnahmen um eine bestmöglichen Schutz sensitiver Daten sicherzustellen.
+
+- Verschlüsselung (TLS 256bit Encryption)
+- Netzerksicherheit (Firewalls / Network Security)
+- 2-Faktor Authentifizierung (YubiKey)
+- Intrusion Detection System (Fail2ban)
+- Zugriffskontrolle (Role Based Access Control)
+- Datenmaskierung und Anonymisierung (Logfiles / Analytics)
+- Aktive Systemüberwachung (System Monitoring)
+- Regelmässige Updates (Update / Patch Management)
+- Automatische Scans auf Schwachstellen (Vulnerability Scans)
+- Backups mit Wiederherstellungstests ([Offsite / Airgrap Backup](https://www.seantis.ch/services/))
+- Schulung und Traning für Mitabeitende (z.B. [Tabletop-Übung](https://www.seantis.ch/blog/wir-proben-den-ernstfall-ransomware/))
+- Meldestelle für Schwachstellen ([Vulnerability Disclosure Policy](https://www.seantis.ch/blog/vulnerability-disclosure-policy/))
+- Hochstrukturierte Softwareauslieferung ([DevOps](https://www.seantis.ch/blog/infrastructure-as-code/))
+- Regelmässige Penetration Testing ([White Hat Hacker](https://www.seantis.ch/blog/white-hat-hacker-penetration-testing/))
+
 ## Datenschutzstufen
 Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschutz. Gemäss Datenschutzkonzept wird zwischen folgenden Datenschutzstufen unterschieden.
 
@@ -72,6 +91,13 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
             <td>1</td>
             <td><a href="https://www.exoscale.ch" target="_blank">Exoscale</a>, <a href="https://postmarkapp.com" target="_blank">Postmark</a></td>
             <td>CH, USA</td>
+        </tr>
+        <tr>
+            <td>SMS</td>
+            <td>mTan (OTP)</td>
+            <td>3</td>
+            <td><a href="https://www.aspsms.ch" target="_blank">VADIAN.NET AG</a></td>
+            <td>CH</td>
         </tr>
         <tr>
             <td>Publizierter Webinhalt</td>
