@@ -30,6 +30,7 @@ Können wir damit also für Informationssicherheit garantieren? Leider nein, in 
 - Meldestelle für Schwachstellen ([Vulnerability Disclosure Policy](https://www.seantis.ch/blog/vulnerability-disclosure-policy/))
 - Hochstrukturierte Softwareauslieferung ([DevOps](https://www.seantis.ch/blog/infrastructure-as-code/))
 - Regelmässige Penetration Testing ([White Hat Hacker](https://www.seantis.ch/blog/white-hat-hacker-penetration-testing/))
+- Datensparsamkeit ([Data Retension Policy](https://www.admin.digital/neuerungen/alle/datensparsamkeit/))
 
 ## Datenschutzstufen
 Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschutz. Gemäss Datenschutzkonzept wird zwischen folgenden Datenschutzstufen unterschieden.
