@@ -14,7 +14,7 @@ Qualität und Informationssicherheit gehören seit der Gründung zu unseren Grun
 
 ## Technische und organisatorische Massnahmen
 
-Können wir damit also für Informationssicherheit garantieren? Leider nein, in der IT-Sicherheit gibt es keine Garantien. Sicherheit ist kein Zustand, sondern ein Prozess. Wir setzen nicht auf eine Vielzahl von technischen und organsatorischen Massnahmen um eine bestmöglichen Schutz sensitiver Daten sicherzustellen.
+Können wir damit also für Informationssicherheit garantieren? Leider nein, in der IT-Sicherheit gibt es keine Garantien. Sicherheit ist kein Zustand, sondern ein Prozess. Wir setzen auf eine Vielzahl von technischen und organisatorischen Massnahmen um einen bestmöglichen Schutz sensitiver Daten sicherzustellen.
 
 - Verschlüsselung (TLS 256bit Encryption)
 - Netzerksicherheit (Firewalls / Network Security)
@@ -110,6 +110,7 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
 </table>
 <p><sup>1</sup> BCrypt+SHA256<br>
 <sup>2</sup> Es werden keine sensitiven personenbezogenen Daten per E-Mail versandt.</p>
+
 
 
 ## Cookies Analytics
