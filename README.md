@@ -8,3 +8,5 @@ Installation
 Run the server
 
     venv/bin/lektor server
+
+Preview the contents on `http://localhost:5000/

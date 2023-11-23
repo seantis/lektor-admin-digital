@@ -1,0 +1,51 @@
+title: API Authentifizierung
+---
+pub_date: 2023-08-22
+---
+author: Cyrill Küttel
+---
+release: 2022.36
+---
+description: Die OneGov Cloud API ermöglicht eine Authentifizierung für Nutzer, die auf das Rate Limit gestossen sind.
+---
+body:
+
+Die Komponente `onegov.api` wurde um einen Authentifizierungs-Flow erweitert.
+Dieser erleichtert den Umgang für den maschinenlesbare Zugriff: für authentifizierte Nutzer ist nämlich das Rate Limit aufgehoben.
+
+Die OneGov Cloud API setzt hierbei auf eine token-basierte Authentifizierung.
+
+
+![Erstellen eines Schlüssels](og_image.png)
+
+Die Authentisierung der Requests erfolgt mittels kurzlebigen Access-Tokens.
+
+1. Auf der Website kann unter `Einstellungen/OneGov API` ein neuer Schlüssel erstellt werden. Der Name des Schlüssels kann beliebig sein.
+
+2. In einen zweiten Schritt kann ein Token generiert werden. Dabei wird ein Request mit dem soeben erstellten Schlüssel abgesendet:
+
+
+<pre><code class="language-shell">curl -u 659912a7-0fa6-4906-aebd-c7aeb813fcff: \
+URL/api/authenticate
+</code></pre>
+
+
+Die Nummer _659912a7-0fa6-4906-aebd-c7aeb813fcff_ ist der Applikations-Schlüssel, mit dem das Token gelöst wird.
+
+Beispielhafte Response:
+
+<pre><code class="language-json">
+{
+    "token":"eyJhbGciOiJIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRhZmJiZGY1LZWNkNDUzZSIsImlhdCI6MTY5MjYzMjQ5MCwiZXhwIjoxNjkyNjM2MDkwfQ.9T5Sk2G9AK7JyUtEF5QU5pIyxnZDGzvJOcDwA_sA0joPcfN3oi9a7lQuKgdSaYShgrA"}
+}
+</code></pre>
+
+*Beispielhafte Response*
+
+
+Schliesslich wird dieses Access-token in jedem Request mitgeschickt.
+
+[Die offizielle Dokumentation](https://docs.onegovcloud.ch/api/api#authorization) beschreibt das Ganze noch in mehr Detail.
+
+---
+apps: staatskalender

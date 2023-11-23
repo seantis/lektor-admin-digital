@@ -1,0 +1,35 @@
+title: Datensparsamkeit
+---
+pub_date: 2023-10-31
+---
+author: Cyrill Küttel
+---
+release: 2023.55
+---
+description: Neues Feature: Automatische Archivierung und Löschung von Tickets
+---
+body:
+
+
+Mit dem neusten Release können Tickets nach einer bestimmten Zeit automatisch archiviert und, falls gewünscht, automatisch gelöscht werden.
+
+## Motivation
+
+Das neue Datenschutzgesetz der Schweiz (DSG) legt grossen Wert auf Transparenz, Kontrolle und Sicherheit der persönlichen Daten.
+Unsere neue Funktion der Datensparsamkeit ist in voller Übereinstimmung mit diesen Prinzipien.
+Dadurch kann sichergestellt werden, dass die Daten nur so lange wie nötig gespeichert werden. Dies entspricht dem Grundsatz der Datenminimierung.
+
+## So aktivieren Sie das Feature
+
+In den Einstellungen kann unter *Datensparsamkeit* der Zeitrahmen für das automatische Löschen und Archivieren von Tickets festgelegt werden.
+
+![Data Retention policy](og_image.png)
+
+## Vorteile
+- Maximale Kontrolle: Sie bestimmen, was mit Ihren Daten passiert
+- Keine Altlasten: Automatische Löschungen verhindern die Ansammlung veralteter Informationen
+
+
+
+---
+apps: town6
