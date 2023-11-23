@@ -59,6 +59,14 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
             <td>CH</td>
         </tr>
         <tr>
+            <td>SMS</td>
+            <td>mTan (OTP)</td>
+            <td>3</td>
+            <td><a href="https://www.aspsms.ch" target="_blank">VADIAN.NET AG</a></td>
+            <td>CH</td>
+        </tr>
+        <tr>
+        <tr>
             <td>Online-Formular</td>
             <td>Datenbank</td>
             <td>2</td>
@@ -93,14 +101,6 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
             <td><a href="https://www.exoscale.ch" target="_blank">Exoscale</a>, <a href="https://postmarkapp.com" target="_blank">Postmark</a></td>
             <td>CH, USA</td>
         </tr>
-        <tr>
-            <td>SMS</td>
-            <td>mTan (OTP)</td>
-            <td>3</td>
-            <td><a href="https://www.aspsms.ch" target="_blank">VADIAN.NET AG</a></td>
-            <td>CH</td>
-        </tr>
-        <tr>
             <td>Publizierter Webinhalt</td>
             <td>Datenbank, Suchindex</td>
             <td>0</td>
