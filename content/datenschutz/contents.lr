@@ -18,7 +18,7 @@ Können wir damit also für Informationssicherheit garantieren? Leider nein, in 
 
 - 2-Faktor Authentifizierung ([YubiKey](https://www.admin.digital/neuerungen/alle/yubikey/))
 - Verschlüsselung (TLS 256bit Encryption)
-- Netzerksicherheit (Firewalls / Network Security)
+- Netzwerksicherheit (Firewalls / Network Security)
 - Intrusion Detection System (Fail2ban)
 - Zugriffskontrolle (Role Based Access Control)
 - Datenmaskierung und Anonymisierung (Logfiles / Analytics)
@@ -26,7 +26,7 @@ Können wir damit also für Informationssicherheit garantieren? Leider nein, in 
 - Regelmässige Updates (Release / Patch Management)
 - Automatische Scans auf Schwachstellen (Vulnerability Scans)
 - Backups mit Wiederherstellungstests ([Offsite / Airgrap Backup](https://www.seantis.ch/services/))
-- Schulung und Traning für Mitabeitende (z.B. [Tabletop-Übung](https://www.seantis.ch/blog/wir-proben-den-ernstfall-ransomware/))
+- Schulung und Training für Mitabeitende (z.B. [Tabletop-Übung](https://www.seantis.ch/blog/wir-proben-den-ernstfall-ransomware/))
 - Meldestelle für Schwachstellen ([Vulnerability Disclosure Policy](https://www.seantis.ch/blog/vulnerability-disclosure-policy/))
 - Hochstrukturierte Softwareauslieferung ([DevOps](https://www.seantis.ch/blog/infrastructure-as-code/))
 - Regelmässige Penetration Testing ([White Hat Hacker](https://www.seantis.ch/blog/white-hat-hacker-penetration-testing/))
