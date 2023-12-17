@@ -4,9 +4,9 @@ _model: Page
 title: Datenschutz und Informationssicherheit
 ---
 
-description: admin.digital legt grössten Wert auf die Sicherheit und den Schutz sensibler Daten.
+description: admin.digital legt grössten Wert auf die Sicherheit und den Schutz schützenswerter Daten.
 ---
-body: Über die Plattform admin.digital werden sensible Daten übertragen und verarbeitet. Gemäss Schutzstufen werden die Daten mit den adäquaten Mechanismen geschützt. Auch die Datenspeicherung und der Ort der Datenhaltung richten sich nach den Schutzanforderungen.
+body: Über die Plattform admin.digital werden schützenswerte Daten übertragen und verarbeitet. Gemäss Schutzstufen werden die Daten mit den adäquaten Mechanismen geschützt. Auch die Datenspeicherung und der Ort der Datenhaltung richten sich nach den Schutzanforderungen.
 
 ## Zertifizierung ISO/IEC 27001:2013
 
@@ -14,7 +14,7 @@ Qualität und Informationssicherheit gehören seit der Gründung zu unseren Grun
 
 ## Technische und organisatorische Massnahmen
 
-Können wir damit also für Informationssicherheit garantieren? Leider nein, in der IT-Sicherheit gibt es keine Garantien. Sicherheit ist kein Zustand, sondern ein Prozess. Wir setzen auf eine Vielzahl von technischen und organisatorischen Massnahmen um einen bestmöglichen Schutz sensitiver Daten sicherzustellen.
+Können wir damit also für Informationssicherheit garantieren? Leider nein, in der IT-Sicherheit gibt es keine Garantien. Sicherheit ist kein Zustand, sondern ein Prozess. Wir setzen auf eine Vielzahl von technischen und organisatorischen Massnahmen um einen bestmöglichen Schutz schützenswerter Daten sicherzustellen.
 
 - 2-Faktor Authentifizierung ([YubiKey](https://www.admin.digital/neuerungen/alle/yubikey/))
 - Verschlüsselung (TLS 256bit Encryption)
@@ -110,10 +110,16 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
     </tbody>
 </table>
 <p><sup>1</sup> BCrypt+SHA256<br>
-<sup>2</sup> Es werden keine sensitiven personenbezogenen Daten per E-Mail versandt.</p>
+<sup>2</sup> Es werden keine schützenswerten personenbezogenen Daten per E-Mail versandt.</p>
 
 
 
 ## Cookies Analytics
 
 Zur Analyse des Nutzungsverhaltens wird die Open Source Analytics Software [Matomo](https://matomo.org) eingesetzt. Die Software wird auf der eigenen Infrastruktur von admin.digital betrieben und es werden keine Daten mit Drittfirmen geteilt.
+
+
+
+## Datenschutzerklärung
+
+admin.digital wird durch die Firma [Seantis GmbH](https://www.seantis.ch) entwickelt und als Software as a Service angeboten. Es gilt daher die [Datenschutzerklärung der Seantis GmbH](https://www.seantis.ch/datenschutzerklaerung/).
