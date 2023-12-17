@@ -212,6 +212,7 @@ footer {margin-top: 100px;}
 .blog-section p a,
 .page p, 
 .page ul li, 
+.page ul li a, 
 .page p a {
     font-size: 18px;
     line-height: 1.5;
