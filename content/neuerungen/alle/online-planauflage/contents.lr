@@ -14,6 +14,8 @@ Als Beispiel für die öffentliche Planauflauflage von Baugesuchen dienen die ge
 
 > «Die Gemeinde hat Baugesuche gleichzeitig ortsüblich, im Internet und – falls erforderlich – in anderer Form, insbesondere im Kantonsblatt, öffentlich bekannt zu machen. Das Baugesuchsformular ist mit sämtlichen Plänen und Beilagen während der öffentlichen Auflage passwortgeschützt im Internet zur Einsicht bereitzustellen. Die Gemeinde hat das Passwort auf individuelle Anfrage hin bekannt zu geben.»
 
+![og_image](og_image.png)
+
 Die Auflage soll öffentlich sein, gleichzeitig muss aber verhindert werden, dass automatisierte Abfragen möglich sind. Entsprechend dieser Vorgabe wurde der Publikationsprozess für die Online-Planauflage realisiert.
 
 - Bauvorhaben werden als Einträge in einem Verzeichnis mit allen zugehörigen Informationen strukturiert erfasst.
@@ -28,7 +30,7 @@ Für den Zugriffsschutz wird eine Authentifizierung per SMS OTP (Einmalcode) ent
 
 - Der Besucher möchte die Detailinformation zu einem Baugesuch einsehen. 
 - Der Besucher muss seine Mobilnummer eingeben.
-- An die Mobilnummer des Benutzers wird einen SMS mit einem Einmal-Code verschickt.
+- An die Mobilnummer des Benutzers wird eine SMS mit einem Einmal-Code verschickt.
 - Nach der Eingabe des Einmal-Codes erhält der Benutzer Zugriff auf die Informationen.
   - Beschränkung auf 10 Zugriffe pro Mobilnummer pro Tag.
   - Die Session des Benutzers läuft nach 5 Tagen (Max 50 Zugriffe ab).
@@ -38,4 +40,4 @@ Für den Zugriffsschutz wird eine Authentifizierung per SMS OTP (Einmalcode) ent
 Gemeinsam mit den Luzerner Gemeinden Meggen und Ebikon hat seantis ein Modul für die öffentliche Planauflage entwickelt. Unsere Lösung durften an einer Informationsveranstaltung des VLGI anfangs November 2023 präsentieren. Diese ist auf grosses Interesse gestossen und bereits einen Monat später war die Publikationsplattform in 14 Gemeinden des Kantons Luzern eingeführt. Diese Gemeinden erfüllen damit die neuen Vorgaben des Kantons für die datenschutzkonforme Publikation von Baugesuchen im Internet.
 
 ---
-apps: town6
+apps: town
