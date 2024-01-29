@@ -1,0 +1,28 @@
+title: Chat-Funktion
+---
+pub_date: 2024-01-16
+---
+author: Chantal Trutmann
+---
+release: 2024.2
+---
+description: Neu gibt es eine Chat-Funktion in der OnegovCloud!
+---
+body:
+
+Die OnegovCloud wurde um eine Chat-Funktion erweitert. Diese wurde von der Gemeinde Meggen vier Wochen lang getestet und steht nun allen weiteren interessierten Gemeinden zur Verfügung. Sie lässt sich in den Einstellungen unter "Chat" aktivieren.
+
+Dieser neue Kommunikationskanal ermöglicht es den Einwohnern, schnell und unkompliziert Informationen zu erhalten, Anfragen zu stellen und Anliegen zu besprechen.
+
+## Vorteile für Gemeinde und Kunden
+
+Durch die Positionierung eines Chats zwischen synchroner und asynchroner Kommunikation können die Vorteile beider Varianten übernommen werden. Die Antwortezeit bei einem Chat ist kürzer als bei einem E-Mail. Es können wie bei einem Anruf Informationen schnell ausgetauscht werden, trotzdem wird ein Gesprächsprotokoll erstellt und am Ende per E-Mail versandt. Die Chat-Funktion ermöglicht es mehrere Chats gleichzeitig zu führen. So kann bereits ein weiteres Anliegen beantwortet werden während auf die Antwort eines anderen Kunden gewartet wird.
+
+## Integration in das Ticketsystem 
+
+Sollte ein Chat-Anliegen nicht gleich beantwortet werden können, sondern benötigt weitere Abklärungen kann aus dem Chat ganz einfach per Knopfdruck ein Ticket erstellt werden. Damit wird der Chat-Verlauf dem Kunden gesendet und dem automatisch erstellten Ticket angehängt.
+
+![Chatverlauf in Ticket](ticket.png)
+
+---
+apps: town6
