@@ -55,7 +55,7 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
             <td>Passwort</td>
             <td>Datenbank<sup>1</sup></td>
             <td>3</td>
-            <td><a href="https://www.exoscale.ch" target="_blank">Exoscale</a></td>
+            <td><a href="https://www.exoscale.ch" target="_blank">Exoscale Akenes SA</a> / <a href="https://www.cloudscale.ch" target="_blank">cloudscale.ch AG</a></td>
             <td>CH</td>
         </tr>
         <tr>
@@ -70,21 +70,21 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
             <td>Online-Formular</td>
             <td>Datenbank</td>
             <td>2</td>
-            <td><a href="https://www.exoscale.ch" target="_blank">Exoscale</a></td>
+           <td><a href="https://www.exoscale.ch" target="_blank">Exoscale Akenes SA</a> / <a href="https://www.cloudscale.ch" target="_blank">cloudscale.ch AG</a></td>
             <td>CH</td>
         </tr>
         <tr>
             <td>Ticket</td>
             <td>Datenbank, Suchindex</td>
             <td>2</td>
-            <td><a href="https://www.exoscale.ch" target="_blank">Exoscale</a></td>
+           <td><a href="https://www.exoscale.ch" target="_blank">Exoscale Akenes SA</a> / <a href="https://www.cloudscale.ch" target="_blank">cloudscale.ch AG</a></td>
             <td>CH</td>
         </tr>
         <tr>
             <td>Versteckter Webinhalt</td>
             <td>Datenbank, Suchindex</td>
             <td>2</td>
-            <td><a href="https://www.exoscale.ch" target="_blank">Exoscale</a></td>
+           <td><a href="https://www.exoscale.ch" target="_blank">Exoscale Akenes SA</a> / <a href="https://www.cloudscale.ch" target="_blank">cloudscale.ch AG</a></td>
             <td>CH</td>
         </tr>
         <tr>
@@ -104,7 +104,7 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
             <td>Publizierter Webinhalt</td>
             <td>Datenbank, Suchindex</td>
             <td>0</td>
-            <td><a href="https://www.exoscale.ch" target="_blank">Exoscale</a></td>
+           <td><a href="https://www.exoscale.ch" target="_blank">Exoscale Akenes SA</a> / <a href="https://www.cloudscale.ch" target="_blank">cloudscale.ch AG</a></td>
             <td>CH</td>
         </tr>
     </tbody>
