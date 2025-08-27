@@ -1,0 +1,30 @@
+title: Kanton Zug setzt auf Open-Source für Raumreservationen
+---
+
+pub_date: 2025-07-11
+---
+author: seantis
+---
+description: Die Zuger Gemeinden führen gemeinsam mit dem Kanton ein einheitliches Online-Reservationstool für Räume und Infrastrukturen ein. Die auf der Open-Source-Plattform admin.digital basierende Lösung wird in den kommenden Monaten schrittweise in allen Gemeinden ausgerollt.
+---
+
+body:  
+
+Im Rahmen des Projekts 11+1 der Zuger Kantons- und Gemeindeverwaltungen (IGI Zug) werden die Webportale der Zuger Gemeinden auf eine einheitliche digitale Plattform überführt. Diese zentrale Lösung wird gezielt für die spezifischen Anforderungen von Ämtern, Schulen und Gemeinden erweitert. Ein zentrales Bedürfnis ist dabei die Einführung eines gemeinsamen Reservationssystems für Räume und Infrastrukturen.
+
+## Bewährte Applikation für Online-Reservationen
+
+Die bereits im Kanton Zug erfolgreich eingesetzte Applikation für Online-Reservationen wird im Rahmen des Projekts auf weitere Gemeinden ausgerollt. Die Lösung basiert auf der Open-Source-Software von admin.digital und ermöglicht eine flexible, nachhaltige und gemeinschaftlich weiterentwickelbare digitale Infrastruktur. Neben dem technischen Rollout für zusätzliche Mandanten werden auch funktionale Erweiterungen umgesetzt, die aus einer vertieften Bedarfsanalyse im Projekt 11+1 hervorgegangen sind.
+
+## Hoher Sicherheitsstandard und Funktionsumfang
+
+Mit dem Online-Reservationstool der Plattform admin.digital stellt seantis eine bewährte Lösung mit hohen Sicherheitsstandards und Verfügbarkeit bereit. Das System bietet eine einheitliche Anwendung für Kanton, Schulen und Gemeinden. Bestehende Mandanten des bisherigen Reservationstools können ohne Migration und mit erweitertem Funktionsumfang in die neue Plattform überführt werden. Zudem umfasst das Projekt automatisierte Datenmigrationen bestehender Reservationen.
+
+## Einführung in den Gemeinden
+
+Nach dem erfolgreichen Go-Live in der Stadt Zug folgen in den kommenden Monaten die Rollouts in den weiteren Zuger Gemeinden.
+
+![Staatskalender Kanton Luzern](og_image.png)
+
+- Raumreservationen Stadt Zug: https://tools.stadtzug.ch
+- Plattform admin.digital: https://admin.digital
