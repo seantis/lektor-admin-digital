@@ -59,6 +59,14 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
             <td>CH</td>
         </tr>
         <tr>
+        <tr>
+            <td>Zahlungsmitttel</td>
+            <td>Payment Gateway<sup>2</sup></td>
+            <td>3</td>
+            <td><a href="https://www.datatrans.ch" target="_blank">Datatrans</a> / <a href="https://www.stripe.com" target="_blank">Stripe</a> / <a href="https://worldline.com" target="_blank">Wordline</a></td>
+            <td>CH / USA / Global</td>
+        </tr>
+        <tr>
             <td>SMS</td>
             <td>mTAN (OTP)</td>
             <td>3</td>
@@ -89,14 +97,14 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
         </tr>
         <tr>
             <td>E-Mail Newsletter</td>
-            <td>Datenbank, E-Mail-Versand<sup>2</sup></td>
+            <td>Datenbank, E-Mail-Versand<sup>3</sup></td>
             <td>1</td>
             <td><a href="https://www.exoscale.ch" target="_blank">Exoscale</a>, <a href="https://postmarkapp.com" target="_blank">Postmark</a></td>
             <td>CH, USA</td>
         </tr>
         <tr>
             <td>E-Mail Ticket</td>
-            <td>Datenbank, E-Mail-Versand<sup>2</sup></td>
+            <td>Datenbank, E-Mail-Versand<sup>3</sup></td>
             <td>1</td>
             <td><a href="https://www.exoscale.ch" target="_blank">Exoscale</a>, <a href="https://postmarkapp.com" target="_blank">Postmark</a></td>
             <td>CH, USA</td>
@@ -109,9 +117,9 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
         </tr>
     </tbody>
 </table>
-<p><sup>1</sup> BCrypt+SHA256<br>
-<sup>2</sup> Es werden keine schützenswerten personenbezogenen Daten per E-Mail versandt.</p>
-
+<p><sup>1</sup> BCrypt+SHA256</p>
+<p><sup>2</sup> Daten zu Zahlungsmitteln (Kreditkarten, TWINT, etc.) werden ausschliesslich auf den zertifizierten Plattformen der Payment-Provider gespeichert.</p>
+<p></p><sup>3</sup> Es werden standardmässig keine schützenswerten personenbezogenen Daten per E-Mail versandt.</p>
 
 
 
