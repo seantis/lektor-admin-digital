@@ -109,10 +109,18 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
             <td><a href="https://www.exoscale.ch" target="_blank">Exoscale</a>, <a href="https://postmarkapp.com" target="_blank">Postmark</a></td>
             <td>CH, USA</td>
         </tr>
+        <tr>
             <td>Publizierter Webinhalt</td>
             <td>Datenbank, Suchindex</td>
             <td>0</td>
            <td><a href="https://www.exoscale.ch" target="_blank">Exoscale Akenes SA</a> / <a href="https://www.cloudscale.ch" target="_blank">cloudscale.ch AG</a></td>
+            <td>CH</td>
+        </tr>
+        <tr>
+            <td>Chatbot</td>
+            <td>Anfragen<sup>4</sup> / Embeddings / LLM</td>
+            <td>0</td>
+          <td><a href="https://www.infomaniak.ch" target="_blank">Infomaniak Network AG</a></td>
             <td>CH</td>
         </tr>
     </tbody>
@@ -120,6 +128,9 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
 <p><sup>1</sup> BCrypt+SHA256</p>
 <p><sup>2</sup> Daten zu Zahlungsmitteln (Kreditkarten, TWINT, etc.) werden ausschliesslich auf den zertifizierten Plattformen der Payment-Provider gespeichert.</p>
 <p><sup>3</sup> Es werden standardmässig keine schützenswerten personenbezogenen Daten per E-Mail versandt.</p>
+<p><sup>4</sup> Alle Anfragen werden anonym verarbeitet und Gespräche nicht gespeichert.</p>
+
+
 
 
 
