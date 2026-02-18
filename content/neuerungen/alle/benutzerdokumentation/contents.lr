@@ -1,0 +1,19 @@
+title: Neue Benutzerdokumentation für admin.digital
+---
+
+pub_date: 2026-02-18
+---
+author: seantis
+---
+description: Unsere Anleitungen wurden neu strukturiert und übersichtlich aufgebaut. Sie sind jederzeit aktuell und konsequent auf eine schnelle und einfache Auffindbarkeit ausgerichtet.
+---
+
+body:
+
+Wir überführen unsere bestehenden Anleitungen in eine neue Online-Dokumentation. Technisch modern aufgebaut mit Markdown und der Open-Source-Software MkDocs entsteht eine strukturierte, durchsuchbare und laufend erweiterbare Wissensbasis.
+
+Handbücher haben sich grundlegend verändert: Früher waren es dicke PDFs oder gedruckte Ordner. Heute müssen Informationen schnell auffindbar, klar strukturiert und jederzeit aktualisierbar sein. Genau darauf ist unsere neue Dokumentation ausgelegt.
+
+Die Nutzung messen wir mit einem selbst gehostetem Plausible Analytics. So erkennen wir, ob und wie intensiv Inhalte verwendet werden, und können sie gezielt weiter verbessern.
+
+Das Benutzerhandbuch ist hier verfügbar: [https://docs.admin.digital](https://docs.admin.digital/)
