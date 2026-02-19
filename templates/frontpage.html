@@ -491,9 +491,14 @@
         <h2 class="heading-2" id="news">Woran wir <mark class="heading-2">aktuell</mark> arbeiten</h2>
         <div class="row">
             {% for item in site.get_root().children.get('neuerungen/alle').children.limit(2) %}
+            {% set post_image = item.attachments.images.first() %}
             <div class="col-lg-6">
                 <div class="blog-post-single">
-                    <img src="/static/images/blog/image.png" alt="img">
+                    {% if post_image %}
+                    <img src="{{ post_image|url }}" alt="{{ item.title }}">
+                    {% else %}
+                    <img src="{{ 'static/images/blog/image.png'|asseturl }}" alt="{{ item.title }}">
+                    {% endif %}
                     <div class="img-overlay">
                         <p class="button-small">{{ item.pub_date|dateformat }}</p>
                         <a href="{{ item|url }}">
