@@ -68,7 +68,25 @@
             {'src': 'static/images/customer-logos/universitaet-bern.svg', 'alt': 'Universität Bern'},
             {'src': 'static/images/customer-logos/neuenkirch.svg', 'alt': 'Gemeinde Neuenkirch'},
             {'src': 'static/images/customer-logos/gemeinde-horw.png', 'alt': 'Gemeinde Horw'},
-            {'src': 'static/images/customer-logos/meggen.png', 'alt': 'Gemeinde Meggen'}
+            {'src': 'static/images/customer-logos/meggen.png', 'alt': 'Gemeinde Meggen'},
+            {'src': 'static/images/customer-logos/baar.png', 'alt': 'Baar'},
+            {'src': 'static/images/customer-logos/berzirk-gersau.jpg', 'alt': 'Gersau SZ'},
+            {'src': 'static/images/customer-logos/stadt-zug.svg', 'alt': 'Stadt Zug'},
+            {'src': 'static/images/customer-logos/regionales-bauamt-oberseetal.svg', 'alt': 'Regionales Bauamt Oberseetal'},
+            {'src': 'static/images/customer-logos/hirzkirch.png', 'alt': 'Hitzkirch'},
+            {'src': 'static/images/customer-logos/beromuenster.svg', 'alt': 'Beromünster'},
+            {'src': 'static/images/customer-logos/weggis.svg', 'alt': 'Weggis'},
+            {'src': 'static/images/customer-logos/wolhusen.png', 'alt': 'Wolhusen'},
+            {'src': 'static/images/customer-logos/willisau.svg', 'alt': 'Willisau'},
+            {'src': 'static/images/customer-logos/rothenburg.svg', 'alt': 'Rothenburg'},
+            {'src': 'static/images/customer-logos/zell.png', 'alt': 'Zell'},
+            {'src': 'static/images/customer-logos/buchrain.png', 'alt': 'Buchrain'},
+            {'src': 'static/images/customer-logos/emmen.svg', 'alt': 'Emmen'},
+            {'src': 'static/images/customer-logos/schuepfheim.png', 'alt': 'Schüpfheim'},
+            {'src': 'static/images/customer-logos/kriens.svg', 'alt': 'Kriens'},
+            {'src': 'static/images/customer-logos/regionales-bauamt-rbs.svg', 'alt': 'Regionales Bauamt RBS'},
+            {'src': 'static/images/customer-logos/sempach.png', 'alt': 'Sempach'},
+            {'src': 'static/images/customer-logos/ruswil.jpg', 'alt': 'Ruswil'}
         ] %}
         {% set logo_sets = customer_logos|batch(12, None)|list %}
 
@@ -82,7 +100,11 @@
                                     {% if logo %}
                                         <div class="col-6 col-md-4 col-lg-2">
                                             <div class="card">
-                                                <img src="{{ logo.src|asseturl }}" alt="{{ logo.alt }}">
+                                                {% if logo.src %}
+                                                    <img src="{{ logo.src|asseturl }}" alt="{{ logo.alt }}">
+                                                {% else %}
+                                                    <span class="logo-fallback">{{ logo.alt }}</span>
+                                                {% endif %}
                                             </div>
                                         </div>
                                     {% endif %}
