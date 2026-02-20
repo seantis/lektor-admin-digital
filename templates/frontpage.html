@@ -36,177 +36,70 @@
 
 <section class="customers">
     <div class="container" data-aos="fade-up">
+        {% set customer_logos = [
+            {'src': 'static/images/customer-icons/zg.svg', 'alt': 'Kanton Zug'},
+            {'src': 'static/images/customer-icons/bs.png', 'alt': 'Kanton Basel Stadt'},
+            {'src': 'static/images/customer-icons/sg.svg', 'alt': 'Kanton St. Gallen'},
+            {'src': 'static/images/customer-icons/sz.svg', 'alt': 'Kanton Schwyz'},
+            {'src': 'static/images/customer-icons/gr.svg', 'alt': 'Kanton Graubünden'},
+            {'src': 'static/images/customer-icons/ar.svg', 'alt': 'Kanton Appenzell Ausserrhoden'},
+            {'src': 'static/images/customer-icons/gl.svg', 'alt': 'Kanton Glarus'},
+            {'src': 'static/images/customer-icons/lu.svg', 'alt': 'Kanton Luzern'},
+            {'src': 'static/images/customer-icons/ai.svg', 'alt': 'Appenzell Innerrhoden'},
+            {'src': 'static/images/customer-icons/sh.svg', 'alt': 'Kanton Schaffhausen'},
+            {'src': 'static/images/customer-icons/bl.svg', 'alt': 'Kanton Basel Landschaft'},
+            {'src': 'static/images/customer-icons/stadt-bern.svg', 'alt': 'Stadt Bern'},
+            {'src': 'static/images/customer-icons/winterthur.svg', 'alt': 'Stadt Winterhur'},
+            {'src': 'static/images/customer-icons/privatim.png', 'alt': 'privatim - Konferenz der schweizerischen Datenschutzbeauftragten'},
+            {'src': 'static/images/customer-icons/ersigen.png', 'alt': 'Gemeinde Ersigen'},
+            {'src': 'static/images/customer-icons/ebikon.png', 'alt': 'Gemeinde Ebikon'},
+            {'src': 'static/images/customer-icons/duerrenaesch.svg', 'alt': 'Gemeinde Dürrenäsch'},
+            {'src': 'static/images/customer-icons/lauerz.png', 'alt': 'Gemeinde Lauerz'},
+            {'src': 'static/images/customer-icons/neuheim.png', 'alt': 'Gemeinde Neuheim'},
+            {'src': 'static/images/customer-icons/steinhausen.png', 'alt': 'Gemeinde Steinhausen'},
+            {'src': 'static/images/customer-icons/huenenberg.png', 'alt': 'Gemeinde Hünenberg'},
+            {'src': 'static/images/customer-icons/ottenbach.png', 'alt': 'Gemeinde Ottenbach'},
+            {'src': 'static/images/customer-icons/risch-rotkreuz.png', 'alt': 'Gemeinde Risch Rotkreuz'},
+            {'src': 'static/images/customer-icons/besenbueren.png', 'alt': 'Gemeinde Besenbüren'},
+            {'src': 'static/images/customer-icons/musikschule-rontal.svg', 'alt': 'Musikschule Rontal'},
+            {'src': 'static/images/customer-icons/ph-zug.png', 'alt': 'PH Zug'},
+            {'src': 'static/images/customer-icons/pro-juventute.svg', 'alt': 'Pro Juventute'},
+            {'src': 'static/images/customer-icons/universitaet-bern.svg', 'alt': 'Universität Bern'},
+            {'src': 'static/images/customer-icons/neuenkirch.svg', 'alt': 'Gemeinde Neuenkirch'},
+            {'src': 'static/images/customer-icons/meggen.png', 'alt': 'Gemeinde Meggen'}
+        ] %}
+        {% set logo_sets = customer_logos|batch(12, None)|list %}
 
-        <div class="brand-logo text-center">
-            <div class="row align-items-center">
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/zg.svg'|asseturl }}" alt="Kanton Zug">
+        <div id="customerLogoCarousel" class="brand-logo text-center carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                {% for logo_set in logo_sets %}
+                    <div class="carousel-item{% if loop.first %} active{% endif %}">
+                        {% for logo_row in logo_set|batch(6, None) %}
+                            <div class="row align-items-center">
+                                {% for logo in logo_row %}
+                                    {% if logo %}
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="card">
+                                                <img src="{{ logo.src|asseturl }}" alt="{{ logo.alt }}">
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
                     </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/bs.png'|asseturl }}" alt="Kanton Basel Stadt">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/sg.svg'|asseturl }}" alt="Kanton St. Gallen">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/sz.svg'|asseturl }}" alt="Kanton Schwyz">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/gr.svg'|asseturl }}" alt="Kanton Graubünden">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/ar.svg'|asseturl }}"
-                            alt="Kanton Appenzell Ausserrhoden">
-                    </div>
-                </div>
+                {% endfor %}
             </div>
-            <div class="row align-items-center">
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/gl.svg'|asseturl }}" alt="Kanton Glarus">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/lu.svg'|asseturl }}" alt="Kanton Luzern">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/ai.svg'|asseturl }}" alt="Appenzell Innerrhoden">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/sh.svg'|asseturl }}" alt="Kanton Schaffhausen">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/bl.svg'|asseturl }}" alt="Kanton Basel Landschaft">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/stadt-bern.svg'|asseturl }}" alt="Stadt Bern">
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/winterthur.svg'|asseturl }}" alt="Stadt Winterhur">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/privatim.png'|asseturl }}" alt="privatim - Konferenz der schweizerischen Datenschutzbeauftragten">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/ersigen.png'|asseturl }}" alt="Gemeinde Ersigen">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/ebikon.png'|asseturl }}" alt="Gemeinde Ebikon">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/duerrenaesch.svg'|asseturl }}"
-                            alt="Gemeinde Dürrenäsch">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/lauerz.png'|asseturl }}" alt="Gemeinde Lauerz">
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/neuheim.png'|asseturl }}" alt="Gemeinde Neuheim">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/steinhausen.png'|asseturl }}"
-                            alt="Gemeinde Steinhausen">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/huenenberg.png'|asseturl }}"
-                            alt="Gemeinde Hünenberg">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/ottenbach.png'|asseturl }}" alt="Gemeinde Ottenbach">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/risch-rotkreuz.png'|asseturl }}"
-                            alt="Gemeinde Risch Rotkreuz">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/besenbueren.png'|asseturl }}"
-                            alt="Gemeinde Besenbüren">
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/musikschule-rontal.svg'|asseturl }}"
-                            alt="Musikschule Rontal">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/ph-zug.png'|asseturl }}" alt="PH Zug">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/pro-juventute.svg'|asseturl }}" alt="Pro Juventute">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/universitaet-bern.svg'|asseturl }}"
-                            alt="Universität Bern">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/neuenkirch.svg'|asseturl }}"
-                            alt="Gemeinde Neuenkirch">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img src="{{ 'static/images/customer-icons/meggen.png'|asseturl }}"
-                            alt="Gemeinde Meggen">
-                    </div>
-                </div>
+
+            <div class="carousel-indicators customers-pagination">
+                {% for _ in logo_sets %}
+                    <button
+                        type="button"
+                        data-bs-target="#customerLogoCarousel"
+                        data-bs-slide-to="{{ loop.index0 }}"
+                        {% if loop.first %}class="active" aria-current="true"{% endif %}
+                        aria-label="Slide {{ loop.index }}"></button>
+                {% endfor %}
             </div>
         </div>
     </div>

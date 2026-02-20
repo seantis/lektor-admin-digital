@@ -226,6 +226,30 @@ footer {margin-top: 100px;}
     background: #fff;
 }
 
+.brand-logo .carousel-item {
+    min-height: 300px;
+}
+
+.customers-pagination {
+    position: static;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.customers-pagination [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border: 0;
+    border-radius: 50%;
+    margin: 0 6px;
+    opacity: 0.35;
+    background-color: #dc0018;
+}
+
+.customers-pagination .active {
+    opacity: 1;
+}
+
 .blog-section ul {
     margin: 40px 0px;
 }
