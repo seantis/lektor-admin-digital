@@ -102,8 +102,18 @@ a.start {
     font-size: 120%;
 }
 
+a.start-wide {
+    width: 100%;
+}
+
 .start svg {
     margin-right: 10px;
+}
+
+@media (min-width: 992px) {
+    .hero-image-col {
+        padding-left: 72px;
+    }
 }
 
 .contact a {
