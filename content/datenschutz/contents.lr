@@ -10,27 +10,27 @@ body: Über die Plattform admin.digital werden schützenswerte Daten übertragen
 
 ## Zertifizierung ISO/IEC 27001:2022
 
-Qualität und Informationssicherheit gehören seit der Gründung zu unseren Grundwerten. Wir haben ein [Managementsystem für Informationssicherheit](https://seantis.ch/portrait/informationssicherheit-iso-27001/) implementiert, welches gemäss ISO/IEC 27001:2022 zertifiziert wurde und auditiert wird. ISO 27001 ist eine internationale Norm für Informationssicherheit. Die Norm beschreibt die Anforderungen für den Aufbau, den Betrieb sowie die laufende Optimierung eines dokumentierten Informationssicherheits-Managementsystems (ISMS). Die Einhaltung der Norm wird in jährlichen Audits überprüft.
+Qualität und Informationssicherheit gehören seit der Gründung zu unseren Grundwerten. Wir haben ein [Managementsystem für Informationssicherheit](https://seantis.ch/portrait/informationssicherheit-iso-27001/) implementiert, das gemäss ISO/IEC 27001:2022 zertifiziert ist und regelmässig auditiert wird. ISO 27001 ist eine internationale Norm für Informationssicherheit. Die Norm beschreibt die Anforderungen für den Aufbau, den Betrieb sowie die laufende Optimierung eines dokumentierten Informationssicherheits-Managementsystems (ISMS). Die Einhaltung der Norm wird in jährlichen Audits überprüft.
 
 ## Technische und organisatorische Massnahmen
 
-Können wir damit also für Informationssicherheit garantieren? Leider nein, in der IT-Sicherheit gibt es keine Garantien. Sicherheit ist kein Zustand, sondern ein Prozess. Wir setzen auf eine Vielzahl von technischen und organisatorischen Massnahmen um einen bestmöglichen Schutz schützenswerter Daten sicherzustellen.
+Können wir damit also Informationssicherheit garantieren? Leider nein: In der IT-Sicherheit gibt es keine Garantien. Sicherheit ist kein Zustand, sondern ein Prozess. Wir setzen auf eine Vielzahl von technischen und organisatorischen Massnahmen, um einen bestmöglichen Schutz schützenswerter Daten sicherzustellen.
 
-- 2-Faktor Authentifizierung ([YubiKey](https://www.admin.digital/neuerungen/alle/yubikey/))
-- Verschlüsselung (TLS 256bit Encryption)
+- 2-Faktor-Authentifizierung ([YubiKey](https://www.admin.digital/neuerungen/alle/yubikey/))
+- Verschlüsselung (TLS, 256-Bit-Encryption)
 - Netzwerksicherheit (Firewalls / Network Security)
-- Intrusion Detection System (Fail2ban)
-- Zugriffskontrolle (Role Based Access Control)
+- Intrusion-Detection-System (Fail2ban)
+- Zugriffskontrolle (Role-Based Access Control)
 - Datenmaskierung und Anonymisierung (Logfiles / Analytics)
 - Aktive Systemüberwachung (System Monitoring)
 - Regelmässige Updates (Release / Patch Management)
 - Automatische Scans auf Schwachstellen (Vulnerability Scans)
-- Backups mit Wiederherstellungstests ([Offsite / Airgrap Backup](https://www.seantis.ch/services/))
+- Backups mit Wiederherstellungstests ([Offsite / Airgap Backup](https://www.seantis.ch/services/))
 - Schulung und Training für Mitarbeitende (z.B. [Tabletop-Übung](https://www.seantis.ch/blog/wir-proben-den-ernstfall-ransomware/))
 - Meldestelle für Schwachstellen ([Vulnerability Disclosure Policy](https://www.seantis.ch/blog/vulnerability-disclosure-policy/))
 - Hochstrukturierte Softwareauslieferung ([DevOps](https://www.seantis.ch/blog/infrastructure-as-code/))
-- Regelmässige Penetration Testing ([White Hat Hacker](https://www.seantis.ch/blog/white-hat-hacker-penetration-testing/))
-- Datensparsamkeit ([Data Retension Policy](https://www.admin.digital/neuerungen/alle/datensparsamkeit/))
+- Regelmässige Penetrationstests ([White Hat Hacker](https://www.seantis.ch/blog/white-hat-hacker-penetration-testing/))
+- Datensparsamkeit ([Data Retention Policy](https://www.admin.digital/neuerungen/alle/datensparsamkeit/))
 
 ## Datenschutzstufen
 Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschutz. Gemäss Datenschutzkonzept wird zwischen folgenden Datenschutzstufen unterschieden.
@@ -59,11 +59,10 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
             <td>CH</td>
         </tr>
         <tr>
-        <tr>
-            <td>Zahlungsmitttel</td>
+            <td>Zahlungsmittel</td>
             <td>Payment Gateway<sup>2</sup></td>
             <td>3</td>
-            <td><a href="https://www.datatrans.ch" target="_blank">Datatrans</a> / <a href="https://www.stripe.com" target="_blank">Stripe</a> / <a href="https://worldline.com" target="_blank">Wordline</a></td>
+            <td><a href="https://www.datatrans.ch" target="_blank">Datatrans</a> / <a href="https://www.stripe.com" target="_blank">Stripe</a> / <a href="https://worldline.com" target="_blank">Worldline</a></td>
             <td>CH / USA / Global</td>
         </tr>
         <tr>
@@ -73,7 +72,6 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
             <td><a href="https://www.aspsms.ch" target="_blank">VADIAN.NET AG</a></td>
             <td>CH</td>
         </tr>
-        <tr>
         <tr>
             <td>Online-Formular</td>
             <td>Datenbank</td>
@@ -125,7 +123,7 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
         </tr>
     </tbody>
 </table>
-<p><sup>1</sup> BCrypt+SHA256</p>
+<p><sup>1</sup> BCrypt + SHA-256</p>
 <p><sup>2</sup> Daten zu Zahlungsmitteln (Kreditkarten, TWINT, etc.) werden ausschliesslich auf den zertifizierten Plattformen der Payment-Provider gespeichert.</p>
 <p><sup>3</sup> Es werden standardmässig keine schützenswerten personenbezogenen Daten per E-Mail versandt.</p>
 <p><sup>4</sup> Alle Anfragen werden anonym verarbeitet und Gespräche nicht gespeichert.</p>
@@ -134,9 +132,9 @@ Transparenz ist eine zwingende Voraussetzung für Datensicherheit und Datenschut
 
 
 
-## Cookies Analytics
+## Cookies und Analytics
 
-Zur Analyse des Nutzungsverhaltens wird die Open Source Analytics Software [Matomo](https://matomo.org) oder [Plausible](https://plausible.io) eingesetzt. Die Software wird auf der eigenen Infrastruktur von admin.digital betrieben und es werden keine Daten mit Drittfirmen geteilt.
+Zur Analyse des Nutzungsverhaltens wird die Open-Source-Analytics-Software [Matomo](https://matomo.org) oder [Plausible](https://plausible.io) eingesetzt. Die Software wird auf der eigenen Infrastruktur von admin.digital betrieben, und es werden keine Daten mit Drittfirmen geteilt.
 
 ## Datenschutzerklärung
 
