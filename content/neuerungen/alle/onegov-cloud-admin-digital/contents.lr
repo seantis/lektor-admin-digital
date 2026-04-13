@@ -6,13 +6,13 @@ author: Fabian Reinhard
 ---
 release: 
 ---
-description: Mit admin.digital wird OneGov Cloud ein Teil der Schweizer Cloud Plattform für Kantone und Gemeinden.
+description: Mit admin.digital wird OneGov Cloud ein Teil der Schweizer Cloud-Plattform für Kantone und Gemeinden.
 ---
 body:
 
-admin.digital basiert auf der bewährten und sicheren Lösung OneGov Cloud. Entwickelt wird admin.digital weiterhin als Open Source Software von der Luzerner Softwareschmiede seantis in der Gemeinschaft des Vereins OneGov.ch. Betrieben wird admin.digital in zertifizierten Schweizer Rechenzentren.
+admin.digital basiert auf der bewährten und sicheren Lösung OneGov Cloud. Entwickelt wird admin.digital weiterhin als Open-Source-Software von der Luzerner Softwareschmiede Seantis in der Gemeinschaft des Vereins OneGov.ch. Betrieben wird admin.digital in zertifizierten Schweizer Rechenzentren.
 
-seantis entwickelt Webapplikationen für die medizinische Forschung, die öffentliche Verwaltung sowie für die Aviatik.
+Seantis entwickelt Webapplikationen für die medizinische Forschung, die öffentliche Verwaltung sowie für die Aviatik.
 
 - Verein OneGov.ch: http://www.onegov.ch
 - OneGov Cloud: https://github.com/OneGov/onegov-cloud

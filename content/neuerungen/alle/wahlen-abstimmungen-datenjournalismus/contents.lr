@@ -10,11 +10,11 @@ description: Das Portal zur Publikation von Wahl- und Abstimmungsresultaten biet
 ---
 body:
 
-Auf den Datenportalen der Kantone [Basel Landschaft](https://abstimmungen.bl.ch), [Graubünden](https://abstimmungen.gr.ch), [Schwyz](https://abstimmungen.sz.ch), [St. Gallen](https://wab.sg.ch) und [Zug](https://wab.zug.ch) werden die Ergebnisse der kantonalen Wahlen und Abstimmungen publiziert.
+Auf den Datenportalen der Kantone [Basel-Landschaft](https://abstimmungen.bl.ch), [Graubünden](https://abstimmungen.gr.ch), [Schwyz](https://abstimmungen.sz.ch), [St. Gallen](https://wab.sg.ch) und [Zug](https://wab.zug.ch) werden die Ergebnisse der kantonalen Wahlen und Abstimmungen publiziert.
 
 ## Interaktive Widgets zum Einbetten
 
-Interaktive Diagramme und Karten können als iFrame ganz einfach in andere Webportale eingebettet werden. So kann z.B. eine Zeitung einfach auf ihrer Website den aktuellen Stand der Auszählung für Wahlen publizieren. Ebenso einfach ist die Einbettung einer interaktive Karte mit den Ergebnissen aus den Gemeinden.
+Interaktive Diagramme und Karten können als iFrame ganz einfach in andere Webportale eingebettet werden. So kann z.B. eine Zeitung einfach auf ihrer Website den aktuellen Stand der Auszählung für Wahlen publizieren. Ebenso einfach ist die Einbettung einer interaktiven Karte mit den Ergebnissen aus den Gemeinden.
 
 ![Widget einbetten](einbetten.png)
 
@@ -25,7 +25,7 @@ Interaktive Diagramme und Karten können als iFrame ganz einfach in andere Webpo
 </iframe>
 ```
 
-Die Snippets für `Diagramm einbetten` bzw. `Karte einbetten` befindet sich jeweils direkt unterhalb des Widgets und sind so ganz einfach zu finden.
+Die Snippets für `Diagramm einbetten` bzw. `Karte einbetten` befinden sich jeweils direkt unterhalb des Widgets und sind so ganz einfach zu finden.
 
 ![Karte einbetten](karte.png)
 
@@ -48,7 +48,7 @@ Alle Daten sind im Rohformat als CSV bzw. JSON verfügbar. Die Daten stehen übe
 
 ![json](json.png)
 
-Es besteht zudem die Möglichkeit die Daten aller Abstimmungen und Wahlen im Archiv als ZIP File herunterzuladen. Für einzelne Wahlen und Abstimmen sind für Druckversionen ebenso unter dem Tab `Downloads` PDFs verfügbar.
+Es besteht zudem die Möglichkeit, die Daten aller Abstimmungen und Wahlen im Archiv als ZIP-Datei herunterzuladen. Für einzelne Wahlen und Abstimmungen sind für Druckversionen ebenso unter dem Tab `Downloads` PDFs verfügbar.
 
 ## Benachrichtigungen per SMS oder E-Mail
 
@@ -60,12 +60,12 @@ Im Wahlzentrum werden die Resultate auf Info-Screens angezeigt. Dafür werden im
 
 ## Open Data
 
-Die Daten sind als Open Data mit einer Lizenz zur freien Nutzung verfügbar. Die detaillierte Dokumentation ist auf [Github](https://github.com/OneGov/onegov-cloud/blob/master/src/onegov/election_day/static/docs/api/open_data_de.md) zu finden.
+Die Daten sind als Open Data mit einer Lizenz zur freien Nutzung verfügbar. Die detaillierte Dokumentation ist auf [GitHub](https://github.com/OneGov/onegov-cloud/blob/master/src/onegov/election_day/static/docs/api/open_data_de.md) zu finden.
 
 ## Kantonale Portale Wahl- und Abstimmungsresultate
 Folgende Kantone publizieren ihre Wahl- und Abstimmungsresultate mit dem Portal von admin.digital.
 
-- [Kanton Basel Landschaft](https://abstimmungen.bl.ch)
+- [Kanton Basel-Landschaft](https://abstimmungen.bl.ch)
 - [Kanton Graubünden](https://abstimmungen.gr.ch)
 - [Kanton Schwyz](https://abstimmungen.sz.ch)
 - [Kanton St. Gallen](https://wab.sg.ch) 

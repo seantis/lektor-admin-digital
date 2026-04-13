@@ -1,4 +1,4 @@
-title: Ergebnispräsentation für Wahlen und  Abstimmungen
+title: Ergebnispräsentation für Wahlen und Abstimmungen
 ---
 pub_date: 2021-06-30
 ---
@@ -10,14 +10,14 @@ description: Für die Ergebnispräsentation am Abstimmungssonntag können neu in
 ---
 body:
 
-Somit können Bildschirme im Wahllokal einfach die entsprechende Seite im Browser anzeigen. Zudem können verschiedene Ansichten können gruppiert werden und zyklisch mit genau definierten zeitlichen Abständen abgearbeitet werden.
+Somit können Bildschirme im Wahllokal einfach die entsprechende Seite im Browser anzeigen. Zudem können verschiedene Ansichten gruppiert werden und zyklisch mit genau definierten zeitlichen Abständen abgearbeitet werden.
 
-Für den Aufbau der Ansichten steht je nach Typ (Majorzwahl, Proporzwahl, Abstimmung mit oder ohne Gegenvorschlag) verschiedene Elemente zur Verfügung, welche auch auf eingebauten Ansichten zur Verfüngung stehen: Diagramme, Karten, Tabellen und Auszählungsstand. Diese Elemente können frei in einem Zeilen und Spalten-Format angeordnet werden. Die Ansichten und Elemente können zudem grösstenteils individuelle gestaltet werden (Farbe, Schrift etc.).
+Für den Aufbau der Ansichten stehen je nach Typ (Majorzwahl, Proporzwahl, Abstimmung mit oder ohne Gegenvorschlag) verschiedene Elemente zur Verfügung, die auch in eingebauten Ansichten zur Verfügung stehen: Diagramme, Karten, Tabellen und Auszählungsstand. Diese Elemente können frei in einem Zeilen- und Spaltenformat angeordnet werden. Die Ansichten und Elemente können zudem grösstenteils individuell gestaltet werden (Farbe, Schrift etc.).
 
-![Beispiel einer  zusammengesetzen Ansicht mit Auszählungsstand links und Balkendiagramm rechts.](2021-62-election-day-screen-1.png)
-Beispiel einer  zusammengesetzen Ansicht mit Auszählungsstand links und Balkendiagramm rechts.
+![Beispiel einer zusammengesetzten Ansicht mit Auszählungsstand links und Balkendiagramm rechts.](2021-62-election-day-screen-1.png)
+Beispiel einer zusammengesetzten Ansicht mit Auszählungsstand links und Balkendiagramm rechts.
 
-![Beispiel einer zusammengesetzen Ansicht mit Balken und Karten.](2021-62-election-day-screen-2.png)
-Beispiel einer zusammengesetzen Ansicht mit Balken und Karten.
+![Beispiel einer zusammengesetzten Ansicht mit Balken und Karten.](2021-62-election-day-screen-2.png)
+Beispiel einer zusammengesetzten Ansicht mit Balken und Karten.
 ---
 apps: election_day

@@ -6,7 +6,7 @@ author: Marc Sommerhalder
 ---
 release: 2021.67
 ---
-description: Neu können Tickets anderen Benutzern zugewiesen werden. Der entsprechende Benutzer enthält eine Benachrichtigungsemail, sofern die Ticket-Emails aktiviert sind.
+description: Neu können Tickets anderen Benutzern zugewiesen werden. Der entsprechende Benutzer erhält eine Benachrichtigungs-E-Mail, sofern die Ticket-E-Mails aktiviert sind.
 ---
 body:
 

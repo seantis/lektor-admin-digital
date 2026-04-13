@@ -10,14 +10,14 @@ description: Feriennet – die Buchungsplattform für betreute Ferienangebote un
 ---
 body:
 
-Die QR-Rechnung werden direkt mit den Zahlungsangaben im Benutzerportal angezeigt und können direkt von dort eingescannt werden - kein unnötiger Papierverbrauch mehr!
+Die QR-Rechnungen werden direkt mit den Zahlungsangaben im Benutzerportal angezeigt und können direkt von dort eingescannt werden - kein unnötiger Papierverbrauch mehr!
 
 ![QR-Rechnungen](qr-bill.png)
 *QR-Rechnung*
 
-## Open Source Python Library
+## Open-Source-Python-Library
 
-Für die Umsetzung konnten wir auf eine Open Source Python Library zurückgreifen. Die Library ermöglicht es einfach QR-Rechungen nach Schweizer Standard zu erstellen. Wir unterstützen `swiss-qr-bill` als Sponsor: https://github.com/claudep/swiss-qr-bill
+Für die Umsetzung konnten wir auf eine Open-Source-Python-Library zurückgreifen. Die Library ermöglicht es, einfach QR-Rechnungen nach Schweizer Standard zu erstellen. Wir unterstützen `swiss-qr-bill` als Sponsor: https://github.com/claudep/swiss-qr-bill
 
 <pre><code class="language-python">
 >>> from qrbill import QRBill

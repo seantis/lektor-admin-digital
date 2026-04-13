@@ -1,4 +1,4 @@
-title: Webservice API
+title: Webservice-API
 ---
 pub_date: 2022-12-16
 ---
@@ -14,7 +14,7 @@ Mit der neuen Komponente `onegov.api` wurde der Grundstein für die OneGov Cloud
 
 Eine Datenschnittstelle sollte möglichst standardisiert sein und neben den eigentlichen Daten auch bestimmte Meta-Informationen enthalten: Welche Endpunkte gibt es? Welche Filtermöglichkeiten? In welcher Beziehung stehen die Daten untereinander?
 
-Die OneGov Cloud API setzt hierbei auf [`Collection+JSON`](http://amundsen.com/media-types/collection/), einen Hypermedia-Type, welche speziell für das Abfragen und Verwaltung von Datensammlungen entwickelt wurde und sehr gut zum Datendesign der OneGov Cloud passt.
+Die OneGov Cloud API setzt hierbei auf [`Collection+JSON`](http://amundsen.com/media-types/collection/), einen Hypermedia-Type, der speziell für das Abfragen und die Verwaltung von Datensammlungen entwickelt wurde und sehr gut zum Datendesign der OneGov Cloud passt.
 
 <pre><code class="language-json">
 {
@@ -44,7 +44,7 @@ Die OneGov Cloud API setzt hierbei auf [`Collection+JSON`](http://amundsen.com/m
 
 *Beispiel einer API-Abfrage*
 
-Mit dem Staatskalender wurde eine erste API Schnittstelle umgesetzt, welche es erlaubt, Organisation und Personen sowie deren Beziehungen (Mitgliedschaften) abzufragen.
+Mit dem Staatskalender wurde eine erste API-Schnittstelle umgesetzt, die es erlaubt, Organisationen und Personen sowie deren Beziehungen (Mitgliedschaften) abzufragen.
 
 **Staatskalender Zug API: <https://staka.zug.ch/api>**
 

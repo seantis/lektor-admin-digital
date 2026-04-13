@@ -11,7 +11,7 @@ description: Neues Feature: Automatische Archivierung und Löschung von Tickets
 body:
 
 
-Mit dem neusten Release können Tickets nach einer bestimmten Zeit automatisch archiviert und, falls gewünscht, automatisch gelöscht werden.
+Mit dem neuesten Release können Tickets nach einer bestimmten Zeit automatisch archiviert und, falls gewünscht, automatisch gelöscht werden.
 
 ## Motivation
 
