@@ -76,6 +76,13 @@ header .navbar {
     padding-top: 60px;
 }
 
+@media only screen and (min-width: 1200px) {
+    .testimonial8-wrapper .glider-contain .glider-next,
+    .testimonial8-wrapper .glider-contain .glider-prev {
+        bottom: 20px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .testimonial8-wrapper .glider-contain .glider .paragraph-medium {
         padding-top: 10px
