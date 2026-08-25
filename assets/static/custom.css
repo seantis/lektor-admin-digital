@@ -137,6 +137,33 @@ a.start-wide {
     padding: 0;
 }
 
+.news-docs-notice {
+    align-items: flex-start;
+    background: #f3f2ef;
+    border-left: 5px solid #169bdb;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0 40px;
+    padding: 18px 32px 28px;
+}
+
+.news-docs-notice .heading-6 {
+    margin: 0 0 8px;
+}
+
+.news-docs-notice p {
+    margin: 0 0 16px;
+}
+
+.news-docs-link {
+    align-items: center;
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 8px;
+}
+
 .blog-section ul li {
     font-weight: normal;
 }
