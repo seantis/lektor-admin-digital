@@ -98,7 +98,12 @@
     </section>
 
     <section class="res-section res-section-tint" aria-labelledby="calendar-title">
-        <div class="container res-feature-grid">
+        {% set views = [
+            {'label': 'Wochenansicht', 'description': 'Freie Zeitfenster gezielt auswählen.', 'icon': 'week', 'file': 'Wochenansicht.png', 'variant': 'res-screen-week', 'alt': 'Wochenkalender einer Sporthalle mit verfügbaren und belegten Zeitblöcken', 'caption': 'Wochenansicht: freie Zeitfenster gezielt auswählen'},
+            {'label': 'Monatsansicht', 'description': 'Das gesamte Angebot im Überblick behalten.', 'icon': 'month', 'file': 'Monatsansicht.png', 'variant': 'res-screen-month', 'alt': 'Monatskalender einer Sporthalle mit verfügbaren und belegten Tagen', 'caption': 'Monatsansicht: das gesamte Angebot im Überblick'},
+            {'label': 'Belegung', 'description': 'Reservationen und Sperrzeiten verwalten.', 'icon': 'occupancy', 'file': 'Belegung.png', 'variant': 'res-screen-occupancy', 'alt': 'Belegungskalender mit einer Vereinsreservation und Sperrzeiten für die Reinigung', 'caption': 'Belegung: Reservationen und Sperrzeiten verwalten'}
+        ] %}
+        <div class="container res-feature-grid" data-res-gallery>
             <div class="res-feature-copy">
                 <p class="res-eyebrow">Übersicht &amp; Planung</p>
                 <h2 id="calendar-title">Freie Zeiten auf einen Blick.</h2>
@@ -108,19 +113,31 @@
                     <li>Zeiten für Reinigung oder Unterhalt sperren</li>
                     <li>Auslastung über frei wählbare Zeiträume auswerten</li>
                 </ul>
-                <p class="res-small">Wechseln Sie zwischen Wochen-, Monats- und Belegungsansicht – für den passenden Überblick über freie Zeiten und bestehende Reservationen.</p>
-            </div>
-            <div class="res-gallery" data-res-gallery>
-                {% set views = [
-                    {'label': 'Woche', 'file': 'Wochenansicht.png', 'variant': 'res-screen-week', 'alt': 'Wochenkalender einer Sporthalle mit verfügbaren und belegten Zeitblöcken', 'caption': 'Wochenansicht: freie Zeitfenster gezielt auswählen'},
-                    {'label': 'Monat', 'file': 'Monatsansicht.png', 'variant': 'res-screen-month', 'alt': 'Monatskalender einer Sporthalle mit verfügbaren und belegten Tagen', 'caption': 'Monatsansicht: das gesamte Angebot im Überblick'},
-                    {'label': 'Belegung', 'file': 'Belegung.png', 'variant': 'res-screen-occupancy', 'alt': 'Belegungskalender mit einer Vereinsreservation und Sperrzeiten für die Reinigung', 'caption': 'Belegung: Reservationen und Sperrzeiten verwalten'}
-                ] %}
                 <nav class="res-view-switch" aria-label="Kalenderansicht im Produkteinblick">
                     {% for view in views %}
-                    <a href="{{ (image_base ~ view.file)|url }}" data-res-view="{{ view.variant }}" data-alt="{{ view.alt }}" data-caption="{{ view.caption }}"{% if loop.first %} aria-current="true"{% endif %}>{{ view.label }}</a>
+                    <a href="{{ (image_base ~ view.file)|url }}" data-res-view="{{ view.variant }}" data-alt="{{ view.alt }}" data-caption="{{ view.caption }}"{% if loop.first %} aria-current="true"{% endif %}>
+                        <span class="res-view-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="7" width="22" height="21" rx="2"/>
+                                <path d="M10 3v8M22 3v8M5 14h22"/>
+                                {% if view.icon == 'week' %}
+                                <path d="M12 14v14M20 14v14M5 21h22"/>
+                                {% elif view.icon == 'month' %}
+                                <path d="M10 19h1m4 0h1m4 0h1m-11 5h1m4 0h1m4 0h1"/>
+                                {% else %}
+                                <path d="m11 21 3 3 7-6"/>
+                                {% endif %}
+                            </svg>
+                        </span>
+                        <span class="res-view-copy">
+                            <span class="res-view-title">{{ view.label }}</span>
+                            <span class="res-view-description">{{ view.description }}</span>
+                        </span>
+                    </a>
                     {% endfor %}
                 </nav>
+            </div>
+            <div class="res-gallery">
                 {{ screenshot(views[0].file, views[0].alt, views[0].caption, views[0].variant, captions=views|map(attribute='caption')|list) }}
             </div>
         </div>
