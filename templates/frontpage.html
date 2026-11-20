@@ -333,10 +333,12 @@
                                 Online-Formulare übermittelten Daten. Tickets werden einer Dienststelle zugewiesen und
                                 strukturiert bearbeitet (inkl. automatischer Benachrichtigung bei Statusänderungen).</p>
                         </div>
-                        <div class="col-md-6 col-lg-4 featured-single border border-top-0">
+                        <a href="{{ '/reservationssystem'|url }}"
+                            class="col-md-6 col-lg-4 featured-single service-card-link border border-top-0"
+                            aria-labelledby="reservations-service-title reservations-service-link">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time"
                                 width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
                                 <circle cx="18" cy="18" r="4" />
@@ -345,12 +347,13 @@
                                 <path d="M3 11h16" />
                                 <path d="M18 16.496v1.504l1 1" />
                             </svg>
-                            <h6 class="heading-6">Reservationen mit Online-Bezahlung</h6>
+                            <h6 class="heading-6" id="reservations-service-title">Reservationen mit Online-Bezahlung</h6>
                             <p class="paragraph-regular">Im Kalender informieren sich die User über freie Termine und
                                 buchen diese direkt – überall und jederzeit.
                                 Das Online-Portal bietet so grösstmögliche Flexibilität bei der Terminbuchung und stellt
                                 die effiziente Abwicklung durch die Verwaltung sicher.</p>
-                        </div>
+                            <span class="button-semi" id="reservations-service-link">Reservationssystem entdecken</span>
+                        </a>
                         <div class="col-md-6 col-lg-4 featured-single border-bottom">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users"
                                 width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc0018"

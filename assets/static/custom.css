@@ -47,6 +47,39 @@ header .navbar {
     padding-bottom: 75px;
 }
 
+/* Keep the service navigation and contact link in the same flex layout. */
+@media (min-width: 992px) {
+    header .navbar .navbar-nav {
+        margin-left: 0;
+        gap: clamp(16px, 2vw, 32px);
+    }
+
+    header .navbar .navbar-nav .nav-item {
+        padding: 0;
+    }
+
+    header .navbar-collapse {
+        gap: 24px;
+        justify-content: flex-end !important;
+    }
+
+    header .navbar-collapse .button-lg-stroke {
+        position: static;
+        flex-shrink: 0;
+        margin-left: 0;
+    }
+
+    header .navbar .nav-link {
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    header .navbar .menu-regular {
+        font-size: 16px;
+    }
+}
+
 .customers {
     margin: 50px 0 0 0;
     padding: 50px 0;
@@ -184,6 +217,11 @@ a.start-wide {
 
 .featured6 .featured-content .featured-single .heading-6 {
     margin-top: 0
+}
+
+.featured3 .service-card-link:focus-visible {
+    outline: 3px solid #0876a8;
+    outline-offset: -3px;
 }
 
 @media (min-width: 768px) {

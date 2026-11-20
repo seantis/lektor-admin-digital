@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    {% block metadata %}
     <title>admin.digital - Cloud für die öffentliche Verwaltung</title>
 
     <meta name="keywords"
@@ -20,6 +21,7 @@
     <meta property="og:description"
         content="admin.digital ist eine bewährte und sichere Cloud Plattform für Schweizer Kantone und Gemeinden." />
     <meta property="og:image" content="https://www.admin.digital/static/images/og-admin-digital.png" />
+    {% endblock %}
 
     <link rel="icon" href="{{ '/static/images/favicon.ico'|url }}" sizes="any"><!-- 32×32 -->
     <link rel="icon" href="{{ '/static/images/icon.svg'|url }}" type="image/svg+xml">
@@ -37,12 +39,13 @@
 
     <link rel="stylesheet" href="{{ '/static/glider.min.css'|url }}">
     <link href="{{ '/static/aos.css'|url }}" rel="stylesheet">
+    {% block extra_head %}{% endblock %}
 
     <script defer data-domain="admin.digital" src="https://analytics.seantis.ch/js/script.js"></script>
 
 </head>
 
-<body>
+<body class="{% block body_class %}{% endblock %}">
 
     <!-- <div class="announcement"><a href="https://www.seantis.ch/news/swisscom-seantis-partnerschaft/">Swisscom Trust
             Services und seantis besiegeln Partnerschaft</a>
@@ -165,14 +168,17 @@
     <script src="{{ '/static/aos.js'|url }}"></script>
 
     <script>
-        new Glider(document.querySelector('.glider'), {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: {
-                prev: '.glider-prev',
-                next: '.glider-next'
-            },
-        });
+        const gliderElement = document.querySelector('.glider');
+        if (gliderElement) {
+            new Glider(gliderElement, {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: {
+                    prev: '.glider-prev',
+                    next: '.glider-next'
+                },
+            });
+        }
     </script>
 
     <script src="{{ '/static/highlight/highlight.min.js'|url }}"></script>
@@ -184,6 +190,8 @@
             duration: 700,
         });
     </script>
+
+    {% block scripts %}{% endblock %}
 
 </body>
 

@@ -1,0 +1,217 @@
+{% extends "layout.html" %}
+{% set image_base = '/static/images/reservationssystem/' %}
+{% set contact_url = 'mailto:info@seantis.ch?subject=Demo%20Reservationssystem%20admin.digital' %}
+
+{% block metadata %}
+    <title>{{ this.title }} | admin.digital</title>
+    <meta name="description" content="{{ this.description }}">
+    <link rel="canonical" href="{{ this|url(external=true) }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_CH">
+    <meta property="og:site_name" content="admin.digital">
+    <meta property="og:url" content="{{ this|url(external=true) }}">
+    <meta property="og:title" content="{{ this.title }}">
+    <meta property="og:description" content="{{ this.description }}">
+    <meta property="og:image" content="{{ (image_base ~ 'Monatsansicht.png')|url(external=true) }}">
+    <meta property="og:image:alt" content="Monatskalender des Reservationssystems von admin.digital">
+{% endblock %}
+
+{% block extra_head %}
+    <link href="{{ '/static/reservationssystem.css'|asseturl }}" rel="stylesheet">
+{% endblock %}
+
+{% block body_class %}reservations-page{% endblock %}
+
+{% macro screenshot(file, alt, caption, variant='', eager=false, captions=[]) %}
+<figure class="res-figure">
+    <a class="res-screen {{ variant }}" href="{{ (image_base ~ file)|url }}" data-res-screenshot aria-label="{{ caption or alt }} – Screenshot vergrössern">
+        <span class="res-screen-stage">
+            <span class="res-screen-viewport">
+                <img src="{{ (image_base ~ file)|url }}" alt="{{ alt }}" width="2760" height="3012" {% if eager %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
+            </span>
+        </span>
+        <span class="res-enlarge" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg>
+        </span>
+    </a>
+    {% if caption %}
+    <figcaption>
+        {% if captions %}
+            {% for label in captions %}
+            <span data-res-caption aria-hidden="{{ 'false' if label == caption else 'true' }}">{{ label }}</span>
+            {% endfor %}
+        {% else %}{{ caption }}{% endif %}
+    </figcaption>
+    {% endif %}
+</figure>
+{% endmacro %}
+
+{% block content %}
+<main id="reservationssystem" class="res-main">
+    <section class="res-hero">
+        <div class="container res-hero-grid">
+            <div class="res-hero-copy">
+                <p class="res-eyebrow">Räume und Infrastruktur online reservieren</p>
+                <h1>{{ this.headline }}</h1>
+                <p class="res-intro">{{ this.intro }}</p>
+                <div class="res-actions">
+                    <a class="res-button res-button-primary" href="{{ contact_url }}">Demo anfragen</a>
+                </div>
+            </div>
+            <div class="res-hero-visual">
+                {{ screenshot('Monatsansicht.png', 'Monatsansicht einer Sporthalle mit freien und belegten Zeitfenstern', 'Verfügbarkeiten auf einen Blick im Kalender erkennen', 'res-screen-month', true) }}
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="res-use-cases" aria-label="Einsatzbereiche">
+            <span>Ein System für viele Möglichkeiten</span>
+            <ul><li>Räume &amp; Säle</li><li>Sportanlagen</li><li>Gegenstände</li></ul>
+        </div>
+    </div>
+
+    <section class="res-section" id="funktionen" aria-labelledby="benefits-title">
+        <div class="container">
+            <div class="res-section-heading">
+                <p class="res-eyebrow">Von der Anfrage bis zur Abwicklung</p>
+                <h2 id="benefits-title">Gut organisiert. Für alle Beteiligten.</h2>
+            </div>
+            <div class="res-benefits">
+                <article>
+                    <svg class="res-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="5" y="7" width="22" height="21" rx="2"/><path d="M10 3v8M22 3v8M5 14h22m-16 6 3 3 7-6"/></svg>
+                    <h3>Einfach online buchen</h3>
+                    <p>Freien Termin auswählen, Angaben erfassen und die Reservation absenden. Bei Bedarf gleich online bezahlen.</p>
+                </article>
+                <article>
+                    <svg class="res-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 8h22M5 16h22M5 24h22"/><rect x="10" y="5" width="4" height="6" rx="1" fill="white"/><rect x="20" y="13" width="4" height="6" rx="1" fill="white"/><rect x="9" y="21" width="4" height="6" rx="1" fill="white"/></svg>
+                    <h3>Ihre Regeln geben den Takt vor</h3>
+                    <p>Legen Sie fest, wann und wie Ihr Angebot buchbar ist. Mit passenden Zeitblöcken, Kapazitäten und Annahmefristen.</p>
+                </article>
+                <article>
+                    <svg class="res-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 5h22v17H16l-7 6v-6H5zM10 11h12m-12 5h8"/></svg>
+                    <h3>Alles an einem Ort bearbeiten</h3>
+                    <p>Reservation, Rückfragen und Bearbeitungsstand bleiben im Ticket zusammen. Das schafft Klarheit für Ihr Team.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="res-section res-section-tint" aria-labelledby="calendar-title">
+        <div class="container res-feature-grid">
+            <div class="res-feature-copy">
+                <p class="res-eyebrow">Übersicht &amp; Planung</p>
+                <h2 id="calendar-title">Freie Zeiten auf einen Blick.</h2>
+                <p>Tag, Woche oder Monat: Wählen Sie die Ansicht, die zu Ihrer Planung passt. Belegungen und Sperrzeiten sind direkt im Kalender sichtbar.</p>
+                <ul class="res-checklist">
+                    <li>Verfügbarkeiten je Ressource steuern</li>
+                    <li>Zeiten für Reinigung oder Unterhalt sperren</li>
+                    <li>Auslastung über frei wählbare Zeiträume auswerten</li>
+                </ul>
+                <p class="res-small">Wechseln Sie zwischen Wochen-, Monats- und Belegungsansicht – für den passenden Überblick über freie Zeiten und bestehende Reservationen.</p>
+            </div>
+            <div class="res-gallery" data-res-gallery>
+                {% set views = [
+                    {'label': 'Woche', 'file': 'Wochenansicht.png', 'variant': 'res-screen-week', 'alt': 'Wochenkalender einer Sporthalle mit verfügbaren und belegten Zeitblöcken', 'caption': 'Wochenansicht: freie Zeitfenster gezielt auswählen'},
+                    {'label': 'Monat', 'file': 'Monatsansicht.png', 'variant': 'res-screen-month', 'alt': 'Monatskalender einer Sporthalle mit verfügbaren und belegten Tagen', 'caption': 'Monatsansicht: das gesamte Angebot im Überblick'},
+                    {'label': 'Belegung', 'file': 'Belegung.png', 'variant': 'res-screen-occupancy', 'alt': 'Belegungskalender mit einer Vereinsreservation und Sperrzeiten für die Reinigung', 'caption': 'Belegung: Reservationen und Sperrzeiten verwalten'}
+                ] %}
+                <nav class="res-view-switch" aria-label="Kalenderansicht im Produkteinblick">
+                    {% for view in views %}
+                    <a href="{{ (image_base ~ view.file)|url }}" data-res-view="{{ view.variant }}" data-alt="{{ view.alt }}" data-caption="{{ view.caption }}"{% if loop.first %} aria-current="true"{% endif %}>{{ view.label }}</a>
+                    {% endfor %}
+                </nav>
+                {{ screenshot(views[0].file, views[0].alt, views[0].caption, views[0].variant, captions=views|map(attribute='caption')|list) }}
+            </div>
+        </div>
+    </section>
+
+    <section class="res-section" aria-labelledby="rules-title">
+        <div class="container res-feature-grid res-feature-reverse">
+            <div class="res-feature-copy">
+                <p class="res-eyebrow">Verfügbarkeiten &amp; Ressourcen</p>
+                <h2 id="rules-title">Passend zu Ihren Anforderungen.</h2>
+                <p>Wiederkehrende Zeiträume bilden den regulären Betrieb ab. Einzelne Termine lassen sich anpassen – etwa für einen besonderen Anlass.</p>
+                <ul class="res-checklist">
+                    <li>Ganztägig oder in definierten Intervallen reservieren</li>
+                    <li>Zeiträume automatisch verlängern</li>
+                    <li>Buchungen auf bestimmte Postleitzahlen einschränken</li>
+                </ul>
+                <div class="res-callout">
+                    <h3>Ganze Halle oder einzelner Teil?</h3>
+                    <p>Verknüpfte Ressourcen berücksichtigen sich gegenseitig: Eine Buchung der ganzen Halle blockiert die Teilräume – und umgekehrt.</p>
+                </div>
+            </div>
+            {{ screenshot('Zeitraum-Bearbeiten.png', 'Einstellungen für einen Verfügbarkeitszeitraum mit Wiederholung, Datum und Wochentagen', 'Buchbare Zeiträume passend zum Betrieb definieren', 'res-screen-rules') }}
+        </div>
+    </section>
+
+    <section class="res-section res-section-tint" aria-labelledby="process-title">
+        <div class="container">
+            <div class="res-section-heading">
+                <p class="res-eyebrow">Buchen &amp; Bearbeiten</p>
+                <h2 id="process-title">Ein durchgängiger Ablauf.<br>Zwei passende Perspektiven.</h2>
+            </div>
+            <div class="res-process-grid">
+                <article>
+                    <div class="res-process-copy">
+                        <span class="res-audience">Für Bevölkerung &amp; Vereine</span>
+                        <h3>Die Reservation beginnt online.</h3>
+                        <p>Individuelle Formulare erfassen die nötigen Angaben, etwa Anlass und gewünschte Ausstattung. Pflichtfelder und optionale Angaben passen Sie pro Ressource an.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="res-process-copy">
+                        <span class="res-audience">Für die Verwaltung</span>
+                        <h3>Der nächste Schritt ist klar.</h3>
+                        <p>Tickets bündeln Angaben, Kommunikation und Änderungen. Zuständigkeiten und Berechtigungen regeln die Zusammenarbeit; auch der Zahlungsstatus bleibt im Blick.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="res-documentation">
+                <p>Sie möchten die Funktionen im Detail kennenlernen?</p>
+                <a class="res-text-link" href="https://docs.admin.digital/module/reservationen/">Zum Benutzerhandbuch</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="res-section">
+        <div class="container res-closing-grid">
+            <section class="res-proof-copy" aria-labelledby="experience-title">
+                <p class="res-eyebrow">Aus der Praxis</p>
+                <h2 id="experience-title">Für die öffentliche Verwaltung gemacht.</h2>
+                <p>Das Reservationssystem ist Teil der Open-Source-Plattform admin.digital.</p>
+                <a class="res-text-link" href="{{ '/neuerungen/alle/reservationssystem-zug'|url }}">Reservationssystem im Kanton Zug kennenlernen</a>
+                <a class="res-proof-link" href="{{ '/datenschutz'|url }}">Mehr zu Datenschutz und Informationssicherheit</a>
+            </section>
+            <section class="res-contact" aria-labelledby="contact-title">
+                <div class="res-contact-inner">
+                    <div>
+                        <p class="res-eyebrow">Ihr nächster Schritt</p>
+                        <h2 id="contact-title">Machen Sie Platz für einfachere Reservationen.</h2>
+                        <p>Zeigen Sie uns Ihre Anforderungen. Wir zeigen Ihnen, wie das Reservationssystem zu Ihrer Verwaltung passt.</p>
+                    </div>
+                    <div class="res-contact-actions">
+                        <a class="res-button res-button-primary" href="{{ contact_url }}">Demo anfragen</a>
+                        <a class="res-text-link" href="tel:+41415112250">+41 41 511 22 50</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<dialog class="res-lightbox" aria-labelledby="res-lightbox-title">
+    <div class="res-lightbox-header">
+        <h2 id="res-lightbox-title">Produkteinblick</h2>
+        <button type="button" class="res-lightbox-close" aria-label="Screenshot schliessen" autofocus><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="res-lightbox-content">
+        <div class="res-lightbox-image"><img alt="" width="2760" height="3012"></div>
+    </div>
+</dialog>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ '/static/reservationssystem.js'|asseturl }}" defer></script>
+{% endblock %}
